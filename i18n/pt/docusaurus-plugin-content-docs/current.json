@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Implemented techniques": {
+    "message": "Técnicas implementadas",
+    "description": "The label for category Implemented techniques in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Implemented techniques.link.generated-index.description": {
+    "message": "Metáforas baseadas no sistema imunológico.",
+    "description": "The generated-index page description for category Implemented techniques in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.negative-selection": {
+    "message": "Seleção-negativa",
+    "description": "The label for category negative-selection in sidebar tutorialSidebar"
+  }
+}
