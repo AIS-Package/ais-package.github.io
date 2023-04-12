@@ -16,7 +16,7 @@ BNSA(self, N: int = 100, t: int = 0.05, r_s: float = 0.0001, k: int = 1, metric:
 
 **Attributes:**
 * *N* (``int``): Quantidade de detectores. Defaults to ``100``.
-* *t* (``float``): A variável representa a porcentagem de não similaridade entre a célula T e as amostras próprias. O valor padrão é de 10% (0,1), enquanto que o valor de 1,0 representa 100% de não similaridade.
+* *aff_thresh* (``float``): A variável ('affinity threshold') representa a porcentagem de não similaridade entre a célula T e as amostras próprias. O valor padrão é de 10% (0,1), enquanto que o valor de 1,0 representa 100% de não similaridade.
 :::note
 Definir uma porcentagem de diferença muito alta pode resultar na incapacidade de gerar detectores para não-próprio.
 :::

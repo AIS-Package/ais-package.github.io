@@ -25,8 +25,7 @@ RNSA(self, N: int = 100, r: float = 0.05, r_s: float = 0.0001, k: int = 1, metri
 
 
 
-* *k* (``int``): Quantidade de vizinhos próximos dos detectores gerados aleatoriamente para efetuar o 
-cálculo da média da distância. Defaults to ``1``.
+* *k* (``int``): Quantidade de vizinhos próximos dos detectores gerados aleatoriamente para efetuar o cálculo da média da distância. Defaults to ``1``.
 * *metric* (``str``): Forma para se calcular a distância entre o detector e a amostra: 
     
     * ``'euclidiana'`` ➜ O cálculo da distância dá-se pela expressão:  √( (X₁ – X₂)² + (Y₁ – Y₂)² + ... + (Yn – Yn)²).

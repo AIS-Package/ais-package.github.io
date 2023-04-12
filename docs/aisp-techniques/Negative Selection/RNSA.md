@@ -23,8 +23,7 @@ RNSA(self, N: int = 100, r: float = 0.05, r_s: float = 0.0001, k: int = 1, metri
 it is important to consider that setting a very low radius for the detector can significantly reduce the detection rate. On the other hand, a very large radius can make it impossible to incorporate the detector into the search space, which can also compromise detection performance. It is essential to find a balance between the radius size and detection efficiency to achieve the best possible results.
 :::
 
-* *k* (``int``): Number of neighbors near the randomly generated detectors to perform the
-distance average calculation. Defaults to ``1``.
+* *k* (``int``): Number of neighbors near the randomly generated detectors to perform the distance average calculation. Defaults to ``1``.
 * *metric* (``str``): Way to calculate the distance between the detector and the sample:
 
     * ``'Euclidean'`` ➜ The calculation of the distance is given by the expression: √( (X₁ – X₂)² + (Y₁ – Y₂)² + ... + (Yn – Yn)²).

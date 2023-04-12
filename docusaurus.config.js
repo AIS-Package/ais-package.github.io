@@ -101,6 +101,10 @@ const config = {
                 label: 'Documentation',
                 to: '/docs/intro',
               },
+              {
+                label: 'Wiki Github',
+                href: 'https://github.com/AIS-Project/aisp/wiki',
+              },
             ],
           },
           {
@@ -109,6 +113,14 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/AIS-Project/aisp',
+              },
+              {
+                label: 'Pipy',
+                href: 'https://pypi.org/project/aisp/',
+              },
+              {
+                label: 'Docusaurus',
+                href: 'https://docusaurus.io/',
               },
             ],
           },

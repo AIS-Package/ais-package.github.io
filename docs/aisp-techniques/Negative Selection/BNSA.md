@@ -18,7 +18,7 @@ The ``BNSA`` (Binary Negative Selection Algorithm) class has the purpose of clas
 **Attributes:**
 
 * *N* (``int``): Number of detectors. Defaults to ``100``.
-* *t* (``float``): The variable represents the percentage of dissimilarity between the T cell and the own samples. The default value is 10% (0.1), while a value of 1.0 represents 100% dissimilarity.
+* *aff_thresh* (``float``): The variable ('affinity threshold') represents the percentage of dissimilarity between the T cell and the own samples. The default value is 10% (0.1), while a value of 1.0 represents 100% dissimilarity.
 :::note
 Setting the difference percentage too high can result in the inability to generate detectors for non-self.
 :::

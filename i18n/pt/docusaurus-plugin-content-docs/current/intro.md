@@ -66,16 +66,16 @@ pip install aisp
 ### **Como importar as Tecnicas**
 
 ``` python
-from aisp.NSA import NegativeSelection
+from aisp.NSA import RNSA
 
-nsa = NegativeSelection(N=300, r=0.05)
+nsa = RNSA(N=300, r=0.05)
 ```
 
 
 ## Exemplos:
 ### Exemplo utilizando a técnica de seleção negativa (**nsa**):
 
-No exemplo presente nesse [notebook](https://github.com/AIS-Project/aisp/examples/RNSA/), gerou-se **500** amostras aleatórias dispostas em dois grupos um para cada classe, podemos visualizar os detectores do não-próprio gerados abaixo:
+No exemplo presente nesse [notebook](https://github.com/AIS-Project/aisp/examples/RNSA/example_with_randomly_generated_dataset-pt.ipynb), gerou-se **500** amostras aleatórias dispostas em dois grupos um para cada classe, podemos visualizar os detectores do não-próprio gerados abaixo:
 
 
 ![](./assets/exemplo-ptbr.png)
@@ -86,5 +86,7 @@ A seguir alguns exemplos que utiliza-se de base de dados para classificação co
 
 ### **Seleção Negativa:**
 + Aplicação das tecnica de seleção negativa para classificação utilizando a base de dados de flores da família Iris e Old Faithful Geyser:
-    + [iris_dataBase_example](https://github.com/AIS-Project/aisp/examples/RNSA/)
-    + [geyser_dataBase_example](https://github.com/AIS-Project/aisp/examples/RNSA/)
+    + [iris_dataBase_example](https://github.com/AIS-Project/aisp/blob/main/examples/RNSA/iris_dataBase_example_pt-br.ipynb)
+    + [geyser_dataBase_example](https://github.com/AIS-Project/aisp//blob/main/examples/RNSA/geyser_dataBase_example_pt-br.ipynb)
++ BNSA - Algoritmo de Seleção Negativa Binária: 
+    + [mushrooms_dataBase_example](https://github.com/AIS-Project/aisp/blob/main/examples/BNSA/mushrooms_dataBase_example_pt-br.ipynb)
