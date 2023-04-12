@@ -32,7 +32,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="The AISP, is a python module that implements artificial immune systems techniques.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
