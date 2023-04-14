@@ -1,0 +1,13 @@
+.cardSpace{
+  margin: 0.8em 0.1rem ;
+}
+.space{
+  padding: 0.2em;
+  margin: 0;
+  margin-bottom: 0.15em;
+}
+
+.subTitle{
+  opacity: 80%;
+  margin-bottom: 0.3em;
+}

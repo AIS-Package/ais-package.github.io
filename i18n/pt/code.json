@@ -318,7 +318,7 @@
     "message": "Veja todos os resultados em{context}"
   },
   "theme.SearchBar.label": {
-    "message": "Pesquisa",
+    "message": "Pesquisar",
     "description": "The ARIA label and placeholder for search button"
   },
   "Easy to Use": {

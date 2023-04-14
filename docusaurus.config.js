@@ -118,10 +118,6 @@ const config = {
                 label: 'Pipy',
                 href: 'https://pypi.org/project/aisp/',
               },
-              {
-                label: 'Docusaurus',
-                href: 'https://docusaurus.io/',
-              },
             ],
           },
         ],
