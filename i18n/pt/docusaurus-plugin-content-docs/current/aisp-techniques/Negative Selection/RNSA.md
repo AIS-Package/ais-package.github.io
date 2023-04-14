@@ -3,6 +3,12 @@ id: rnsa
 title: RNSA
 sidebar_label: RNSA - Algoritmo de Seleção Negativa de Valor Real
 sidebar_position: 1
+keywords:
+  - Valor Real
+  - classificação
+  - anomalias
+  - not self
+  - V-detector
 ---
 
 # RNSA (Algoritmo de Seleção Negativa de Valor Real)

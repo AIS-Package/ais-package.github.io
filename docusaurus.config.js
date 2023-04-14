@@ -56,6 +56,7 @@ const config = {
       }),
     ],
   ],
+  
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -64,6 +65,11 @@ const config = {
       plugins: ['@docusaurus/plugin-content-pages'],
       sidebar: {
         collapsible: true,
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
       },
       navbar: {
         title: 'AISP',

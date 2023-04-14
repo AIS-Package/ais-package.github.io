@@ -3,6 +3,13 @@ id: bnsa
 title: BNSA
 sidebar_label: BNSA - Binary Negative Selection Algorithm
 sidebar_position: 2
+pagination_next: null
+keywords:
+  - Binary
+  - classifying
+  - anomalies
+  - not self
+  - affinity threshold
 ---
 
 # BNSA (Binary Negative Selection Algorithm)
