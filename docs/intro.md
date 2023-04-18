@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Artificial Immune Systems Project.
+# Artificial Immune Systems Package.
 
 <div style={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
 
@@ -39,7 +39,7 @@ Artificial Immune Systems (AIS) are inspired by the vertebrate immune system, cr
 
 ## **Installation**
 
-The module requires installation of [python 3.10.7](https://www.python.org/downloads/) or higher.
+The module requires installation of [python 3.8.10](https://www.python.org/downloads/) or higher.
 
 ### **Dependencies:**
 
@@ -73,7 +73,7 @@ nsa = RNSA(N=300, r=0.05)
 
 ### Example using the negative selection technique (**nsa**):
 
-In the example present in this [notebook](https://github.com/AIS-Project/aisp/blob/main/examples/RNSA/example_with_randomly_generated_dataset-en.ipynb), **500** random samples were generated, arranged in two groups, one for each class, we can see the non-self detectors generated below:
+In the example present in this [notebook](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/example_with_randomly_generated_dataset-en.ipynb), **500** random samples were generated, arranged in two groups, one for each class, we can see the non-self detectors generated below:
 
 ![](./assets/exemple-en.png)
 
@@ -82,7 +82,7 @@ Below are some examples that use a database for classification with the [Jupyter
 ### **Negative Selection:**
 
 + Application of negative selection techniques for classification using the Iris family flower database and Old Faithful Geyser:
-    + [iris_dataBase_example](https://github.com/AIS-Project/aisp/blob/main/examples/RNSA/iris_dataBase_example_en.ipynb)
-    + [geyser_dataBase_example](https://github.com/AIS-Project/aisp/blob/main/examples/RNSA/geyser_dataBase_example_en.ipynb)
+    + [iris_dataBase_example](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/iris_dataBase_example_en.ipynb)
+    + [geyser_dataBase_example](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/geyser_dataBase_example_en.ipynb)
 + BNSA - Binary Negative Selection Algorithm: 
-    + [mushrooms_dataBase_example](https://github.com/AIS-Project/aisp/blob/main/examples/BNSA/mushrooms_dataBase_example_en.ipynb)
+    + [mushrooms_dataBase_example](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/mushrooms_dataBase_example_en.ipynb)

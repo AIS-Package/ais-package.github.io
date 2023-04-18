@@ -7,20 +7,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   
-  title: 'AISP - Artificial Immune Systems Project',
+  title: 'AISP - Artificial Immune Systems Package',
   tagline: 'Based on metaphors of the immune system',
   favicon: 'img/icon.svg',
 
   // Set the production url of your site here
-  url: 'https://ais-project.github.io/',
+  url: 'https://ais-package.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'AIS-Project', // Usually your GitHub org/user name.
-  projectName: 'ais-project.github.io', // Usually your repo name.
+  organizationName: 'AIS-Package', // Usually your GitHub org/user name.
+  projectName: 'ais-package.github.io', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -87,7 +87,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/AIS-Project/aisp',
+            href: 'https://github.com/AIS-Package/aisp',
             label: 'GitHub',
             position: 'right',
           },
@@ -109,7 +109,7 @@ const config = {
               },
               {
                 label: 'Wiki Github',
-                href: 'https://github.com/AIS-Project/aisp/wiki',
+                href: 'https://github.com/AIS-Package/aisp/wiki',
               },
             ],
           },
@@ -118,7 +118,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/AIS-Project/aisp',
+                href: 'https://github.com/AIS-Package/aisp',
               },
               {
                 label: 'Pipy',
