@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Projeto de Sistemas Imunológicos Artificiais.
+# Pacote de Sistemas Imunológicos Artificiais.
 <div style={{ display: "flex", justifyContent: "center", alignItems: "center", margin: "auto" }}>
 
 ![](./assets/logo.svg)  

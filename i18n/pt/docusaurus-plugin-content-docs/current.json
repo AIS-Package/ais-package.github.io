@@ -14,5 +14,9 @@
   "sidebar.tutorialSidebar.category.negative-selection": {
     "message": "Seleção-negativa",
     "description": "The label for category negative-selection in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Seleção Negativa": {
+    "message": "Seleção Negativa",
+    "description": "The label for category Seleção Negativa in sidebar tutorialSidebar"
   }
 }
