@@ -19,7 +19,7 @@ keywords:
 The ``BNSA`` (Binary Negative Selection Algorithm) class has the purpose of classifying and identifying anomalies through the self and not self methods.
 
 ``` python
- BNSA(self, N: int = 100, t: float = 0.1, max_discards: int = 100, seed: int = None):
+ BNSA(self, N: int = 100, aff_thresh: float = 0.1, max_discards: int = 100, seed: int = None):
 ```
 
 **Attributes:**

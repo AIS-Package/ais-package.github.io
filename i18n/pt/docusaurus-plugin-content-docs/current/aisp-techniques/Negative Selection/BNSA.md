@@ -17,7 +17,7 @@ keywords:
 A classe ``BNSA`` tem a finalidade de classificação e identificação de anomalias através do método self e not self . 
 
 ```python
-BNSA(self, N: int = 100, t: int = 0.05, r_s: float = 0.0001, k: int = 1, metric: str = 'euclidean', seed: int = None):
+BNSA(self, N: int = 100, aff_thresh: int = 0.05, r_s: float = 0.0001, k: int = 1, metric: str = 'euclidean', seed: int = None):
 ```
 
 
