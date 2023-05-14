@@ -9,9 +9,14 @@ sidebar_position: 1
 
 > 1. **[Binary version:](BNSA.md)**
 >> The binary algorithm adapted for multiple classes in this project is based on the version proposed by [Forrest et al. (1994)](#2), originally developed for computer security.
+>>> **Example:**
+>>> +  [Mushrooms Database](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/mushrooms_dataBase_example_en.ipynb)
 
 > 2. **[Real-Valued version:](RNSA.md)**
 >>This algorithm has two different versions: one based on the canonical version [[1]](#1) and another with variable radius detectors [[3]](#3). Both are adapted to work with multiple classes and have methods for predicting data present in the non-self region of all detectors and classes.
+>>> **Examples:**
+>>> +  [Iris Database](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/iris_dataBase_example_en.ipynb)
+>>> +  [Geyser Database](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/geyser_dataBase_example_en.ipynb)
 
 # References
 

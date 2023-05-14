@@ -8,9 +8,14 @@ A **seleção negativa** é o processo em que o sistema imunológico faz a matur
 
 > 1. **[Binary version:](BNSA.md)**
 >> O algoritmo binário adaptado para múltiplas classes neste projeto tem como base a versão proposta por [Forrest et al. (1994)](#2), originalmente desenvolvida para segurança computacional.
+>>> **Exemplo:**
+>>> + [Base de dados Mushrooms](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/mushrooms_dataBase_example_pt-br.ipynb)
 
 > 2. **[Real-Valued version:](RNSA.md)**
 >>Este algoritmo possui duas versões diferentes: uma baseada na versão canônica [[1]](#1) e outra com detectores de raio variável [[3]](#3). Ambas estão adaptadas para trabalhar com múltiplas classes e possuem métodos para previsão de dados presentes na região não-self de todos os detectores e classes.
+>>> **Exemplos:**
+>>> +  [Base de dados Iris](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/iris_dataBase_example_pt-br.ipynb)
+>>> +  [Base de dados Geyser](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/geyser_dataBase_example_pt-br.ipynb)
 
 # References
 

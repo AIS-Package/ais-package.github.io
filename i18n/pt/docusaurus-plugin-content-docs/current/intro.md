@@ -87,6 +87,6 @@ A seguir alguns exemplos que utiliza-se de base de dados para classificação co
 ### **Seleção Negativa:**
 + Aplicação das tecnica de seleção negativa para classificação utilizando a base de dados de flores da família Iris e Old Faithful Geyser:
     + [iris_dataBase_example](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/iris_dataBase_example_pt-br.ipynb)
-    + [geyser_dataBase_example](https://github.com/AIS-Package/aisp//blob/main/examples/RNSA/geyser_dataBase_example_pt-br.ipynb)
+    + [geyser_dataBase_example](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/geyser_dataBase_example_pt-br.ipynb)
 + BNSA - Algoritmo de Seleção Negativa Binária: 
     + [mushrooms_dataBase_example](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/mushrooms_dataBase_example_pt-br.ipynb)
