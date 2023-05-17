@@ -37,12 +37,16 @@ export default function TeamUser({name, date, description, githubUrl, lattesUrl}
                 </div>
                 <div className="card__footer text--center">
                     <div className="button-group button-group--block">
-                        <a className="button button--secondary" href={githubUrl}>
+                    {githubUrl && 
+                        (<a className="button button--secondary" href={githubUrl}>
                             GitHub
-                        </a>
-                        <a className="button button--secondary" href={lattesUrl}>
+                        </a>)
+                    }
+                    {lattesUrl &&
+                        (<a className="button button--secondary" href={lattesUrl}>
                             Lattes
-                        </a>
+                        </a>)
+                    }
                     </div>
                 </div>
             </div>

@@ -19,7 +19,18 @@ keywords:
 The ``RNSA`` (Real-Valued Negative Selection Algorithm) class has the purpose of classifying and identifying anomalies through the self and not self methods.
 
 ```python
-RNSA(self, N: int = 100, r: float = 0.05, r_s: float = 0.0001, k: int = 1, metric: str = 'euclidean', seed: int = None, max_discards:int = 100, algorithm: str = 'default-NSA', cell_bounds: bool = False):
+class RNSA(
+    self, 
+    N: int = 100, 
+    r: float = 0.05, 
+    r_s: float = 0.0001, 
+    k: int = 1, 
+    metric: Literal['manhattan', 'minkowski', 'euclidean'] = 'euclidean', 
+    max_discards: int = 100, 
+    seed: int = None, 
+    algorithm: Literal['default-NSA', 'V-detector'] ='default-NSA', 
+    cell_bounds: bool = False
+)
 ```
 
 **Attributes:**
