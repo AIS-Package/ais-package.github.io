@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   
   title: 'AISP - Artificial Immune Systems Package',
-  tagline: 'Based on metaphors of the immune system',
+  tagline: 'A set of immuno inspired techniques!',
   favicon: 'img/icon.svg',
 
   // Set the production url of your site here
@@ -30,7 +30,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'pt'],
+    locales: ['en', 'pt-br'],
     localeConfigs: {
       en: {
         htmlLang: 'en-GB',

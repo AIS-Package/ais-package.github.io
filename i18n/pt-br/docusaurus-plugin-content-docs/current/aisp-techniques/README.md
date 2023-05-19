@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Implemented techniques
+# Técnicas implementadas
 
 # Classes AISP
 

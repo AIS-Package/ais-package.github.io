@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Próxima",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Implemented techniques": {
+    "message": "Técnicas implementadas",
+    "description": "The label for category Implemented techniques in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Negative selection": {
+    "message": "Seleção negativa",
+    "description": "The label for category Negative selection in sidebar tutorialSidebar"
+  }
+}

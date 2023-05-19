@@ -11,20 +11,20 @@
     "message": "Documentação",
     "description": "The label of footer link with label=Documentation linking to /docs/intro"
   },
-  "link.item.label.GitHub": {
-    "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/AIS-Package/aisp"
-  },
-  "copyright": {
-    "message": "Copyright © 2023 AISP, Inc. Built with Docusaurus.",
-    "description": "The footer copyright"
-  },
   "link.item.label.Wiki Github": {
     "message": "Wiki Github",
     "description": "The label of footer link with label=Wiki Github linking to https://github.com/AIS-Package/aisp/wiki"
   },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/AIS-Package/aisp"
+  },
   "link.item.label.Pipy": {
     "message": "Pipy",
     "description": "The label of footer link with label=Pipy linking to https://pypi.org/project/aisp/"
+  },
+  "copyright": {
+    "message": "Copyright © 2023 AISP, Inc. Construído com Docusaurus.",
+    "description": "The footer copyright"
   }
 }

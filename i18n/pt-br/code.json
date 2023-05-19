@@ -1,15 +1,26 @@
 {
-  "Getting Started": {
+  "subTitleHome": {
+    "message": "Um conjunto de técnicas imunoinspiradas!"
+  },
+  "Getting_Started": {
     "message": "Primeiros passos",
     "description": "The homepage main heading"
   },
-  "theme.ErrorPageContent.title": {
-    "message": "Esta página travou.",
-    "description": "The title of the fallback page when the page crashed"
+  "Easy to Use": {
+    "message": "Fácil de usar"
   },
-  "theme.ErrorPageContent.tryAgain": {
-    "message": "Tente novamente",
-    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  "cardEasy": {
+    "message": "A utilização do pacote é extremamente fácil, já que está disponível no gerenciador de pacote pip. Assim, sua instalação e execução são simplificadas, tornando o processo muito acessível para qualquer usuário."
+  },
+  "Developed in python": {
+    "message": "Desenvolvido em python"
+  },
+  "cardPython": {
+    "message": "O AISP é desenvolvido em Python, uma linguagem amplamente utilizada na comunidade de aprendizado de máquina. Logo, é possível a utilização com diversos pacotes que facilitam o trabalho com os dados."
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "This page crashed.",
+    "description": "The title of the fallback page when the page crashed"
   },
   "theme.NotFound.title": {
     "message": "Página não encontrada",
@@ -24,7 +35,7 @@
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.admonition.note": {
-    "message": "note",
+    "message": "observação",
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
@@ -36,7 +47,7 @@
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "info",
+    "message": "informação",
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.caution": {
@@ -112,7 +123,7 @@
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Navigação das páginas de documentação",
+    "message": "Páginas de documentação",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
@@ -132,7 +143,7 @@
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
-    "message": "Version: {versionLabel}"
+    "message": "Versões: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
     "message": "Esta é uma documentação não lançada para {siteTitle} {versionLabel}.",
@@ -171,7 +182,7 @@
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
+    "message": "Versões",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.tags.tagsListLabel": {
@@ -199,11 +210,11 @@
     "description": "The copy button label on code blocks"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Toggle word wrap",
+    "message": "Alternar quebra de linha",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-    "message": "Toggle the collapsible sidebar category '{label}'",
+    "message": "Alternar a categoria da barra lateral recolhível '{label}'",
     "description": "The ARIA label to toggle the collapsible sidebar category"
   },
   "theme.NavBar.navAriaLabel": {
@@ -211,7 +222,7 @@
     "description": "The ARIA label for the main navigation"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Languages",
+    "message": "Idiomas",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
@@ -223,7 +234,7 @@
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "Read more about {title}",
+    "message": "Leia mais sobre {title}",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readingTime.plurals": {
@@ -231,7 +242,7 @@
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Home page",
+    "message": "Pagina inicial",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
@@ -247,7 +258,7 @@
     "description": "The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Close navigation bar",
+    "message": "Fechar barra de navegação",
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
@@ -255,7 +266,7 @@
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Toggle navigation bar",
+    "message": "Alternar barra de navegação",
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.sidebar.expandButtonTitle": {
@@ -266,36 +277,16 @@
     "message": "Expandir painel lateral",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
-  "theme.common.skipToMainContent": {
-    "message": "Pular para o conteúdo principal",
-    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
-  },
-  "theme.tags.tagsPageTitle": {
-    "message": "Marcadores",
-    "description": "The title of the tag list page"
-  },
-  "The use of the module is extremely easy, since it is widely available in pip package managers. Thus, its installation and execution are simplified, making the process much more accessible for any user.": {
-    "message": "A utilização do módulo é extremamente fácil, já que está amplamente disponível nos gerenciadores de pacotes pip. Assim, sua instalação e execução são simplificadas, tornando o processo muito mais acessível para qualquer usuário."
-  },
-  "AISP is developed in Python, a widely used language in the machine learning community. This provides excellent availability and familiarity to users and collaborators, as they are accustomed to working with this programming language.": {
-    "message": "O AISP é desenvolvido em Python, uma linguagem amplamente utilizada na comunidade de machine learning. Isso proporciona excelente disponibilidade e familiaridade aos usuários e colaboradores, uma vez que estão acostumados a trabalhar com essa linguagem de programação."
-  },
-  "textDesc1": {
-    "message": "A utilização do módulo é extremamente fácil, já que está amplamente disponível nos gerenciadores de pacotes pip. Assim, sua instalação e execução são simplificadas, tornando o processo muito mais acessível para qualquer usuário."
-  },
-  "textDesc2": {
-    "message": "O AISP é desenvolvido em Python, uma linguagem amplamente utilizada na comunidade de machine learning. Isso proporciona excelente disponibilidade e familiaridade aos usuários e colaboradores, uma vez que estão acostumados a trabalhar com essa linguagem de programação."
-  },
   "theme.SearchPage.existingResultsTitle": {
     "message": "Resultados da busca por \"{query}\"",
     "description": "The search page title for non-empty query"
   },
   "theme.SearchPage.emptyResultsTitle": {
-    "message": "Pesquise a documentação",
+    "message": "Pesquisar na documentação",
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.searchContext.everywhere": {
-    "message": "em toda a documentação"
+    "message": "Em todos os lugares"
   },
   "theme.SearchPage.documentsFound.plurals": {
     "message": "1 documento encontrado|{count} documentos encontrados",
@@ -312,19 +303,25 @@
     "message": "Ver todos os resultados"
   },
   "theme.SearchBar.seeAllOutsideContext": {
-    "message": "Ver resultados fora {context}"
+    "message": "Ver resultados fora de {context}"
   },
   "theme.SearchBar.searchInContext": {
-    "message": "Veja todos os resultados em{context}"
+    "message": "Veja todos os resultados no {context}"
   },
   "theme.SearchBar.label": {
-    "message": "Pesquisar",
+    "message": "Procurar",
     "description": "The ARIA label and placeholder for search button"
   },
-  "Easy to Use": {
-    "message": "Fácil de usar"
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Tente novamente",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
-  "Developed in python": {
-    "message": "Desenvolvido em python"
+  "theme.common.skipToMainContent": {
+    "message": "Pular para o conteúdo principal",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Marcadores",
+    "description": "The title of the tag list page"
   }
 }

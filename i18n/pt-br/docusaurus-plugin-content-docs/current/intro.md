@@ -25,7 +25,7 @@ sidebar_position: 1
 
 ## Introdução
 
-O **AISP**, é um módulo python que implementa as técnicas dos sistemas imunológicos artificiais, distribuído sob a licença GNU General Public License v3 (GPLv3).
+O **AISP** é um pacote python que implementa as técnicas dos sistemas imunológicos artificiais, distribuído sob a licença GNU Lesser General Public License v3.0 (LGPLv3).
 
 O pacote teve início no ano de **2022** como um projeto de pesquisa no instituto federal do norte de minas gerais - campus salinas (**IFNMG - Salinas**).
 
