@@ -112,7 +112,7 @@ def predict(self, X: npt.NDArray) -> npt.NDArray:
 
 ---
 
-### Function score(...):
+### Function score(...)
 
 The function ``score(...)`` calculates the accuracy of the trained model by making predictions and computing accuracy.
 
@@ -128,7 +128,7 @@ It returns the accuracy as a float type.
 
 ---
 
-### Fuction __checks_valid_detector(...):
+### Fuction __checks_valid_detector(...)
 
 The ``def __checks_valid_detector(...)`` function checks if the detector has a valid ``r`` radius for the non-self of the class:
 
@@ -147,7 +147,7 @@ def __checks_valid_detector(self, X: npt.NDArray, vector_x: npt.NDArray, samples
 
 ---
 
-### Fuction __compare_KnearestNeighbors_List(...):
+### Fuction __compare_KnearestNeighbors_List(...)
 
 The ``def __compare_KnearestNeighbors_List(...)`` function compares the distance of the k-nearest neighbors, so if the distance of the new sample is smaller, replaces ``k-1`` and sorts in ascending order:
 
@@ -159,7 +159,7 @@ Returns a list of k-nearest neighbor distances.
 
 ---
 
-### Function __compare_sample_to_detectors(...):
+### Function __compare_sample_to_detectors(...)
 
 Function to compare a sample with the detectors, verifying if the sample is proper.
 In this function, when there is class ambiguity, it returns the class that has the greatest average distance between the detectors.
@@ -174,7 +174,7 @@ def __compare_sample_to_detectors(self, line):
 
 ---
 
-### Function __detector_is_valid_to_Vdetector(...):
+### Function __detector_is_valid_to_Vdetector(...)
 
 Check if the distance between the detector and the samples, minus the radius of the samples, is greater than the minimum radius.
 
@@ -193,7 +193,7 @@ def __detector_is_valid_to_Vdetector(self, distance, vector_x):
 
 ---
 
-### Fuction __distance(...):
+### Fuction __distance(...)
 
 The function ``def __distance(...)`` calculates the distance between two points using the technique defined in ``metric``, which are: ``'euclidean', 'norm_euclidean', or 'manhattan'``
 
@@ -207,7 +207,7 @@ The input parameters are ``u`` and ``v`` NDArrays, with the coordinates for the 
 
 ---
 
-### Function __slice_index_list_by_class(...):
+### Function __slice_index_list_by_class(...)
 
 The function ``__slice_index_list_by_class(...)``, separates the indices of the lines according to the output class, to go through the sample array, only in the positions that the output is the class that is being trained:
 

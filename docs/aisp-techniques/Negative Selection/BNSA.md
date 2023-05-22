@@ -87,7 +87,7 @@ def predict(self, X: npt.NDArray) -> npt.NDArray:
 
 ---
 
-### Function score(...):
+### Function score(...)
 
 The function ``score(...)`` calculates the accuracy of the trained model by making predictions and computing accuracy.
 
@@ -103,7 +103,7 @@ It returns the accuracy as a float type.
 
 ---
 
-### Function __slice_index_list_by_class(...):
+### Function __slice_index_list_by_class(...)
 
 The function ``__slice_index_list_by_class(...)``, separates the indices of the lines according to the output class, to go through the sample array, only in the positions that the output is the class that is being trained:
 

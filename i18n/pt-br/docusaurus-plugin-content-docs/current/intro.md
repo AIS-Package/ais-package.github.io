@@ -75,7 +75,7 @@ nsa = RNSA(N=300, r=0.05)
 ## Exemplos:
 ### Exemplo utilizando a técnica de seleção negativa (**nsa**):
 
-No exemplo presente nesse [notebook](https://github.com/AIS-Package/aisp/examples/RNSA/example_with_randomly_generated_dataset-pt.ipynb), gerou-se **500** amostras aleatórias dispostas em dois grupos um para cada classe, podemos visualizar os detectores do não-próprio gerados abaixo:
+No exemplo presente nesse [notebook](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/example_with_randomly_generated_dataset-pt.ipynb) foram geradas **500** amostras aleatórias dispostas em dois grupos um para cada classe, podemos visualizar os detectores do não-próprio gerados abaixo:
 
 
 ![](./assets/exemplo-ptbr.png)

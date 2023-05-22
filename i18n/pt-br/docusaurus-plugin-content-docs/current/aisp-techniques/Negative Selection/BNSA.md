@@ -80,7 +80,7 @@ def predict(self, X: npt.NDArray) -> npt.NDArray:
 
 ---
 
-### Função score(...):
+### Função score(...)
 
 A função "score(...)" calcula a precisão do modelo treinado por meio da realização de previsões e do cálculo da acurácia.
 
@@ -96,7 +96,7 @@ retorna a acurácia, do tipo ``float``.
 
 ---
 
-### Função __slice_index_list_by_class(...):
+### Função __slice_index_list_by_class(...)
 
 A função ``__slice_index_list_by_class(...)``, separa os índices das linhas conforme a classe de saída, para percorrer o array de amostra, apenas nas posições que a saída for a classe que está sendo treinada:
 
