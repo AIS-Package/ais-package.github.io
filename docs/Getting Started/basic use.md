@@ -12,7 +12,7 @@ showLastUpdateTime: true
 
 ## BNSA (Binary Negative Selection Algorithm)
 
-### Importing negative selection binary.
+### Importing Binary Negative Selection Algorithm.
 
 ```python
 from aisp.NSA import BNSA
@@ -98,7 +98,7 @@ weighted avg       0.90      0.90      0.90       120
 
 ## RNSA (Real-Valued Negative Selection Algorithm)
 
-### Importing the negative selection real-valued.
+### Importing the Real-Valued Negative Selection Algorithm.
 ```python
 from aisp.NSA import RNSA
 ```

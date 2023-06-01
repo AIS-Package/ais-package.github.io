@@ -12,12 +12,14 @@ showLastUpdateTime: true
 
 ## BNSA (Algoritmo de seleção negativa binária)
 
-### Importando o binário de seleção negativa.
+### Importando o Algoritmo de seleção negativa binária.
 
 ```python
 from aisp.NSA import BNSA
 ```
+
 ### Gerando anostras binárias aleatoriamente e separando os dados.
+
 #### Função para gerar amostras binárias
 
 Nesta função, são geradas amostras de dados binários com um grau de similaridade acima de um limiar definido s. No entanto, 10% dos primeiros dados são gerados aleatoriamente, sem levar em consideração o valor de s. Além disso, quando já existem amostras, são geradas amostras únicas para a nova classe, garantindo que as amostras aleatórias geradas não estejam duplicadas em classes diferentes.
@@ -97,7 +99,7 @@ weighted avg       0.90      0.90      0.90       120
 ```
 ## RNSA (Algoritmo de seleção negativa de valor real)
 
-### Importando a seleção negativa com valor real.
+### Importando o Algoritmo de seleção negativa de valor real.
 ```python
 from aisp.NSA import RNSA
 ```
