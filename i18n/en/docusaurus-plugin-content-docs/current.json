@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Implemented techniques": {
+    "message": "Implemented techniques",
+    "description": "The label for category Implemented techniques in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Negative selection": {
+    "message": "Negative selection",
+    "description": "The label for category Negative selection in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Examples": {
+    "message": "Examples",
+    "description": "The label for category Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Examples.link.generated-index.description": {
+    "message": "Below are some examples that use databases for sorting with the Jupyter notebook tool.",
+    "description": "The generated-index page description for category Examples in sidebar tutorialSidebar"
+  }
+}

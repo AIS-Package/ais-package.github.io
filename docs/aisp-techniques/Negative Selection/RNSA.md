@@ -29,7 +29,7 @@ class RNSA(
     max_discards: int = 100, 
     seed: int = None, 
     algorithm: Literal['default-NSA', 'V-detector'] ='default-NSA', 
-    cell_bounds: bool = False
+    **kwargs: bool
 )
 ```
 
@@ -63,8 +63,8 @@ it is important to consider that setting a very low radius for the detector can 
     Defaults to ``'default-NSA'``.
 
 * *r_s* (``float``): rₛ Radius of the ``X`` own samples.
-* *cell_bounds* (``bool``): If set to ``True``, this option limits the generation of detectors to the space within the plane between 0 and 1. 
-This means that any detector whose radius exceeds this limit is discarded, this variable is only used in the ``V-detector`` algorithm.
+- ``**kwargs``:
+    -  *cell_bounds* (``bool``): If set to ``True``, this option limits the generation of detectors to the space within the plane between 0 and 1. This means that any detector whose radius exceeds this limit is discarded, this variable is only used in the ``V-detector`` algorithm.
 
 **Other variables initiated:**
 

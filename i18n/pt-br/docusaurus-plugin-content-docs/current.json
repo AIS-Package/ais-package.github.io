@@ -10,5 +10,25 @@
   "sidebar.tutorialSidebar.category.Negative selection": {
     "message": "Seleção negativa",
     "description": "The label for category Negative selection in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message": "Primeiros passos",
+    "description": "The label for category Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Técnicas implementadas": {
+    "message": "Técnicas implementadas",
+    "description": "The label for category Técnicas implementadas in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Seleção Negativa": {
+    "message": "Seleção Negativa",
+    "description": "The label for category Seleção Negativa in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Examples": {
+    "message": "Exemplos",
+    "description": "The label for category Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Examples.link.generated-index.description": {
+    "message": "Abaixo estão alguns exemplos que usam base de dados para classificação com a ferramenta Jupyter notebook.",
+    "description": "The generated-index page description for category Examples in sidebar tutorialSidebar"
   }
 }

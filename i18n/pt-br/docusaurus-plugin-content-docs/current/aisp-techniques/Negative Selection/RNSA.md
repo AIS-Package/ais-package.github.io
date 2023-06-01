@@ -28,7 +28,7 @@ class RNSA(
     max_discards: int = 100, 
     seed: int = None, 
     algorithm: Literal['default-NSA', 'V-detector'] ='default-NSA', 
-    cell_bounds: bool = False
+    **kwargs: bool
 )
 ```
 
@@ -63,7 +63,8 @@ possível loop infinito caso seja definido um raio que não seja possível gerar
     Defaults to ``'default-NSA'``.
 
 * *r_s* (``float``): O valor de ``rₛ`` é o raio das amostras próprias da matriz ``X``.
-* *cell_bounds* (``bool``):  Se definido como ``True``, esta opção limita a geração dos detectores ao espaço do plano compreendido entre 0 e 1. Isso significa que qualquer detector cujo raio ultrapasse esse limite é descartado, e esta variável é usada exclusivamente no algoritmo ``V-detector``.
+- ``**kwargs``:
+    -  *cell_bounds* (``bool``):  Se definido como ``True``, esta opção limita a geração dos detectores ao espaço do plano compreendido entre 0 e 1. Isso significa que qualquer detector cujo raio ultrapasse esse limite é descartado, e esta variável é usada exclusivamente no algoritmo ``V-detector``.
 
 **Outras variáveis iniciadas:**
 
