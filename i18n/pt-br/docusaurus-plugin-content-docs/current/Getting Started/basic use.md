@@ -1,14 +1,16 @@
 ---
 sidebar_position: 2
-title: Basic usage
-sidebar_label: Basic usage
+title: Utilização básica
+sidebar_label: Utilização básica
 lastUpdatedAt: 2023/06/01
 author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
 ---
 
-# BNSA (Algoritmo de seleção negativa binária)
+# Utilização básica
+
+## BNSA (Algoritmo de seleção negativa binária)
 
 ### Importando o binário de seleção negativa.
 

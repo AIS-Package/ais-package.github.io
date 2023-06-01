@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-title: Instalation
-sidebar_label: Instalation
+title: Instalação
+sidebar_label: Instalação
 lastUpdatedAt: 2023/05/30
 author: João Paulo
 showLastUpdateAuthor: true

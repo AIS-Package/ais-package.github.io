@@ -8,7 +8,9 @@ showLastUpdateAuthor: true
 showLastUpdateTime: true
 ---
 
-# BNSA (Binary Negative Selection Algorithm)
+# Basic usage
+
+## BNSA (Binary Negative Selection Algorithm)
 
 ### Importing negative selection binary.
 
