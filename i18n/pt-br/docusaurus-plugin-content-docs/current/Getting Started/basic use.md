@@ -6,6 +6,9 @@ lastUpdatedAt: 2023/06/01
 author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
+last_update:
+  date: 2023/05/30
+  author: João Paulo
 ---
 
 # Utilização básica
@@ -18,7 +21,7 @@ showLastUpdateTime: true
 from aisp.NSA import BNSA
 ```
 
-### Gerando anostras binárias aleatoriamente e separando os dados.
+### Gerando amostras binárias aleatoriamente e separando os dados.
 
 #### Função para gerar amostras binárias
 

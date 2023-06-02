@@ -6,6 +6,9 @@ lastUpdatedAt: 2023/06/01
 author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
+last_update:
+  date: 2023/06/01
+  author: João Paulo
 ---
 
 # Basic usage
