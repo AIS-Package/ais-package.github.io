@@ -29,7 +29,7 @@ Os exemplos a seguir mostram várias funcionalidades das classes de seleção ne
 
 ## BNSA (Algoritmo de Seleção Negativa Binária)
 + [Notebook](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/example_with_randomly_generated_dataset-pt.ipynb)
-> No exemplo presente neste notebook, foram geradas 600 amostras aleatórias, organizadas em dois grupos, um para cada classe.
+> No exemplo presente neste notebook, foram geradas 1000 amostras aleatórias, organizadas em dois grupos, um para cada classe.
 
 + [Exemplo de Base de Dados de Cogumelos](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/mushrooms_dataBase_example_pt.ipynb)
 > Ele usa a [base de dados de cogumelos](https://www.kaggle.com/datasets/uciml/mushroom-classification), que contém informações sobre cogumelos comestíveis e venenosos.

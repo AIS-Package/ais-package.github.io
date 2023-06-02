@@ -30,5 +30,9 @@
   "sidebar.tutorialSidebar.category.Examples.link.generated-index.description": {
     "message": "Abaixo estão alguns exemplos que usam base de dados para classificação com a ferramenta Jupyter notebook.",
     "description": "The generated-index page description for category Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Basic usage": {
+    "message": "Utilização básica",
+    "description": "The label for category Basic usage in sidebar tutorialSidebar"
   }
 }

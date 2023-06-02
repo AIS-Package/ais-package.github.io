@@ -29,7 +29,7 @@ The examples below show various functionality of negative selection classes so t
 ## BNSA (Binary Negative Selection Algorithm)
 
 + [notebook](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/example_with_randomly_generated_dataset-en.ipynb) 
-> In the example present in this notebook 600 random samples were generated, arranged in two groups, one for each class.
+> In the example present in this notebook 1000 random samples were generated, arranged in two groups, one for each class.
 
 + [mushrooms_dataBase_example](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/mushrooms_dataBase_example_en.ipynb)
 >  It uses the [mushrooms database](https://www.kaggle.com/datasets/uciml/mushroom-classification), which contains information about edible and poisonous mushrooms.
