@@ -34,5 +34,9 @@
   "sidebar.tutorialSidebar.category.Basic usage": {
     "message": "Utilização básica",
     "description": "The label for category Basic usage in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Advanced Guides": {
+    "message": "Guias avançados",
+    "description": "The label for category Advanced Guides in sidebar tutorialSidebar"
   }
 }
