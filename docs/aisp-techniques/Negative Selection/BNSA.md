@@ -23,7 +23,7 @@ class BNSA(
     self, 
     N: int = 100, 
     aff_thresh: float = 0.1, 
-    max_discards: int = 100, 
+    max_discards: int = 1000, 
     seed: int = None
 )
 ```
@@ -37,7 +37,7 @@ Setting the difference percentage too high can result in the inability to genera
 :::
 
 * *max_discards* (``int``): This parameter indicates the maximum number of detector discards in sequence, which aims to avoid a
-possible infinite loop if a radius is defined that it is not possible to generate non-self detectors. Defaults to ``100``.
+possible infinite loop if a radius is defined that it is not possible to generate non-self detectors. Defaults to ``1000``.
 * *seed* (``int``): Seed for the random generation of values in the detectors. Defaults to ``None``.
 
 
@@ -47,6 +47,8 @@ possible infinite loop if a radius is defined that it is not possible to generat
 
 * *classes* (``npt.NDArray``): list of output classes.
 
+
+---
 
 
 ### Fuction fit(...)

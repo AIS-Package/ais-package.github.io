@@ -46,6 +46,8 @@ def generate_samples(n_samples: int, n_features: int, s: float, x: None):
    return np.array(class_samples)
 ```
 
+---
+
 ### Data generation and separation
 
 In this step, 1000 pieces of data are generated, 500 representing class 'x' and 500 representing class 'y'. Each die is made up of 20 dimensions. It is important to highlight that these data are created in such a way that they present a degree of similarity of 80%, that is, they share common characteristics. After generation, the data is separated into training and test sets.
@@ -71,6 +73,9 @@ output = dataset[:, -1]
 train_x, test_x, train_y, test_y = train_test_split(samples, output, test_size=0.2, random_state=1234321)
 
 ```
+
+---
+
 ## Testing the model:
 
 Starting the model and applying it to randomly generated samples, the current configuration consists of 250 detectors with a differentiation rate of 30%.
@@ -101,6 +106,8 @@ The accuracy is 0.96
    macro avg       0.96      0.96      0.96       200
 weighted avg       0.96      0.96      0.96       200
 ```
+
+---
 
 ##  Confusion matrix
 

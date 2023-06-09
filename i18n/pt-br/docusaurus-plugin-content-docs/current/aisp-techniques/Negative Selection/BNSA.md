@@ -21,11 +21,10 @@ class BNSA(
   self, 
   N: int = 100, 
   aff_thresh: float = 0.1, 
-  max_discards: int = 100, 
+  max_discards: int = 1000, 
   seed: int = None
 )
 ```
-
 
 **Attributes:**
 * *N* (``int``): Quantidade de detectores. Defaults to ``100``.
@@ -35,7 +34,7 @@ Definir uma porcentagem de diferença muito alta pode resultar na incapacidade d
 :::
 
 * *max_discards* (``int``): Este parâmetro indica o número máximo de descartes de detectores em sequência, que tem como objetivo evitar um 
-possível loop infinito caso seja definido um raio que não seja possível gerar detectores do não-próprio. Defaults to ``100``.
+possível loop infinito caso seja definido um raio que não seja possível gerar detectores do não-próprio. Defaults to ``1000``.
 * *seed* (``int``): Semente para a geração randômica dos valores nos detectores. Defaults to ``None``.
 
 **Outras variáveis iniciadas:**
@@ -43,6 +42,8 @@ possível loop infinito caso seja definido um raio que não seja possível gerar
 * *detectors* (``dict``): Esta variável armazena uma lista de detectores por classe.
 
 * *classes* (``npt.NDArray``): lista de classes de saída.
+
+---
 
 ### Função fit(...)
 

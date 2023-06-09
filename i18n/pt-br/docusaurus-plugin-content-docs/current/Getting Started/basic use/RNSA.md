@@ -34,6 +34,8 @@ samples, output = make_blobs(n_samples=500 , n_features=2, cluster_std=0.07, cen
 train_x, test_x, train_y, test_y = train_test_split(samples, output, test_size=0.2)
 ```
 
+---
+
 ## Testando o modelo `default-NSA`:
 
 Inicia o modelo com 500 detectores, cada um com um raio de 0.06. Em seguida, apresenta o resultado da acurácia da previsão.
@@ -66,9 +68,13 @@ The accuracy is 1.0
 weighted avg       1.00      1.00      1.00       100
 ```
 
+---
+
 ## Plotagem dos detector e amostras:
 
 ![](../../assets/exemple_pt_d.png)
+
+---
 
 ## Testando o modelo `V-detector`:
 
@@ -101,6 +107,8 @@ A acuracia é 1.0
    macro avg       1.00      1.00      1.00       100
 weighted avg       1.00      1.00      1.00       100
 ```
+
+---
 
 ## Plotagem dos detector e amostras:
 

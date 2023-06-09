@@ -26,10 +26,10 @@ class RNSA(
     r_s: float = 0.0001, 
     k: int = 1, 
     metric: Literal['manhattan', 'minkowski', 'euclidean'] = 'euclidean', 
-    max_discards: int = 100, 
+    max_discards: int = 1000, 
     seed: int = None, 
     algorithm: Literal['default-NSA', 'V-detector'] ='default-NSA', 
-    **kwargs: bool
+    **kwargs: Dict[str, Union[bool, str]]
 )
 ```
 
@@ -52,7 +52,7 @@ it is important to consider that setting a very low radius for the detector can 
     Defaults to ``'euclidean'``.
 
 
-* *max_discards* (``int``): This parameter indicates the maximum number of consecutive detector discards, aimed at preventing a possible infinite loop in case a radius is defined that cannot generate non-self detectors.
+* *max_discards* (``int``): This parameter indicates the maximum number of consecutive detector discards, aimed at preventing a possible infinite loop in case a radius is defined that cannot generate non-self detectors. Defaults to ``1000``.
 * *seed* (``int``): Seed for the random generation of values in the detectors. Defaults to ``None``.
 
 * *algorithm* (``str``), Set the algorithm version:
@@ -64,6 +64,8 @@ it is important to consider that setting a very low radius for the detector can 
 
 * *r_s* (``float``): rₛ Radius of the ``X`` own samples.
 - ``**kwargs``:
+    - *non_self_label* (``str``): This variable stores the label that will be assigned when the data has only one 
+    output class, and the sample is classified as not belonging to that class. Defaults to ``'non-self'``.
     -  *cell_bounds* (``bool``): If set to ``True``, this option limits the generation of detectors to the space within the plane between 0 and 1. This means that any detector whose radius exceeds this limit is discarded, this variable is only used in the ``V-detector`` algorithm.
 
 **Other variables initiated:**

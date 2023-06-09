@@ -48,6 +48,8 @@ def generate_samples(n_samples: int, n_features: int, s: float, x: None):
   return np.array(classe_samples)
 ```
 
+---
+
 ### Geração e separação de dados
 
 Nessa etapa, são gerados 1000 dados, sendo 500 para representar a classe 'x' e 500 para representar a classe 'y'. Cada dado é formado por 20 dimensões. É importante destacar que esses dados são criados de forma que apresentem um grau de similaridade de 80%, ou seja, compartilham características comuns. Após a geração, os dados são separados em conjuntos de treinamento e teste.
@@ -73,6 +75,9 @@ output = dataset[:, -1]
 train_x, test_x, train_y, test_y = train_test_split(samples, output, test_size=0.2, random_state=1234321)
 
 ```
+
+---
+
 ## Testando o modelo:
 
 Iniciando o modelo e aplicando-o às amostras geradas aleatoriamente, a configuração atual possui 250 detectores com uma taxa de diferenciação de 30%.
@@ -102,6 +107,8 @@ A acurácia é 0.96
    macro avg       0.96      0.96      0.96       200
 weighted avg       0.96      0.96      0.96       200
 ```
+
+---
 
 ## Matriz de confusão
 Aqui está a matriz de confusão, onde a diagonal principal representa as amostras previstas corretamente e a diagonal secundária mostra os falsos positivos. Dos 200 dados de teste, houve 5 falsos positivos para a classe x e 6 falsos positivos para a classe y.

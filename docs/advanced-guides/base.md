@@ -12,6 +12,8 @@ The ``_Base`` class contains utility functions with the ``protected`` modifier t
 
 ## Protected Functions:
 
+---
+
 ### def _distance(...):
 
 ```python
@@ -27,6 +29,21 @@ Function to calculate the distance between two points by the chosen ``metric``.
 **returns**:
 * Distance (``double``) between the two points.
 
+---
+
+### def _check_and_raise_exceptions_fit(...):
+```python
+def _check_and_raise_exceptions_fit(self, X: npt.NDArray = None, y: npt.NDArray = None, _class_: Literal['RNSA', 'BNSA'] = 'RNSA')
+```
+Function responsible for verifying fit function parameters and throwing exceptions if the verification is not successful.
+
+**Parameters**:
+* ***X*** (``npt.NDArray``): Training array, containing the samples and their characteristics, [``N samples`` (rows)][``N features`` (columns)].
+* ***y*** (``npt.NDArray``): Array of target classes of ``X`` with [``N samples`` (lines)].
+* ***_class_*** (Literal[RNSA, BNSA], optional): Current class. Defaults to 'RNSA'.
+
+---
+
 ### def _slice_index_list_by_class(...)
 
 ```python
@@ -41,6 +58,7 @@ The function ``__slice_index_list_by_class(...)``, separates the indices of the 
 **returns**:
 * dict: A dictionary with the list of array positions(``y``), with the classes as key.
 
+---
 
 ### def _score(...)
 

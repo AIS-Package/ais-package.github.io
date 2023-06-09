@@ -12,6 +12,8 @@ A classe ``_Base`` contém funções utilitárias com o modificador ``protected`
 
 ## Funções Protegidas:
 
+---
+
 ### def _distance(...):
 
 ```python
@@ -27,6 +29,22 @@ Função para calcular a distância entre dois pontos usando a "métrica" escolh
 **Retorna**:
 * Distância (``double``) entre os dois pontos.
 
+---
+
+### def _check_and_raise_exceptions_fit(...)
+
+```python
+def _check_and_raise_exceptions_fit(self, X: npt.NDArray = None, y: npt.NDArray = None, _class_: Literal['RNSA', 'BNSA'] = 'RNSA')
+```
+Função responsável por verificar os parâmetros da função fit e lançar exceções se a verificação não for bem-sucedida.
+
+**Parâmetros**:
+* **X** (``npt.NDArray``): Array de treinamento, contendo as amostras e suas características, [``N samples`` (linhas)][``N features`` (colunas)].
+* ***y*** (``npt.NDArray``): Array de classes alvo de ``X`` com [``N samples`` (linhas)].
+* ***_class_*** (Literal[RNSA, BNSA], opcional): Classe atual. O padrão é 'RNSA'.
+
+---
+
 ### def _slice_index_list_by_class(...)
 
 ```python
@@ -40,6 +58,8 @@ A função ``_slice_index_list_by_class(...)`` separa os índices das linhas de 
 
 **Retorna**:
 * dict: Um dicionário com a lista de posições do array (`y`), com as classes como chave.
+
+---
 
 ### def _score(...)
 

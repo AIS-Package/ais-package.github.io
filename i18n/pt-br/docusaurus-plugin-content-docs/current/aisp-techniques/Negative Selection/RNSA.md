@@ -25,10 +25,10 @@ class RNSA(
     r_s: float = 0.0001, 
     k: int = 1, 
     metric: Literal['manhattan', 'minkowski', 'euclidean'] = 'euclidean', 
-    max_discards: int = 100, 
+    max_discards: int = 1000, 
     seed: int = None, 
     algorithm: Literal['default-NSA', 'V-detector'] ='default-NSA', 
-    **kwargs: bool
+    **kwargs: Dict[str, Union[bool, str]]
 )
 ```
 
@@ -41,7 +41,6 @@ class RNSA(
 :::
 
 
-
 * *k* (``int``): Quantidade de vizinhos próximos dos detectores gerados aleatoriamente para efetuar o cálculo da média da distância. Defaults to ``1``.
 * *metric* (``str``): Forma para se calcular a distância entre o detector e a amostra: 
     
@@ -52,7 +51,7 @@ class RNSA(
     Defaults to ``'euclidean'``.
 
 * *max_discards* (``int``): Este parâmetro indica o número máximo de descartes de detectores em sequência, que tem como objetivo evitar um 
-possível loop infinito caso seja definido um raio que não seja possível gerar detectores do não-próprio.
+possível loop infinito caso seja definido um raio que não seja possível gerar detectores do não-próprio. Defaults to ``1000``.
 
 * *seed* (``int``): Semente para a geração randômica dos valores nos detectores. Defaults to ``None``.
 * *algorithm* (``str``), Definir a versão do algoritmo:
@@ -64,7 +63,10 @@ possível loop infinito caso seja definido um raio que não seja possível gerar
 
 * *r_s* (``float``): O valor de ``rₛ`` é o raio das amostras próprias da matriz ``X``.
 - ``**kwargs``:
-    -  *cell_bounds* (``bool``):  Se definido como ``True``, esta opção limita a geração dos detectores ao espaço do plano compreendido entre 0 e 1. Isso significa que qualquer detector cujo raio ultrapasse esse limite é descartado, e esta variável é usada exclusivamente no algoritmo ``V-detector``.
+    -  *non_self_label* (``str``): Esta variável armazena o rótulo que será atribuído quando os dados possuírem 
+    apenas uma classe de saída, e a amostra for classificada como não pertencente a essa classe. Defaults to ``'non-self'``.
+                    
+    - *cell_bounds* (``bool``):  Se definido como ``True``, esta opção limita a geração dos detectores ao espaço do plano compreendido entre 0 e 1. Isso significa que qualquer detector cujo raio ultrapasse esse limite é descartado, e esta variável é usada exclusivamente no algoritmo ``V-detector``.
 
 **Outras variáveis iniciadas:**
 
