@@ -29,7 +29,7 @@ class RNSA(
     max_discards: int = 1000, 
     seed: int = None, 
     algorithm: Literal['default-NSA', 'V-detector'] ='default-NSA', 
-    **kwargs: Dict[str, Union[bool, str]]
+    **kwargs: Dict[str, Union[bool, str, float]]
 )
 ```
 
@@ -44,10 +44,10 @@ it is important to consider that setting a very low radius for the detector can 
 * *k* (``int``): Number of neighbors near the randomly generated detectors to perform the distance average calculation. Defaults to ``1``.
 * *metric* (``str``): Way to calculate the distance between the detector and the sample:
 
-    * ``'Euclidean'`` ➜ The calculation of the distance is given by the expression: $$\sqrt{(X₁ – X₂)² + (Y₁ – Y₂)² + ... + (Yn – Yn)²}$$.
+    * ``'Euclidean'`` ➜ The calculation of the distance is given by the expression: $$\sqrt{(X_1 – X_1)^2 + (Y_2 – Y_2)^2 + ... + (Y_n – Y_n)^2}$$.
 
-    * ``'minkowski'`` ➜ The calculation of the distance is given by the expression: $$( |X₁ – Y₁|p + |X₂ – Y₂|p + ... |Xn – Yn|p) ¹/ₚ$$ , In this project ``p == 2``.
-    * ``'manhattan'`` ➜ The calculation of the distance is given by the expression: $$( |X₁ – X₂| + |Y₁ – Y₂| + ...+ |Yn – Yn₂|)$$ .
+    * ``'minkowski'`` ➜ The calculation of the distance is given by the expression: $$( |X_1 – Y_1|^p + |X_2 – Y_2|^p + ... |X_n – Y_n|^p)^\frac{1}{p}$$.
+    * ``'manhattan'`` ➜ The calculation of the distance is given by the expression: $$( |X_1 – X_1| + |Y_2 – Y_2| + ...+ |Y_n – Y_n|)$$.
 
     Defaults to ``'euclidean'``.
 
@@ -67,6 +67,9 @@ it is important to consider that setting a very low radius for the detector can 
     - *non_self_label* (``str``): This variable stores the label that will be assigned when the data has only one 
     output class, and the sample is classified as not belonging to that class. Defaults to ``'non-self'``.
     -  *cell_bounds* (``bool``): If set to ``True``, this option limits the generation of detectors to the space within the plane between 0 and 1. This means that any detector whose radius exceeds this limit is discarded, this variable is only used in the ``V-detector`` algorithm.
+    - p (``float``): This parameter stores the value of ``p`` used in the Minkowski distance. The default is ``2``, which represents normalized Euclidean distance. Different values of p lead to different variants of the Minkowski 
+    distance [learn more](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.minkowski.html).
+       
 
 **Other variables initiated:**
 

@@ -28,7 +28,7 @@ class RNSA(
     max_discards: int = 1000, 
     seed: int = None, 
     algorithm: Literal['default-NSA', 'V-detector'] ='default-NSA', 
-    **kwargs: Dict[str, Union[bool, str]]
+    **kwargs: Dict[str, Union[bool, str, float]]
 )
 ```
 
@@ -44,9 +44,9 @@ class RNSA(
 * *k* (``int``): Quantidade de vizinhos próximos dos detectores gerados aleatoriamente para efetuar o cálculo da média da distância. Defaults to ``1``.
 * *metric* (``str``): Forma para se calcular a distância entre o detector e a amostra: 
     
-    * ``'euclidiana'`` ➜ O cálculo da distância dá-se pela expressão:  $$\sqrt{(X₁ – X₂)² + (Y₁ – Y₂)² + ... + (Yn – Yn)²}$$.
-    * ``'minkowski'``  ➜ O cálculo da distância dá-se pela expressão: $$( |X₁ – Y₁|p + |X₂ – Y₂|p + ... + |Xn – Yn|p) ¹/ₚ$$ , Neste projeto ``p == 2``.
-    * ``'manhattan'``  ➜ O cálculo da distância dá-se pela expressão:  ( $$|X₁ – X₂| + |Y₁ – Y₂| + ... + |Yn – Yn₂|$$).
+    * ``'euclidiana'`` ➜ O cálculo da distância dá-se pela expressão:  $$\sqrt{(X_1 – X_1)^2 + (Y_2 – Y_2)^2 + ... + (Y_n – Y_n)^2}$$.
+    * ``'minkowski'``  ➜ O cálculo da distância dá-se pela expressão: $$( |X_1 – Y_1|^p + |X_2 – Y_2|^p + ... |X_n – Y_n|^p)^\frac{1}{p}$$.
+    * ``'manhattan'``  ➜ O cálculo da distância dá-se pela expressão:  $$( |X_1 – X_1| + |Y_2 – Y_2| + ...+ |Y_n – Y_n|)$$.
 
     Defaults to ``'euclidean'``.
 
@@ -67,6 +67,8 @@ possível loop infinito caso seja definido um raio que não seja possível gerar
     apenas uma classe de saída, e a amostra for classificada como não pertencente a essa classe. Defaults to ``'non-self'``.
                     
     - *cell_bounds* (``bool``):  Se definido como ``True``, esta opção limita a geração dos detectores ao espaço do plano compreendido entre 0 e 1. Isso significa que qualquer detector cujo raio ultrapasse esse limite é descartado, e esta variável é usada exclusivamente no algoritmo ``V-detector``.
+    - p (``float``): Este parâmetro armazena o valor de ``p`` utilizada na distância de Minkowski. O padrão é ``2``, o que significa distância euclidiana normalizada. Diferentes valores de p levam a diferentes variantes da distância de Minkowski [saiba mais](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.minkowski.html).
+        
 
 **Outras variáveis iniciadas:**
 
