@@ -35,7 +35,9 @@ export default function Home(): JSX.Element {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="The AISP, is a python module that implements artificial immune systems techniques.">
-      <meta name="google-site-verification" content="NM5u1Mr5zwR2o5soz5uCGrxbVtH9faAhThnUmhMdQcI" />
+      <head>
+        <meta name="google-site-verification" content="NM5u1Mr5zwR2o5soz5uCGrxbVtH9faAhThnUmhMdQcI" />
+      </head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
