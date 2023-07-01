@@ -81,10 +81,10 @@ const config = {
         collapsible: true,
       },
       docs: {
-
         sidebar: {
           hideable: true,
         },
+        
       },
       navbar: {
         title: 'AISP',

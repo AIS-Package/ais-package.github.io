@@ -27,12 +27,16 @@ Nesta página, você encontrará uma coleção de exemplos práticos que demonst
 
 Os exemplos a seguir mostram várias funcionalidades das classes de seleção negativa para que você saiba como usá-las em seu projeto. Sinta-se à vontade para explorar esses exemplos e adaptá-los conforme necessário para atender às suas necessidades específicas.
 
+---
+
+Acesse os notebooks com a possibilidade de execução online pelo Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?labpath=%2Fexamples)
+
 ## BNSA (Algoritmo de Seleção Negativa Binária)
 + [Notebook](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/example_with_randomly_generated_dataset-pt.ipynb)
 > No exemplo presente neste notebook, foram geradas 1000 amostras aleatórias, organizadas em dois grupos, um para cada classe.
 
 + [Exemplo de Base de Dados de Cogumelos](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/mushrooms_dataBase_example_pt.ipynb)
-> Ele usa a [base de dados de cogumelos](https://www.kaggle.com/datasets/uciml/mushroom-classification), que contém informações sobre cogumelos comestíveis e venenosos.
+> Ele usa a [base de dados de cogumelos](https://archive.ics.uci.edu/dataset/73/mushroom), que contém informações sobre cogumelos comestíveis e venenosos.
 
 ## RNSA (Algoritmo de Seleção Negativa de Valores Reais)
 

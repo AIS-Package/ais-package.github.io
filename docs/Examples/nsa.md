@@ -26,17 +26,22 @@ On this page, you will find a collection of practical examples that demonstrate 
 
 The examples below show various functionality of negative selection classes so that you know how to use them in your project. Feel free to explore these examples and adapt them as needed to meet your specific needs.
 
+---
+
+Access the notebooks with the option to run them online using Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?labpath=%2Fexamples)
+
+
 ## BNSA (Binary Negative Selection Algorithm)
 
-+ [notebook](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/example_with_randomly_generated_dataset-en.ipynb) 
++ [Example with random samples](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/example_with_randomly_generated_dataset-en.ipynb) 
 > In the example present in this notebook 1000 random samples were generated, arranged in two groups, one for each class.
 
 + [mushrooms_dataBase_example](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/mushrooms_dataBase_example_en.ipynb)
->  It uses the [mushrooms database](https://www.kaggle.com/datasets/uciml/mushroom-classification), which contains information about edible and poisonous mushrooms.
+>  It uses the [mushrooms database](https://archive.ics.uci.edu/dataset/73/mushroom), which contains information about edible and poisonous mushrooms.
 
 # RNSA (Real-Valued Negative Selection Algorithm)
 
-+ [notebook](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/example_with_randomly_generated_dataset-en.ipynb) 
++ [Example with random samples](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/example_with_randomly_generated_dataset-en.ipynb) 
 > In the example present in this notebook 500 random samples were generated, arranged in two groups, one for each class, we can see the non-self detectors generated below
 + [iris_dataBase_example](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/iris_dataBase_example_en.ipynb)
 > Example using the NSA [iris database](https://archive.ics.uci.edu/ml/datasets/iris), which contains four-dimensional samples and three output classes (Setosa, Versicolo and Virginca).
