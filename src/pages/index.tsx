@@ -5,7 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Translate from '@docusaurus/Translate';
-
+import Head from '@docusaurus/Head';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -35,9 +35,9 @@ export default function Home(): JSX.Element {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="The AISP, is a python module that implements artificial immune systems techniques.">
-      <head>
+      <Head>
         <meta name="google-site-verification" content="NM5u1Mr5zwR2o5soz5uCGrxbVtH9faAhThnUmhMdQcI" />
-      </head>
+      </Head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
