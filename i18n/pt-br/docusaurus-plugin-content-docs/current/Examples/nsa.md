@@ -32,7 +32,7 @@ Os exemplos a seguir mostram várias funcionalidades das classes de seleção ne
 Acesse os notebooks com a possibilidade de execução online pelo Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?labpath=%2Fexamples)
 
 ## BNSA (Algoritmo de Seleção Negativa Binária)
-+ [Notebook](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/example_with_randomly_generated_dataset-pt.ipynb)
++ [Exemplo com amostras aleatórias](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/example_with_randomly_generated_dataset-pt.ipynb)
 > No exemplo presente neste notebook, foram geradas 1000 amostras aleatórias, organizadas em dois grupos, um para cada classe.
 
 + [Exemplo de Base de Dados de Cogumelos](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/mushrooms_dataBase_example_pt.ipynb)
@@ -40,7 +40,7 @@ Acesse os notebooks com a possibilidade de execução online pelo Binder: [![Bin
 
 ## RNSA (Algoritmo de Seleção Negativa de Valores Reais)
 
-+ [Notebook](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/example_with_randomly_generated_dataset-pt.ipynb)
++ [Exemplo com amostras aleatórias](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/example_with_randomly_generated_dataset-pt.ipynb)
 > No exemplo presente neste notebook, foram geradas 500 amostras aleatórias, organizadas em dois grupos, um para cada classe.
 
 + [Exemplo de Base de Dados Iris](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/iris_dataBase_example_pt.ipynb)

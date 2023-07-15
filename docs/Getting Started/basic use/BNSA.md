@@ -96,15 +96,15 @@ print(classification_report(test_y, prev_y))
 Output:
 ```
 ✔ Non-self detectors for classes (x, y) successfully generated:  ┇██████████┇ 500/500 detectors
-The accuracy is 0.96
+The accuracy is 0.93
               precision    recall  f1-score   support
 
-           x       0.95      0.97      0.96        90
-           y       0.97      0.95      0.96       110
+           x       0.93      0.91      0.92        90
+           y       0.93      0.95      0.94       110
 
-    accuracy                           0.96       200
-   macro avg       0.96      0.96      0.96       200
-weighted avg       0.96      0.96      0.96       200
+    accuracy                           0.93       200
+   macro avg       0.93      0.93      0.93       200
+weighted avg       0.93      0.93      0.93       200
 ```
 
 ---

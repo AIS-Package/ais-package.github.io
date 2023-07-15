@@ -44,10 +44,10 @@ it is important to consider that setting a very low radius for the detector can 
 * *k* (``int``): Number of neighbors near the randomly generated detectors to perform the distance average calculation. Defaults to ``1``.
 * *metric* (``str``): Way to calculate the distance between the detector and the sample:
 
-    * ``'Euclidean'`` ➜ The calculation of the distance is given by the expression: $$\sqrt{(X_1 – X_1)^2 + (Y_2 – Y_2)^2 + ... + (Y_n – Y_n)^2}$$.
+    * ``'Euclidean'`` ➜ The calculation of the distance is given by the expression: $$\sqrt{(X_{1} – X_{1})^2 + (Y_{2} – Y_{2})^2 + ... + (Y_{n} – Y_{n})^2}$$.
 
-    * ``'minkowski'`` ➜ The calculation of the distance is given by the expression: $$( |X_1 – Y_1|^p + |X_2 – Y_2|^p + ... |X_n – Y_n|^p)^\frac{1}{p}$$.
-    * ``'manhattan'`` ➜ The calculation of the distance is given by the expression: $$( |X_1 – X_1| + |Y_2 – Y_2| + ...+ |Y_n – Y_n|)$$.
+    * ``'minkowski'`` ➜ The calculation of the distance is given by the expression: $$( |X_{1} – Y_{1}|^p + |X_{2} – Y_{2}|^p + ... |X_{n} – Y_{n}|^p)^\frac{1}{p}$$.
+    * ``'manhattan'`` ➜ The calculation of the distance is given by the expression: $$( |X_{1} – X_{1}| + |Y_{2} – Y_{2}| + ... + |Y_{n} – Y_{n}|)$$.
 
     Defaults to ``'euclidean'``.
 

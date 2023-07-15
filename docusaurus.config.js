@@ -5,10 +5,9 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const math = require('remark-math');
 const katex = require('rehype-katex');
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  
+
   title: 'AISP - Artificial Immune Systems Package',
   tagline: 'A set of immuno inspired techniques!',
   favicon: 'img/icon.svg',
@@ -18,7 +17,7 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
+  // @ts-ignore
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'AIS-Package', // Usually your GitHub org/user name.
@@ -40,8 +39,10 @@ const config = {
       // You can omit a locale (e.g. fr) if you don't need to override the defaults
       pt: {
         htmlLang: 'pt-br',
+        calendar: 'DD/MM/YYYY',
       },
     },
+
   },
 
   presets: [
@@ -52,12 +53,14 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [math],
-          rehypePlugins: [katex],
+          rehypePlugins: [
+            [katex, { strict: false }],
+          ],
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
-          },
-          
+        },
+
       }),
     ],
   ],
@@ -70,12 +73,27 @@ const config = {
       crossorigin: 'anonymous',
     },
   ],
-  
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/aisp-social-card.jpg',
+      metadata: [
+        { name: 'keywords', content: 'Package python' },
+        { name: 'keywords', content: 'classification' },
+        { name: 'keywords', content: 'artificial immune system' },
+        { name: 'keywords', content: 'natural computing' },
+        { name: 'keywords', content: 'scientific computing' },
+        { name: 'keywords', content: 'aisp' },
+        { name: 'keywords', content: 'aisp python package' },
+        { nome: 'keywords', conteúdo: 'Pacote python' },
+        { nome: 'keywords', conteúdo: 'classificação' },
+        { nome: 'keywords', conteúdo: 'sistema imunológico artificial' },
+        { nome: 'keywords', conteúdo: 'computação natural' },
+        { nome: 'keywords', conteúdo: 'computação científica' },
+        { nome: 'keywords', conteúdo: 'Negative Selection Algorithm' },
+      ],
       plugins: ['@docusaurus/plugin-content-pages'],
       sidebar: {
         collapsible: true,
@@ -84,7 +102,7 @@ const config = {
         sidebar: {
           hideable: true,
         },
-        
+
       },
       navbar: {
         title: 'AISP',
@@ -92,9 +110,9 @@ const config = {
           alt: 'AISP',
           src: 'img/logo.png',
         },
-        
+
         items: [
-          
+
           {
             type: 'doc',
             docId: 'intro',
@@ -151,21 +169,21 @@ const config = {
       },
       pagination: false,
     }),
-    
-    themes: [
-      [
-        '@easyops-cn/docusaurus-search-local',
-        /* @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-        ({
-          hashed: true,
-          language: ["en", "pt"],
-          indexBlog: false,
-          indexPages: false,
-          highlightSearchTermsOnTargetPage: true,
-          searchResultLimits: 6,
-        }),
-      ],
+
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      /* @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        language: ["en", "pt"],
+        indexBlog: false,
+        indexPages: false,
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 6,
+      }),
     ],
+  ],
 };
 
 module.exports = config;
