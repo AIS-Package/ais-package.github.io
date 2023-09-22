@@ -37,7 +37,7 @@ A maneira mais simples de instalação do AISP é utilizando o ``pip``:
 pip install aisp
 ```
 
-### **Como importar as Tecnicas**
+### **Como importar as Técnicas**
 
 ``` python
 from aisp.NSA import RNSA, BNSA
