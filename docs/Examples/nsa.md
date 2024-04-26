@@ -44,6 +44,6 @@ Access the notebooks with the option to run them online using Binder: [![Binder]
 + [Example with random samples](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/example_with_randomly_generated_dataset-en.ipynb) 
 > In the example present in this notebook 500 random samples were generated, arranged in two groups, one for each class, we can see the non-self detectors generated below
 + [iris_dataBase_example](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/iris_dataBase_example_en.ipynb)
-> Example using the NSA [iris database](https://archive.ics.uci.edu/ml/datasets/iris), which contains four-dimensional samples and three output classes (Setosa, Versicolo and Virginca).
+> Example using the NSA [iris database](https://archive.ics.uci.edu/ml/datasets/iris), which contains four-dimensional samples and three output classes (Setosa, Versicolor and Virginica).
 + [geyser_dataBase_example](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/geyser_dataBase_example_en.ipynb)
 > To classify geyser eruptions in Yellowstone National Park, this notebook uses the [Old Faithful database](https://github.com/mwaskom/seaborn-data/blob/master/geyser.csv).

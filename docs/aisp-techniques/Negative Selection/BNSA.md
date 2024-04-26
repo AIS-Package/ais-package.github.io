@@ -51,7 +51,7 @@ possible infinite loop if a radius is defined that it is not possible to generat
 ---
 
 
-### Fuction fit(...)
+### Function fit(...)
 
 The ``fit(...)`` function generates the detectors for non-fits with respect to the samples:
 
@@ -72,7 +72,7 @@ In it, training is performed according to ``X`` and ``y``, using the negative se
 
 ---
 
-### Fuction predict(...)
+### Function predict(...)
 
 The ``predict(...)`` function performs class prediction using the generated detectors:
 

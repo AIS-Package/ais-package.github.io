@@ -44,7 +44,7 @@ Acesse os notebooks com a possibilidade de execução online pelo Binder: [![Bin
 > No exemplo presente neste notebook, foram geradas 500 amostras aleatórias, organizadas em dois grupos, um para cada classe.
 
 + [Exemplo de Base de Dados Iris](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/iris_dataBase_example_pt.ipynb)
-> Exemplo usando a base de dados [íris](https://archive.ics.uci.edu/ml/datasets/iris), que contém amostras de quatro dimensões e três classes de saída (Setosa, Versicolo e Virginca).
+> Exemplo usando a base de dados [íris](https://archive.ics.uci.edu/ml/datasets/iris), que contém amostras de quatro dimensões e três classes de saída (Setosa, Versicolor e Virginica).
 
 + [Exemplo de Base de Dados Geyser](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/geyser_dataBase_example_pt.ipynb)
 > Para classificar erupções de geysers no Parque Nacional de Yellowstone, este notebook usa a [base de dados Old Faithful](https://github.com/mwaskom/seaborn-data/blob/master/geyser.csv).

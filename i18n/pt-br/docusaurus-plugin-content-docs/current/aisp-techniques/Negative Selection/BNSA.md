@@ -57,7 +57,7 @@ Nela é realizado o treinamento de acordo com ``X`` e ``y``, usando o método de
 **Os parâmetros de entrada são:**
 * ``X``: array com as características das amostras com **N** amostras (linhas) e **N** características  (colunas), normalizados para valores entre [0, 1]. 
 * ``y``: array com as classes de saídas disposto em **N** amostras que são relacionadas ao ``X``.
-* ``verbose``: booleano com valor padrão ``True``, determina se o feedback da geração dos detectores será impresso.
+* ``verbose``: boolean com valor padrão ``True``, determina se o feedback da geração dos detectores será impresso.
 
 *Retorna a instância da classe.*
 

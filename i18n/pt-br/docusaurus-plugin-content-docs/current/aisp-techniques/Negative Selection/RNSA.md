@@ -90,7 +90,7 @@ Nela é realizado o treinamento de acordo com ``X`` e ``y``, usando o método de
 **Os parâmetros de entrada são:**
 * ``X``: array com as características das amostras com **N** amostras (linhas) e **N** características  (colunas), normalizados para valores entre [0, 1]. 
 * ``y``: array com as classes de saídas disposto em **N** amostras que são relacionadas ao ``X``.
-* ``verbose``: booleano com valor padrão ``True``, determina se o feedback da geração dos detectores será impresso.
+* ``verbose``: boolean com valor padrão ``True``, determina se o feedback da geração dos detectores será impresso.
 
 *Retorna a instância da classe.*
 
@@ -143,13 +143,13 @@ def __checks_valid_detector(self, X: npt.NDArray, vector_x: npt.NDArray, samples
 
 * ``vector_x``: Detector candidato gerado aleatoriamente. 
 
-* ``samplesIndexClass``: Array com os indexs de uma classe.
+* ``samplesIndexClass``: Array com os indexes de uma classe.
 
 **Retorna:** Verdadeiro (``True``) para os detectores que não possuam amostras em seu interior ou falso (``False``) se possuir.
 
 ---
 
-### Fuction __compare_KnearestNeighbors_List(...)
+### Função __compare_KnearestNeighbors_List(...)
 
 A função ``def __compare_KnearestNeighbors_List(...)`` compara a distância dos k-vizinhos mais próximo, para isso se a distância da nova amostra for menor, substitui ``k-1`` e ordena em ordem crescente:
 
@@ -197,7 +197,7 @@ def __detector_is_valid_to_Vdetector(self, distance, vector_x):
 
 ### Função __distance(...)
 
-A função ``def __distance(...)`` calcula a distância entre dois pontos utilizando a técnica definida em ``mettric``, no qual são: ``'euclidiana', 'minkowski', ou 'manhattan'``
+A função ``def __distance(...)`` calcula a distância entre dois pontos utilizando a técnica definida em ``metric``, no qual são: ``'euclidiana', 'minkowski', ou 'manhattan'``
 
 ```python
 def __distance(self, u: npt.NDArray, v: npt.NDArray):

@@ -79,7 +79,7 @@ it is important to consider that setting a very low radius for the detector can 
 
 ---
 
-### Fuction fit(...)
+### Function fit(...)
 
 The ``fit(...)`` function generates the detectors for non-fits with respect to the samples:
 
@@ -100,7 +100,7 @@ The input parameters are:
 
 ---
 
-### Fuction predict(...)
+### Function predict(...)
 
 The ``predict(...)`` function performs class prediction using the generated detectors:
 
@@ -133,7 +133,7 @@ It returns the accuracy as a float type.
 
 ---
 
-### Fuction __checks_valid_detector(...)
+### Function __checks_valid_detector(...)
 
 The ``def __checks_valid_detector(...)`` function checks if the detector has a valid ``r`` radius for the non-self of the class:
 
@@ -152,7 +152,7 @@ def __checks_valid_detector(self, X: npt.NDArray, vector_x: npt.NDArray, samples
 
 ---
 
-### Fuction __compare_KnearestNeighbors_List(...)
+### Function __compare_KnearestNeighbors_List(...)
 
 The ``def __compare_KnearestNeighbors_List(...)`` function compares the distance of the k-nearest neighbors, so if the distance of the new sample is smaller, replaces ``k-1`` and sorts in ascending order:
 
@@ -198,7 +198,7 @@ def __detector_is_valid_to_Vdetector(self, distance, vector_x):
 
 ---
 
-### Fuction __distance(...)
+### Function __distance(...)
 
 The function ``def __distance(...)`` calculates the distance between two points using the technique defined in ``metric``, which are: ``'euclidean', 'norm_euclidean', or 'manhattan'``
 
