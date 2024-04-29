@@ -22,7 +22,8 @@ class BNSA(
   N: int = 100, 
   aff_thresh: float = 0.1, 
   max_discards: int = 1000, 
-  seed: int = None
+  seed: int = None,
+  no_label_sample_selection: Literal["max_average_difference", "max_nearest_difference"] = "max_average_difference"
 )
 ```
 
@@ -36,6 +37,9 @@ Definir uma porcentagem de diferença muito alta pode resultar na incapacidade d
 * *max_discards* (``int``): Este parâmetro indica o número máximo de descartes de detectores em sequência, que tem como objetivo evitar um 
 possível loop infinito caso seja definido um raio que não seja possível gerar detectores do não-próprio. Defaults to ``1000``.
 * *seed* (``int``): Semente para a geração randômica dos valores nos detectores. Defaults to ``None``.
+* no_label_sample_selection (``str``): Método para a seleção de rótulos para amostras designadas como não pertencentes por todos os detectores não pertencentes. **Tipos de métodos disponíveis:**
+    - (``max_average_difference``): Seleciona a classe com a maior diferença média entre os detectores.
+    - (``max_nearest_difference``): Seleciona a classe com a maior diferença entre o detector mais próximo e mais distante da amostra.
 
 **Outras variáveis iniciadas:**
 

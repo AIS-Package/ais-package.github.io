@@ -24,7 +24,8 @@ class BNSA(
     N: int = 100, 
     aff_thresh: float = 0.1, 
     max_discards: int = 1000, 
-    seed: int = None
+    seed: int = None,
+    no_label_sample_selection: Literal["max_average_difference", "max_nearest_difference"] = "max_average_difference"
 )
 ```
 
@@ -39,7 +40,9 @@ Setting the difference percentage too high can result in the inability to genera
 * *max_discards* (``int``): This parameter indicates the maximum number of detector discards in sequence, which aims to avoid a
 possible infinite loop if a radius is defined that it is not possible to generate non-self detectors. Defaults to ``1000``.
 * *seed* (``int``): Seed for the random generation of values in the detectors. Defaults to ``None``.
-
+* no_label_sample_selection (``str``): Method for selecting labels for samples designated as non-members by all non-member detectors. **Available method types:**
+    - (``max_average_difference``): Selects the class with the highest average difference among the detectors.
+    - (``max_nearest_difference``): Selects the class with the highest difference between the nearest and farthest detector from the sample.
 
 **Other variables initiated:**
 
