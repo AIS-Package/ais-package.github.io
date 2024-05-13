@@ -20,15 +20,11 @@ last_update:
 
 ## Introdução
 
-O **AISP** é um pacote python que implementa as técnicas dos sistemas imunológicos artificiais, distribuído sob a licença GNU Lesser General Public License v3.0 (LGPLv3).
-
-O pacote teve início no ano de **2022** como um projeto de pesquisa no instituto federal do norte de minas gerais - campus salinas (**IFNMG - Salinas**).
-
-Os sistemas imunológicos artificiais (SIA) inspiram-se no sistema imunológico dos vertebrados, criando metáforas que aplicam a capacidade de reconhecer e catalogar os patógenos, entre outras características desse sistema.
+**AISP** é um pacote Python de técnicas imunoinspiradas, as quais aplicam metáforas do sistema imunológico dos vertebrados ao reconhecimento de padrões e à tarefas de otimização. Concebido como um pacote de sistemas imunológicos artificiais de código aberto, o AISP é resultado de um projeto de pesquisa iniciado em **2022** no Instituto Federal do Norte de Minas Gerais - Campus Salinas (**IFNMG - Salinas**). Sua distribuição é regida pela GNU Lesser General Public License v3.0 (LGPLv3).
 
 ### Algoritmos implementados:
 
 > - [x] [**Seleção Negativa.**](./aisp-techniques/Negative%20Selection/)
 > - [ ] *Células Dendríticas.*
-> - [ ] *Clonalg.*
+> - [ ] *Algoritmos de Seleção Clonal.*
 > - [ ] *Teoria da Rede Imune.*

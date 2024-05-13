@@ -7,18 +7,17 @@ author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
 last_update:
-  date: 2023/05/30
+  date: 2024/05/13
   author: João Paulo
 ---
 
 # **Installation**
 
-This page contains information about the dependencies needed by the package, how to install it and how to import the modules.
+This page contains information about dependencies, how to install and how to import modules.
 
 ## **Dependencies:**
 
-The module requires installation of [python 3.8.10](https://www.python.org/downloads/) or higher.
-
+The package requires [python 3.8.10](https://www.python.org/downloads/) or higher.
 
 <div style={{ display: "flex", justifyContent: "center", alignItems: "center", margin: "auto" }}>
 
@@ -30,15 +29,15 @@ The module requires installation of [python 3.8.10](https://www.python.org/downl
 
 </div>
 
-## **User installation**
+## **Instalation procedure**
 
-The simplest way to install AISP is using ``pip``:
+The simplest way to install is via ``pip``:
 
 ```bash
 pip install aisp
 ```
 
-## **How to import the Techniques**
+## **Importing modules**
 
 ```python
 from aisp.NSA import RNSA, BNSA

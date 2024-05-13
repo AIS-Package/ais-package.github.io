@@ -7,17 +7,17 @@ author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
 last_update:
-  date: 2023/05/30
+  date: 2024/05/13
   author: João Paulo
 ---
 
 # **Instalação**
 
-Esta página contém informações sobre as dependências necessárias para o pacote, como instalá-lo e como importar os módulos.
+Esta página contém informações sobre as dependências do pacote, como instalá-lo e como importar os módulos.
 
 ### **Dependências:**
 
-O módulo requer a instalação do [python 3.8.10](https://www.python.org/downloads/) ou superior.
+O módulo requer [python 3.8.10](https://www.python.org/downloads/) ou superior.
 
 <div style={{ display: "flex", justifyContent: "center", alignItems: "center", margin: "auto" }}>
 
@@ -29,18 +29,19 @@ O módulo requer a instalação do [python 3.8.10](https://www.python.org/downlo
 
 </div>
 
-### **Instalação do usuário**
+### **Procedimento de instalação**
 
-A maneira mais simples de instalação do AISP é utilizando o ``pip``:
+A maneira mais simples de instalação é através do ``pip``:
 
 ```bash
 pip install aisp
 ```
 
-### **Como importar as Técnicas**
+### **Importando módulos**
 
 ``` python
 from aisp.NSA import RNSA, BNSA
 
 nsa = RNSA(N=300, r=0.05)
+
 ```

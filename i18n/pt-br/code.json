@@ -10,13 +10,13 @@
     "message": "Fácil de usar"
   },
   "cardEasy": {
-    "message": "A utilização do pacote é extremamente fácil, já que está disponível no gerenciador de pacote pip. Assim, sua instalação e execução são simplificadas, tornando o processo muito acessível para qualquer usuário."
+    "message": "Disponível no PyPI, é facilmente instalado através comando pip. Logo, o acesso é simples e direto para qualquer usuário."
   },
   "Developed in python": {
     "message": "Desenvolvido em python"
   },
   "cardPython": {
-    "message": "O AISP é desenvolvido em Python, uma linguagem amplamente utilizada na comunidade de aprendizado de máquina. Logo, é possível a utilização com diversos pacotes que facilitam o trabalho com os dados."
+    "message": "AISP foi projetado com e para Python, linguagem amplamente utilizada em aprendizagem de máquina e ciência de dados."
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",

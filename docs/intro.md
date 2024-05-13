@@ -19,16 +19,11 @@ last_update:
 
 ## Introduction
 
-The **AISP** is a python module that implements artificial immune systems techniques, distributed under the GNU Lesser General Public License v3.0 (LGPLv3).
-
-The package started in **2022** as a research project at the Federal Institute of Northern Minas Gerais - Salinas campus (**IFNMG - Salinas**).
-
-
-Artificial Immune Systems (AIS) are inspired by the vertebrate immune system, creating metaphors that apply the ability to detect and catalog pathogens, among other features of this system.
+**AISP** is a Python package of immunoinspired techniques that apply metaphors from the vertebrate immune system to pattern recognition and optimization tasks. Conceived as an open-source package of artificial immune systems, AISP emerged from a research project initiated in **2022** at the Instituto Federal do Norte de Minas Gerais - Campus Salinas (**IFNMG - Salinas**). Its distribution is governed by the GNU Lesser General Public License v3.0 (LGPLv3).
 
 ### Algorithms implemented:
 
 > - [x] [**Negative Selection.**](./aisp-techniques/Negative%20Selection/)
 > - [ ] *Dendritic Cells.*
-> - [ ] *Clonalg.*
+> - [ ] *Clonal Selection Algorithms.*
 > - [ ] *Immune Network Theory.*

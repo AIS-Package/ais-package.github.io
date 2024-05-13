@@ -11,21 +11,22 @@ last_update:
   author: João Paulo
 ---
 
-# Usando o BNSA
+# Aplicando o BNSA
 
-Acesse o notebook Jupyter com o código disponível [aqui](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/example_with_randomly_generated_dataset-pt.ipynb)!
+O presente exemplo, disponível aqui, visa demonstrar a aplicação do algoritmo de seleção negativa binária. Esse algoritmo é empregado na classificação de amostras com características discretas. 
 
-## Importando o Algoritmo de seleção negativa binária.
+
+Acesse o notebook Jupyter disponível [aqui](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/example_with_randomly_generated_dataset-pt.ipynb)!
+
+## Importando o algoritmo BNSA
 
 ```python
 from aisp.NSA import BNSA
 ```
 
-## Gerando amostras binárias aleatoriamente e separando os dados.
+## Gerando amostras
 
-### Função para gerar amostras binárias
-
-Nesta função, são geradas amostras de dados binários com um grau de similaridade abaixo do limiar definido s. No entanto, 10% dos primeiros dados são gerados aleatoriamente, sem levar em consideração o valor de s. Além disso, quando já existem amostras, são geradas amostras únicas para a nova classe, garantindo que as amostras aleatórias geradas não estejam duplicadas em classes diferentes.
+O treinamento e teste do algoritmo precisa de amostras de dados. Assim, para a demonstração, foram geradas duas classes aleatórias, empregando a função a seguir:
 
 ```python
 import numpy as np
@@ -50,9 +51,7 @@ def generate_samples(n_samples: int, n_features: int, s: float, x: None):
 
 ---
 
-### Geração e separação de dados
-
-Nessa etapa, são gerados 1000 dados, sendo 500 para representar a classe 'x' e 500 para representar a classe 'y'. Cada dado é formado por 20 dimensões. É importante destacar que esses dados são criados de forma que apresentem um grau de similaridade de 80%, ou seja, compartilham características comuns. Após a geração, os dados são separados em conjuntos de treinamento e teste.
+Cada classe contará com 500 amostras, sendo a similaridade mínima entre amostras de 80% (s = 0.2). Essas classes serão separadas em conjunto de treinamento (800 amostras) e de teste (200 amostras). 
 
 ```python
 # Configurando a seed para 121 para garantir a reprodutibilidade dos dados gerados.
@@ -71,20 +70,20 @@ dataset = np.vstack((x, y))[index]
 # Separando as características (inputs) e as classes de saída (rótulos).
 samples = dataset[:, :-1].astype(int)
 output = dataset[:, -1]
-# Separating data for training and testing.
+# Separando as amostras de treinamento e teste
 train_x, test_x, train_y, test_y = train_test_split(samples, output, test_size=0.2, random_state=1234321)
 
 ```
 
 ---
 
-## Testando o modelo:
+## Treinamento:
 
-Iniciando o modelo e aplicando-o às amostras geradas aleatoriamente, a configuração atual possui 250 detectores com uma taxa de diferenciação de 30%.
+O modelo é ajustado através dos padrões de treinamento. Nessa aplicação, a seleção negativa distribuirá, com taxa de diferenciação de 30%, 250 detectores pelo espaço de entradas.
 
 ```python
 # Iniciando p modelo.
-nsa = BNSA(N=250, aff_thresh=0.34, seed=1234321, max_discards=10000)
+nsa = BNSA(N=250, aff_thresh=0.30, seed=1234321, max_discards=10000)
 # Efetuando o treinamento: 
 nsa.fit(X=train_x, y=train_y)
 # Efetuando a previsão:: 
@@ -110,7 +109,7 @@ weighted avg       0.93      0.93      0.93       200
 
 ---
 
-## Matriz de confusão
-Aqui está a matriz de confusão, onde a diagonal principal representa as amostras previstas corretamente e a diagonal secundária mostra os falsos positivos. Dos 200 dados de teste, houve 5 falsos positivos para a classe x e 6 falsos positivos para a classe y.
+## Avaliação
+O modelo obteve 0,93 de acurácia para o conjunto teste. A precisão na classificação, tanto para x quanto para y, também foi de 0,93. Isso pode ser observado pela matriz de confusão na Figura 1.
 
 ![](../../assets/matrizBNSA.png)

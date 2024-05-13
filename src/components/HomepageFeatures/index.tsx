@@ -15,8 +15,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/Easy to Use.svg').default,
     description: (
         <Translate id='cardEasy'>
-          Using the package is extremely easy as it is available in the pip package manager. 
-          Thus, its installation and execution are simplified, making the process very accessible for any user.
+          Available on Pypi, it is easily installed via pip command. Therefore, access is simple and direct for any user.  
         </Translate>
     ),
   },
@@ -25,8 +24,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/python-AISP.svg').default,
     description: (
         <Translate id='cardPython'>
-          AISP is developed in Python, a language widely used in the machine learning community. 
-          Therefore, it is possible to use it with several packages that facilitate the work with the data.
+          AISP was designed with and for Python, a language widely used in machine learning and data science.
         </Translate>
     ),
   },

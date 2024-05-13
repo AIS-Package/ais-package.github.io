@@ -7,23 +7,23 @@ author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
 last_update:
-  date: 2023/06/01
+  date: 2024/05/13
   author: João Paulo
 ---
 
-# Using the BNSA
+# Applying the BNSA
+The present example, available here, aims to demonstrate the application of the binary negative selection algorithm. This algorithm is used to classify samples with discrete characteristics.
 
 Access the Jupyter notebook with the code available [here](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/example_with_randomly_generated_dataset-en.ipynb)!
 
-## Importing Binary Negative Selection Algorithm.
+## Importing the BNSA algorithm
 
 ```python
 from aisp.NSA import BNSA
 ```
-## Randomly generating binary samples and splitting the data.
-### Function to generate binary samples
+## Generating samples
 
-In this function, samples of binary data with a degree of similarity below a defined threshold s are generated. However, the first 10% of the data is generated randomly, without taking into account the value of s. Furthermore, when there are already samples, unique samples are generated for the new class, ensuring that the random samples generated are not duplicated in different classes.
+Algorithm training and testing needs data samples. Thus, for the demonstration, two random classes were generated, using the following function:
 
 ```python
 import numpy as np
@@ -48,9 +48,7 @@ def generate_samples(n_samples: int, n_features: int, s: float, x: None):
 
 ---
 
-### Data generation and separation
-
-In this step, 1000 pieces of data are generated, 500 representing class 'x' and 500 representing class 'y'. Each die is made up of 20 dimensions. It is important to highlight that these data are created in such a way that they present a degree of similarity of 80%, that is, they share common characteristics. After generation, the data is separated into training and test sets.
+Each class will have 500 samples, with the minimum similarity between samples being 80% (s = 0.2). These classes will be separated into training (800 samples) and testing (200 samples) sets.
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -76,14 +74,14 @@ train_x, test_x, train_y, test_y = train_test_split(samples, output, test_size=0
 
 ---
 
-## Testing the model:
+## Training
 
-Starting the model and applying it to randomly generated samples, the current configuration consists of 250 detectors with a differentiation rate of 30%.
+The model is tuned through training patterns. In this application, negative selection will distribute, with a differentiation rate of 30%, 250 detectors across the input space.
 
 ```python
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
 # Starting the model.
-nsa = BNSA(N=250, aff_thresh=0.34, seed=1234321, max_discards=10000)
+nsa = BNSA(N=250, aff_thresh=0.30, seed=1234321, max_discards=10000)
 # Conducting the training:
 nsa.fit(X=train_x, y=train_y)
 # Visualization of classes with test samples.
@@ -109,9 +107,9 @@ weighted avg       0.93      0.93      0.93       200
 
 ---
 
-##  Confusion matrix
+## Evaluation
 
-Here is the confusion matrix, where the main diagonal represents correctly predicted samples and the secondary diagonal shows the false positives. Out of 200 test data points, there were 5 false positives for class x and 3 false positives for class y.
+The model obtained an accuracy of 0.93 for the test set. The precision in each class, for both x and y, was also 0.93. This can be seen in the confusion matrix in Figure 1.
 
 ```python
 # Generating the confusion matrix and plotting it graphically.
