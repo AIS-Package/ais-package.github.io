@@ -44,7 +44,7 @@ Start the model with 500 detectors, each with a radius of 0.06. Then, it present
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
 
 # Starting the class.
-model = RNSA(N=500, r=0.06, seed=123)
+model = RNSA(N=500, r=0.05, seed=1234)
 # Carrying out the training:
 model.fit(X=train_x, y=train_y)
 # Previewing classes with test samples.

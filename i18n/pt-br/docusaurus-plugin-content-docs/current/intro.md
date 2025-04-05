@@ -24,7 +24,7 @@ last_update:
 
 ### Algoritmos implementados:
 
-> - [x] [**Seleção Negativa.**](./aisp-techniques/Negative%20Selection/)
-> - [ ] *Células Dendríticas.*
+> - [x] [**Seleção Negativa.**](/docs/aisp-techniques/Negative%20Selection/)
 > - [ ] *Algoritmos de Seleção Clonal.*
+> - [ ] *Células Dendríticas.*
 > - [ ] *Teoria da Rede Imune.*

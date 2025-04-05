@@ -38,5 +38,13 @@
   "sidebar.tutorialSidebar.category.Advanced Guides": {
     "message": "Guias avançados",
     "description": "The label for category Advanced Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Base Classes Reference": {
+    "message": "Referência das Classes Base",
+    "description": "The label for category Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Advanced Guides.link.generated-index.description": {
+    "message": "Explore a documentação avançada da biblioteca, que abrange as classes base, além das funções utilitárias do módulo utils voltadas para métricas e manipulação de classificação multiclasse.",
+    "description": "The generated-index page description for category Advanced Guides in sidebar tutorialSidebar"
   }
 }

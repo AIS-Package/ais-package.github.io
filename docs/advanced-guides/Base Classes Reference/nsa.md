@@ -1,12 +1,12 @@
 ---
 sidebar_position: 1
-title: aisp._base Class
-sidebar_label: Class - Base.
-lastUpdatedAt: 2023/06/04
+title: Negative Selection Base
+sidebar_label: Negative Selection
+lastUpdatedAt: 2025/04/04
 author: João Paulo
 ---
 
-# aisp._base Class
+# NSA._base Class
 
 The ``_Base`` class contains utility functions with the ``protected`` modifier that can be inherited by various classes for ease of use. It includes functions for distance calculation, data separation to improve training and prediction efficiency, accuracy measurement and other functions.
 
@@ -44,22 +44,6 @@ Function responsible for verifying fit function parameters and throwing exceptio
 
 ---
 
-### def _slice_index_list_by_class(...)
-
-```python
-def _slice_index_list_by_class(self, y: npt.NDArray) -> dict
-```
-
-The function ``__slice_index_list_by_class(...)``, separates the indices of the lines according to the output class, to loop through the sample array, only in positions where the output is the class being trained.
-
-**Parameters**:
-* ***y*** (npt.NDArray): Receives a ``y``[``N sample``] array with the output classes of the ``X`` sample array.
-
-**returns**:
-* dict: A dictionary with the list of array positions(``y``), with the classes as key.
-
----
-
 ### def _score(...)
 
 ```python
@@ -80,3 +64,35 @@ This function was added for compatibility with some scikit-learn functions.
 
 + accuracy: float
     The accuracy of the model.
+
+---
+
+## Abstract methods
+
+### def fit(...)
+
+```python
+def fit(self, X: npt.NDArray, y: npt.NDArray, verbose: bool = True)
+```
+
+Fit the model to the training data.
+
+Implementation:
+
+- [RNSA](/docs/aisp-techniques/Negative%20Selection/rnsa#function-fit)
+- [BNSA](/docs/aisp-techniques/Negative%20Selection/bnsa#function-fit)
+
+
+
+### def predict(...)
+
+```python
+def predict(self, X) -> Optional[npt.NDArray]:
+```
+
+Performs label prediction for the given data.
+
+Implementation:
+
+- [RNSA](/docs/aisp-techniques/Negative%20Selection/rnsa#function-predict)
+- [BNSA](/docs/aisp-techniques/Negative%20Selection/bnsa#function-predict)

@@ -56,6 +56,8 @@ const config = {
           rehypePlugins: [
             [katex, { strict: false }],
           ],
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -154,8 +156,12 @@ const config = {
                 href: 'https://github.com/AIS-Package/aisp',
               },
               {
-                label: 'Pipy',
+                label: 'PyPi',
                 href: 'https://pypi.org/project/aisp/',
+              },
+              {
+                label: 'TestPyPI',
+                href: 'https://test.pypi.org/project/aisp/',
               },
             ],
           },

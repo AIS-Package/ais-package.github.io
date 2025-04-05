@@ -1,12 +1,13 @@
 ---
 sidebar_position: 1
-title: aisp._base Class
-sidebar_label: Classe - Base.
-lastUpdatedAt: 2023/06/04
+title: Base de Seleção Negativa
+sidebar_label: Seleção Negativa
+lastUpdatedAt: 2025/04/04
 author: João Paulo
 ---
 
-# Classe aisp._base
+# NSA._base Class
+
 
 A classe ``_Base`` contém funções utilitárias com o modificador ``protected`` que podem ser herdadas por várias classes para facilitar o uso. Ela inclui funções para calcular distância, separar dados para melhorar a eficiência de treinamento e previsão, medir precisão e outras funções.
 
@@ -45,8 +46,6 @@ Função responsável por verificar os parâmetros da função fit e lançar exc
 
 ---
 
-### def _slice_index_list_by_class(...)
-
 ```python
 def _slice_index_list_by_class(self, y: npt.NDArray) -> dict
 ```
@@ -82,3 +81,33 @@ Esta função foi adicionada para compatibilidade com algumas funções do sciki
 
 + precisão: float
     A precisão do modelo.
+
+---
+
+## Métodos abstratos
+
+### def fit(...)
+
+```python
+def fit(self, X: npt.NDArray, y: npt.NDArray, verbose: bool = True)
+```
+
+Ajusta o modelo aos dados de treinamento.
+
+Implementação:
+
+- [RNSA](/docs/aisp-techniques/Negative%20Selection/rnsa#function-fit)
+- [BNSA](/docs/aisp-techniques/Negative%20Selection/bnsa#function-fit)
+
+### def predict(...)
+
+```python
+def predict(self, X) -> Optional[npt.NDArray]:
+```
+
+Realiza a previsão dos rótulos para os dados fornecidos.
+
+Implementação:
+
+- [RNSA](/docs/aisp-techniques/Negative%20Selection/rnsa#function-predict)
+- [BNSA](/docs/aisp-techniques/Negative%20Selection/bnsa#function-predict)

@@ -44,7 +44,7 @@ Inicia o modelo com 500 detectores, cada um com um raio de 0.06. Em seguida, apr
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
 
 # Iniciando a classe.
-model = RNSA(N=500, r=0.06, seed=123)
+model = RNSA(N=500, r=0.05, r_s=0.03, seed=1234)
 # Efetuando o treinamento: 
 model.fit(X=train_x, y=train_y)
 # Efetuando a previsão:
@@ -84,7 +84,7 @@ Inicia o modelo com 50 detectores, onde o raio mínimo é de 0.05 e o raio próp
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
 
 # Iniciando a classe.
-model = RNSA(N=50, r=0.05, algorithm='V-detector', r_s=0.04, seed=1234)
+model = RNSA(N=50, r=0.05, algorithm="V-detector", r_s=0.03, seed=1234)
 # Efetuando o treinamento: 
 model.fit(X=train_x, y=train_y)
 # Efetuando a previsão:

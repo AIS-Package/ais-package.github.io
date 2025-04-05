@@ -15,7 +15,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/Easy to Use.svg').default,
     description: (
         <Translate id='cardEasy'>
-          Available on Pypi, it is easily installed via pip command. Therefore, access is simple and direct for any user.  
+         Available on Pypi, it is easily installed via pip command. Therefore, 
+         access is simple and direct for any user.
         </Translate>
     ),
   },
@@ -24,13 +25,14 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/python-AISP.svg').default,
     description: (
         <Translate id='cardPython'>
-          AISP was designed with and for Python, a language widely used in machine learning and data science.
+          AISP was designed with and for Python, a language widely used in machine 
+          learning and data science.
         </Translate>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Svg, description}: Readonly<FeatureItem>) {
   return (
     <div className={clsx('col col--6')}>
       <div className="text--center">
