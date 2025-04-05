@@ -46,20 +46,6 @@ Função responsável por verificar os parâmetros da função fit e lançar exc
 
 ---
 
-```python
-def _slice_index_list_by_class(self, y: npt.NDArray) -> dict
-```
-
-A função ``_slice_index_list_by_class(...)`` separa os índices das linhas de acordo com a classe de saída, para iterar sobre o array de amostra apenas nas posições em que a saída é a classe em treinamento.
-
-**Parâmetros**:
-* ***y*** (npt.NDArray): Recebe um array ``y``[``N amostra``] com as classes de saída do array de amostra ``X``.
-
-**Retorna**:
-* dict: Um dicionário com a lista de posições do array (`y`), com as classes como chave.
-
----
-
 ### def _score(...)
 
 ```python
