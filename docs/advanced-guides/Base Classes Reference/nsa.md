@@ -10,6 +10,30 @@ author: João Paulo
 
 The ``_Base`` class contains utility functions with the ``protected`` modifier that can be inherited by various classes for ease of use. It includes functions for distance calculation, data separation to improve training and prediction efficiency, accuracy measurement and other functions.
 
+---
+
+### def score(...)
+
+```python
+def score(self, X: npt.NDArray, y: list) -> float
+```
+Score function calculates forecast accuracy.
+
+This function performs the prediction of X and checks how many elements are equal between vector y and y_predicted. 
+This function was added for compatibility with some scikit-learn functions.
+
+**Parameters**:
++ ***X***: ``np.ndarray``
+    Feature set with shape (n_samples, n_features).
++ ***y***: ``np.ndarray``
+    True values with shape (n_samples,).
+
+**Returns**:
+
++ accuracy: ``float`` The accuracy of the model.
+
+---
+
 ## Protected Functions:
 
 ---
@@ -41,29 +65,6 @@ Function responsible for verifying fit function parameters and throwing exceptio
 * ***X*** (``npt.NDArray``): Training array, containing the samples and their characteristics, [``N samples`` (rows)][``N features`` (columns)].
 * ***y*** (``npt.NDArray``): Array of target classes of ``X`` with [``N samples`` (lines)].
 * ***_class_*** (Literal[RNSA, BNSA], optional): Current class. Defaults to 'RNSA'.
-
----
-
-### def _score(...)
-
-```python
-def _score(self, X: npt.NDArray, y: list) -> float
-```
-Score function calculates forecast accuracy.
-
-This function performs the prediction of X and checks how many elements are equal between vector y and y_predicted. 
-This function was added for compatibility with some scikit-learn functions.
-
-**Parameters**:
-+ ***X***: np.ndarray
-    Feature set with shape (n_samples, n_features).
-+ ***y***: np.ndarray
-    True values with shape (n_samples,).
-
-**Returns**:
-
-+ accuracy: float
-    The accuracy of the model.
 
 ---
 

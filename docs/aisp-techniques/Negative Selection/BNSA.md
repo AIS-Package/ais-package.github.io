@@ -59,7 +59,7 @@ possible infinite loop if a radius is defined that it is not possible to generat
 The ``fit(...)`` function generates the detectors for non-fits with respect to the samples:
 
 ```python
-def fit(self, X: npt.NDArray, y: npt.NDArray):
+def fit(self, X: npt.NDArray, y: npt.NDArray, verbose: bool = True)
 ```
 
 In it, training is performed according to ``X`` and ``y``, using the negative selection method(``NegativeSelect``).

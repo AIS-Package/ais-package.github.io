@@ -13,6 +13,6 @@ Classes implementadas utilizando as metáforas do sistemas imunológicos artific
 ## Classe do módulo:
 
 > 1. [**Seleção negativa**](./Negative%20Selection/)
-> 2. **Células dendríticas**
-> 3. **Clonalg**
+> 2. **Algoritmos de Seleção Clonal**
+> 3. **Células dendríticas**
 > 4. **Teoria da Rede Imune**

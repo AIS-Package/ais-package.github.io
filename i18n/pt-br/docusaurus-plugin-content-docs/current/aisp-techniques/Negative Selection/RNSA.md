@@ -83,7 +83,7 @@ possível loop infinito caso seja definido um raio que não seja possível gerar
 A função ``fit(...)`` gera os detectores para os não próprios com relação às amostras:
 
 ```python
-def fit(self, X: npt.NDArray, y: npt.NDArray)
+def fit(self, X: npt.NDArray, y: npt.NDArray, verbose: bool = True)
 ```
 Nela é realizado o treinamento de acordo com ``X`` e ``y``, usando o método de seleção negativa(``NegativeSelect``).
 
