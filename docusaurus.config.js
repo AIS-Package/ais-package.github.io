@@ -1,10 +1,15 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+require('dotenv/config');
+const {themes} = require('prism-react-renderer')
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 const math = require('remark-math');
 const katex = require('rehype-katex');
+const isDev = process.env.NODE_ENV === 'development';
+
+
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 
@@ -51,13 +56,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebars.ts'),
           remarkPlugins: [math],
           rehypePlugins: [
             [katex, { strict: false }],
           ],
           showLastUpdateAuthor: true,
-          showLastUpdateTime: true
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -75,7 +80,6 @@ const config = {
       crossorigin: 'anonymous',
     },
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -96,7 +100,9 @@ const config = {
         { nome: 'keywords', conteúdo: 'computação científica' },
         { nome: 'keywords', conteúdo: 'Negative Selection Algorithm' },
       ],
-      plugins: ['@docusaurus/plugin-content-pages'],
+      plugins: [
+        '@docusaurus/plugin-content-pages'
+      ],
       sidebar: {
         collapsible: true,
       },
@@ -104,7 +110,6 @@ const config = {
         sidebar: {
           hideable: true,
         },
-
       },
       navbar: {
         title: 'AISP',
@@ -112,9 +117,7 @@ const config = {
           alt: 'AISP',
           src: 'img/logo.png',
         },
-
         items: [
-
           {
             type: 'doc',
             docId: 'intro',
@@ -124,7 +127,7 @@ const config = {
           {
             href: 'https://github.com/AIS-Package/aisp',
             label: 'GitHub',
-            position: 'right',
+            position: 'right'
           },
           {
             type: 'localeDropdown',

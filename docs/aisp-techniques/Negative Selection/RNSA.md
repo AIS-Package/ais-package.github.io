@@ -9,7 +9,14 @@ keywords:
   - anomalies
   - not self
   - V-detector
-
+  - Negative Selection Algorithm
+  - Artificial Immune System (AIS)
+  - Self and non-self
+  - Immune
+  - Computação Natural
+last_update:
+  date: 2025/05/17
+  author: João Paulo
 ---
 
 # RNSA (Real-Valued Negative Selection Algorithm)
@@ -20,16 +27,16 @@ The ``RNSA`` (Real-Valued Negative Selection Algorithm) class has the purpose of
 
 ```python
 class RNSA(
-    self, 
-    N: int = 100, 
-    r: float = 0.05, 
-    r_s: float = 0.0001, 
-    k: int = 1, 
-    metric: Literal['manhattan', 'minkowski', 'euclidean'] = 'euclidean', 
-    max_discards: int = 1000, 
-    seed: int = None, 
-    algorithm: Literal['default-NSA', 'V-detector'] ='default-NSA', 
-    **kwargs: Dict[str, Union[bool, str, float]]
+    self,
+    N: int = 100,
+    r: float = 0.05,
+    r_s: float = 0.0001,
+    k: int = 1,
+    metric: Literal["manhattan", "minkowski", "euclidean"] = "euclidean",
+    max_discards: int = 1000,
+    seed: int = None,
+    algorithm: Literal["default-NSA", "V-detector"] = "default-NSA",
+    **kwargs: Dict[str, Union[bool, str, float]],
 )
 ```
 
@@ -209,18 +216,6 @@ def __distance(self, u: npt.NDArray, v: npt.NDArray):
 The input parameters are ``u`` and ``v`` NDArrays, with the coordinates for the points.
 
 **Returns:** the distance (``double``) between the two points.
-
----
-
-### Function __slice_index_list_by_class(...)
-
-The function ``__slice_index_list_by_class(...)``, separates the indices of the lines according to the output class, to go through the sample array, only in the positions that the output is the class that is being trained:
-
-```python
-def __slice_index_list_by_class(self, y: npt.NDArray) -> dict:
-```
-
-Returns a dictionary with the classes as key and the indices in ``X`` of the samples.
 
 ---
 

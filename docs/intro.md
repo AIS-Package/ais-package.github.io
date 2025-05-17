@@ -2,10 +2,23 @@
 sidebar_position: 1
 lastUpdatedAt: 2023/05/30
 author: João Paulo
-
 last_update:
-  date: 2023/05/30
+  date: 2025/05/17
   author: João Paulo
+keywords:
+  - AISP
+  - Artificial Intelligence
+  - Artificial Immune Systems
+  - Natural Computing
+  - Immune-inspired Algorithms
+  - Optimization
+  - Pattern Recognition
+  - Python
+  - Open Source
+  - LGPLv3
+  - Research
+  - Bioinspiration
+  - Immune Metaphors
 ---
 # Artificial Immune Systems Package.
 

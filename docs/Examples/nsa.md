@@ -7,6 +7,17 @@ showLastUpdateTime: true
 last_update:
   date: 2023/05/30
   author: João Paulo
+keywords:
+  - Binary
+  - classifying
+  - anomalies
+  - not self
+  - affinity threshold
+  - Negative Selection Algorithm
+  - Artificial Immune System (AIS)
+  - Self and non-self
+  - Immune
+  - Computação Natural
 ---
 
 # Negative Selection Algorithm

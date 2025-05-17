@@ -10,6 +10,16 @@ keywords:
   - anomalies
   - not self
   - affinity threshold
+  - Negative Selection Algorithm
+  - Artificial Immune System (AIS)
+  - Self and non-self
+  - Immune
+  - Computação Natural
+  - Real-Valued
+  - V-detector
+last_update:
+  date: 2025/05/17
+  author: João Paulo
 ---
 
 # BNSA (Binary Negative Selection Algorithm)
@@ -20,12 +30,14 @@ The ``BNSA`` (Binary Negative Selection Algorithm) class has the purpose of clas
 
 ``` python
 class BNSA(
-    self, 
-    N: int = 100, 
-    aff_thresh: float = 0.1, 
-    max_discards: int = 1000, 
+    self,
+    N: int = 100,
+    aff_thresh: float = 0.1,
+    max_discards: int = 1000,
     seed: int = None,
-    no_label_sample_selection: Literal["max_average_difference", "max_nearest_difference"] = "max_average_difference"
+    no_label_sample_selection: Literal[
+        "max_average_difference", "max_nearest_difference"
+    ] = "max_average_difference",
 )
 ```
 
@@ -108,14 +120,16 @@ It returns the accuracy as a float type.
 
 ---
 
-### Function __slice_index_list_by_class(...)
+### Function __assign_class_to_non_self_sample(...)
 
-The function ``__slice_index_list_by_class(...)``, separates the indices of the lines according to the output class, to go through the sample array, only in the positions that the output is the class that is being trained:
+The function ``__assign_class_to_non_self_sample(...)``, determines the class of a sample when all detectors classify it as "non-self". Classification is performed using the ``max_average_difference`` and ``max_nearest_difference`` methods.
 
 ```python
-def __slice_index_list_by_class(self, y: npt.NDArray) -> dict:
+def __assign_class_to_non_self_sample(self, line: npt.NDArray, c: list):
 ```
 
-Returns a dictionary with the classes as key and the indices in ``X`` of the samples.
+**The input parameter is:** 
+* ***line*** (``npt.NDArray``): Sample to be classified.
+* ***c*** (``list``): List of predictions to be updated with the new classification.
 
 ---

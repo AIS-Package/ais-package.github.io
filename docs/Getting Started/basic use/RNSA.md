@@ -2,13 +2,24 @@
 sidebar_position: 2
 title: Using the RNSA
 sidebar_label: Using the RNSA
-lastUpdatedAt: 2023/06/01
+lastUpdatedAt: 2025/05/17
 author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
 last_update:
-  date: 2023/06/01
+  date: 2025/05/17
   author: João Paulo
+keywords:
+  - Real-Valued
+  - classifying
+  - anomalies
+  - not self
+  - V-detector
+  - Negative Selection Algorithm
+  - Artificial Immune System (AIS)
+  - Self and non-self
+  - Immune
+  - Computação Natural
 ---
 
 # Using the RNSA
@@ -17,7 +28,7 @@ Access the Jupyter notebook with the code available [here](https://github.com/AI
 
 ### Importing the Real-Valued Negative Selection Algorithm.
 ```python
-from aisp.NSA import RNSA
+from aisp.nsa import RNSA
 ```
 
 ### Generating dice bubbles for classes randomly.

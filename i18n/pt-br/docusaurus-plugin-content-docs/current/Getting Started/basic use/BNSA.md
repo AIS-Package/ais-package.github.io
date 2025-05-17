@@ -7,8 +7,19 @@ author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
 last_update:
-  date: 2023/06/01
+  date: 2025/05/17
   author: João Paulo
+keywords:
+  - Binário
+  - classificação
+  - anomalias
+  - not self
+  - affinity threshold
+  - Algoritmo de Seleção Negativa
+  - Sistema Imunológico Artificial (AIS)
+  - Próprio e não-próprio
+  - Imune
+  - Computação Natural
 ---
 
 # Aplicando o BNSA
@@ -21,7 +32,7 @@ Acesse o notebook Jupyter disponível [aqui](https://github.com/AIS-Package/aisp
 ## Importando o algoritmo BNSA
 
 ```python
-from aisp.NSA import BNSA
+from aisp.nsa import BNSA
 ```
 
 ## Gerando amostras

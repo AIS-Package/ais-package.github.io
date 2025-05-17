@@ -7,8 +7,19 @@ author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
 last_update:
-  date: 2023/06/01
+  date: 2025/05/17
   author: João Paulo
+keywords:
+  - Valor Real
+  - classificação
+  - anomalias
+  - not self
+  - V-detector
+  - Algoritmo de Seleção Negativa
+  - Sistema Imunológico Artificial (AIS)
+  - Próprio e não-próprio
+  - Imune
+  - Computação Natural
 ---
 
 # Usando o RNSA
@@ -17,7 +28,7 @@ Acesse o notebook Jupyter com o código disponível [aqui](https://github.com/AI
 
 ## Importando o Algoritmo de seleção negativa de valor real.
 ```python
-from aisp.NSA import RNSA
+from aisp.nsa import RNSA
 ```
 
 ## Gerando bolhas de dados para as classe aleatoriamente.
