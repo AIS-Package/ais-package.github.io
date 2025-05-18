@@ -1,4 +1,4 @@
 {
-  "label": "Base Classes Reference",
-  "position": 2
+  "position": 2,
+  "description": "Base classes for implementing the algorithms provided in this package."
 }
