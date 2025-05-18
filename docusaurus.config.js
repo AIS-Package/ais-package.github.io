@@ -6,9 +6,20 @@ const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 const math = require('remark-math');
 const katex = require('rehype-katex');
+const versions = require('./versions.json');
 const isDev = process.env.NODE_ENV === 'development';
 
+function getNextVersionName() {
+  return versions[0];
+}
 
+function getVersions() {
+  if (isDev) {
+    return ['current', ...versions];
+  }
+
+  return versions;
+}
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -18,7 +29,7 @@ const config = {
   favicon: 'img/icon.svg',
 
   // Set the production url of your site here
-  url: 'https://ais-package.github.io/',
+  url: process.env.URL || 'https://ais-package.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -63,6 +74,8 @@ const config = {
           ],
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          lastVersion: isDev ? 'current' : getNextVersionName(),
+          onlyIncludeVersions: getVersions(),
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -124,10 +137,16 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
+          
           {
             href: 'https://github.com/AIS-Package/aisp',
             label: 'GitHub',
             position: 'right'
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownActiveClassDisabled: false,
           },
           {
             type: 'localeDropdown',
