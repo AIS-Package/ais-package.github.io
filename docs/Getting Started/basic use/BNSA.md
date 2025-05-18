@@ -2,13 +2,24 @@
 sidebar_position: 1
 title: Using the BNSA
 sidebar_label: Using the BNSA
-lastUpdatedAt: 2023/06/01
+lastUpdatedAt: 2025/05/17
 author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
 last_update:
-  date: 2024/05/13
+  date: 2025/05/17
   author: João Paulo
+keywords:
+  - Binary
+  - classifying
+  - anomalies
+  - not self
+  - affinity threshold
+  - Negative Selection Algorithm
+  - Artificial Immune System (AIS)
+  - Self and non-self
+  - Immune
+  - Computação Natural
 ---
 
 # Applying the BNSA
@@ -19,7 +30,7 @@ Access the Jupyter notebook with the code available [here](https://github.com/AI
 ## Importing the BNSA algorithm
 
 ```python
-from aisp.NSA import BNSA
+from aisp.nsa import BNSA
 ```
 ## Generating samples
 

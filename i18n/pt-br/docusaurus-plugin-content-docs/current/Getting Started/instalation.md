@@ -2,12 +2,12 @@
 sidebar_position: 1
 title: Instalação
 sidebar_label: Instalação
-lastUpdatedAt: 2023/05/30
+lastUpdatedAt: 2025/05/17
 author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
 last_update:
-  date: 2024/05/13
+  date: 2025/05/17
   author: João Paulo
 ---
 
@@ -26,6 +26,7 @@ O módulo requer [python 3.8.10](https://www.python.org/downloads/) ou superior.
 |    numpy      |    ≥ 1.23.0   |
 |    scipy      |    ≥ 1.8.1    |
 |    tqdm       |    ≥ 4.64.1   |
+|    numba      |    ≥ 0.59.0   |
 
 </div>
 
@@ -40,7 +41,7 @@ pip install aisp
 ### **Importando módulos**
 
 ``` python
-from aisp.NSA import RNSA, BNSA
+from aisp.nsa import RNSA, BNSA
 
 nsa = RNSA(N=300, r=0.05)
 

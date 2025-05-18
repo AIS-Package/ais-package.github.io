@@ -3,12 +3,20 @@ id: rnsa
 title: RNSA
 sidebar_label: RNSA - Algoritmo de Seleção Negativa de Valor Real
 sidebar_position: 1
+last_update:
+  date: 2025/05/17
+  author: João Paulo
 keywords:
   - Valor Real
   - classificação
   - anomalias
   - not self
   - V-detector
+  - Algoritmo de Seleção Negativa
+  - Sistema Imunológico Artificial (AIS)
+  - Próprio e não-próprio
+  - Imune
+  - Computação Natural
 ---
 
 # RNSA (Algoritmo de Seleção Negativa de Valor Real)

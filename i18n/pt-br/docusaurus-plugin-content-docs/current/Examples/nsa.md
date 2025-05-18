@@ -7,7 +7,19 @@ showLastUpdateTime: true
 last_update:
   date: 2023/05/30
   author: João Paulo
-
+keywords:
+  - Binário
+  - classificação
+  - anomalias
+  - not self
+  - affinity threshold
+  - Algoritmo de Seleção Negativa
+  - Sistema Imunológico Artificial (AIS)
+  - Próprio e não-próprio
+  - Imune
+  - Computação Natural
+  - Valor Real
+  - V-detector
 ---
 
 # Algoritmo de Seleção Negativa

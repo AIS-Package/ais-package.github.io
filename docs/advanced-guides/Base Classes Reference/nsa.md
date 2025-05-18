@@ -6,31 +6,9 @@ lastUpdatedAt: 2025/04/04
 author: João Paulo
 ---
 
-# NSA._base Class
+# ``class BaseNSA(BaseClassifier, ABC)``
 
-The ``_Base`` class contains utility functions with the ``protected`` modifier that can be inherited by various classes for ease of use. It includes functions for distance calculation, data separation to improve training and prediction efficiency, accuracy measurement and other functions.
-
----
-
-### def score(...)
-
-```python
-def score(self, X: npt.NDArray, y: list) -> float
-```
-Score function calculates forecast accuracy.
-
-This function performs the prediction of X and checks how many elements are equal between vector y and y_predicted. 
-This function was added for compatibility with some scikit-learn functions.
-
-**Parameters**:
-+ ***X***: ``np.ndarray``
-    Feature set with shape (n_samples, n_features).
-+ ***y***: ``np.ndarray``
-    True values with shape (n_samples,).
-
-**Returns**:
-
-+ accuracy: ``float`` The accuracy of the model.
+The ``BaseNSA`` class contains utility functions with the ``protected`` modifier that can be inherited by various classes for ease of use. It includes functions for distance calculation, data separation to improve training and prediction efficiency, accuracy measurement and other functions.
 
 ---
 
@@ -38,26 +16,13 @@ This function was added for compatibility with some scikit-learn functions.
 
 ---
 
-### def _distance(...):
-
+### Function _check_and_raise_exceptions_fit(...):
 ```python
-def _distance(self, u: npt.NDArray, v: npt.NDArray)
-```
-
-Function to calculate the distance between two points by the chosen ``metric``.
-
-**Parameters**:
-* ***u*** (``npt.NDArray``): Coordinates of the first point.
-* ***v*** (``npt.NDArray``): Coordinates of the second point.
-
-**returns**:
-* Distance (``double``) between the two points.
-
----
-
-### def _check_and_raise_exceptions_fit(...):
-```python
-def _check_and_raise_exceptions_fit(self, X: npt.NDArray = None, y: npt.NDArray = None, _class_: Literal['RNSA', 'BNSA'] = 'RNSA')
+def _check_and_raise_exceptions_fit(
+    X: npt.NDArray = None,
+    y: npt.NDArray = None,
+    _class_: Literal["RNSA", "BNSA"] = "RNSA",
+) -> None:
 ```
 Function responsible for verifying fit function parameters and throwing exceptions if the verification is not successful.
 
@@ -66,34 +31,28 @@ Function responsible for verifying fit function parameters and throwing exceptio
 * ***y*** (``npt.NDArray``): Array of target classes of ``X`` with [``N samples`` (lines)].
 * ***_class_*** (Literal[RNSA, BNSA], optional): Current class. Defaults to 'RNSA'.
 
+**Raises**
+* ``TypeError``: If X or y are not ndarrays or have incompatible shapes.
+* ``ValueError``: If _class_ is BNSA and X contains values that are not composed only of 0 and 1.
+
 ---
 
-## Abstract methods
-
-### def fit(...)
-
+### Function _check_and_raise_exceptions_predict(...):
 ```python
-def fit(self, X: npt.NDArray, y: npt.NDArray, verbose: bool = True)
+def _check_and_raise_exceptions_predict(
+    X: npt.NDArray = None,
+    expected: int = 0,
+    _class_: Literal["RNSA", "BNSA"] = "RNSA",
+) -> None:
 ```
+Function responsible for verifying predict function parameters and throwing exceptions if the verification is not successful.
 
-Fit the model to the training data.
+**Parameters**:
+* ***X*** (``npt.NDArray``): Input array for prediction, containing the samples and their characteristics, [``N samples`` (rows)][``N features`` (columns)].
+* ***expected*** (``int``): Expected number of features per sample (columns in X).
+* _class_ (``Literal[RNSA, BNSA], optional``): Current class. Defaults to 'RNSA'.
 
-Implementation:
-
-- [RNSA](/docs/aisp-techniques/Negative%20Selection/rnsa#function-fit)
-- [BNSA](/docs/aisp-techniques/Negative%20Selection/bnsa#function-fit)
-
-
-
-### def predict(...)
-
-```python
-def predict(self, X) -> Optional[npt.NDArray]:
-```
-
-Performs label prediction for the given data.
-
-Implementation:
-
-- [RNSA](/docs/aisp-techniques/Negative%20Selection/rnsa#function-predict)
-- [BNSA](/docs/aisp-techniques/Negative%20Selection/bnsa#function-predict)
+**Raises**
+* ``TypeError``: If X is not an ndarray or list.
+* ``FeatureDimensionMismatch``: If the number of features in X does not match the expected number.
+* ``ValueError``: If _class_ is BNSA and X contains values that are not composed only of 0 and 1.

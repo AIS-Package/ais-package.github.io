@@ -4,12 +4,20 @@ title: BNSA
 sidebar_label: BNSA - Algoritmo de Seleção Negativa Binária
 sidebar_position: 2
 pagination_next: null
+last_update:
+  date: 2025/05/17
+  author: João Paulo
 keywords:
   - Binário
   - classificação
   - anomalias
   - not self
   - affinity threshold
+  - Algoritmo de Seleção Negativa
+  - Sistema Imunológico Artificial (AIS)
+  - Próprio e não-próprio
+  - Imune
+  - Computação Natural
 ---
 
 # BNSA (Algoritmo de Seleção Negativa Binária).

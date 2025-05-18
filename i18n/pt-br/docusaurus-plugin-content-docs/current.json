@@ -29,7 +29,7 @@
   },
   "sidebar.tutorialSidebar.category.Examples.link.generated-index.description": {
     "message": "Abaixo estão alguns exemplos que usam base de dados para classificação com a ferramenta Jupyter notebook.",
-    "description": "The generated-index page description for category Examples in sidebar tutorialSidebar"
+    "description": "Abaixo estão alguns exemplos que usam base de dados para classificação com a ferramenta Jupyter notebook."
   },
   "sidebar.tutorialSidebar.category.Basic usage": {
     "message": "Utilização básica",
@@ -46,5 +46,21 @@
   "sidebar.tutorialSidebar.category.Advanced Guides.link.generated-index.description": {
     "message": "Explore a documentação avançada da biblioteca, que abrange as classes base, além das funções utilitárias do módulo utils voltadas para métricas e manipulação de classificação multiclasse.",
     "description": "The generated-index page description for category Advanced Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.docs.category.Base module.description": {
+    "message": "Classe base para algoritmo de classificação.",
+    "description": "Classe base para algoritmo de classificação."
+  },
+  "sidebar.docs.category.Base Classes Reference.description": {
+    "message": "Classes base para implementar os algoritmos fornecidos neste pacote.",
+    "description": "Classes base para implementar os algoritmos fornecidos neste pacote."
+  },
+  "sidebar.docs.category.Core.description": {
+    "message": "As funções realizam verificações de detectores e utilizam decoradores Numba para compilação Just-In-Time",
+    "description": "As funções realizam verificações de detectores e utilizam decoradores Numba para compilação Just-In-Time"
+  },
+  "sidebar.docs.category.Utils.description": {
+    "message": "Funções utilitárias e auxiliares para o desenvolvimento.",
+    "description": "Funções utilitárias e auxiliares para o desenvolvimento."
   }
 }

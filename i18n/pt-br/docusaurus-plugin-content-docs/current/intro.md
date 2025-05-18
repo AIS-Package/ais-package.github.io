@@ -5,8 +5,23 @@ author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
 last_update:
-  date: 2023/05/30
+  date: 2025/05/17
   author: João Paulo
+keywords:
+  - AISP
+  - Inteligência Artificial
+  - Sistemas Imunológicos Artificiais
+  - Computação Natural
+  - Algoritmos Imunoinspirados
+  - Otimização
+  - Reconhecimento de Padrões
+  - Python
+  - Código Aberto
+  - LGPLv3
+  - Pesquisa
+  - Bioinspiração
+  - Artificial Immune System
+  - Immune-inspired Algorithms
 ---
 
 # Pacote de Sistemas Imunológicos Artificiais.
