@@ -17,7 +17,7 @@ This page contains information about dependencies, how to install and how to imp
 
 ## **Dependencies:**
 
-The package requires [python 3.8.10](https://www.python.org/downloads/) or higher.
+The package requires [python 3.10](https://www.python.org/downloads/) or higher.
 
 <div style={{ display: "flex", justifyContent: "center", alignItems: "center", margin: "auto" }}>
 

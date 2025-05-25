@@ -17,7 +17,7 @@ Esta página contém informações sobre as dependências do pacote, como instal
 
 ### **Dependências:**
 
-O módulo requer [python 3.8.10](https://www.python.org/downloads/) ou superior.
+O módulo requer [python 3.10](https://www.python.org/downloads/) ou superior.
 
 <div style={{ display: "flex", justifyContent: "center", alignItems: "center", margin: "auto" }}>
 
