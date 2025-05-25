@@ -27,7 +27,7 @@ keywords:
 O presente exemplo, disponível aqui, visa demonstrar a aplicação do algoritmo de seleção negativa binária. Esse algoritmo é empregado na classificação de amostras com características discretas. 
 
 
-Acesse o notebook Jupyter disponível [aqui](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/example_with_randomly_generated_dataset-pt.ipynb)!
+Acesse o notebook Jupyter disponível [aqui](https://github.com/AIS-Package/aisp/blob/0.1.x/examples/BNSA/example_with_randomly_generated_dataset-pt.ipynb)!
 
 ## Importando o algoritmo BNSA
 

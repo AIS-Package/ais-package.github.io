@@ -1,0 +1,8 @@
+{
+  "label": "Clonal Selection Algorithms",
+  "position": 2.61,
+  "link": {
+    "type": "generated-index",
+    "description": "The base classes provide the core framework for implementing Clonal Selection Algorithm techniques."
+  }
+}

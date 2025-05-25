@@ -25,7 +25,7 @@ keywords:
 # Applying the BNSA
 The present example, available here, aims to demonstrate the application of the binary negative selection algorithm. This algorithm is used to classify samples with discrete characteristics.
 
-Access the Jupyter notebook with the code available [here](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/example_with_randomly_generated_dataset-en.ipynb)!
+Access the Jupyter notebook with the code available [here](https://github.com/AIS-Package/aisp/blob/0.1.x/examples/BNSA/example_with_randomly_generated_dataset-en.ipynb)!
 
 ## Importing the BNSA algorithm
 
