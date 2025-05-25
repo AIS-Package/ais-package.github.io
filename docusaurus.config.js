@@ -114,7 +114,14 @@ const config = {
         { nome: 'keywords', conteúdo: 'Negative Selection Algorithm' },
       ],
       plugins: [
-        '@docusaurus/plugin-content-pages'
+        '@docusaurus/plugin-content-pages',
+        '@docusaurus/plugin-sitemap',
+        {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
       ],
       sidebar: {
         collapsible: true,
