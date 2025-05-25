@@ -1,0 +1,8 @@
+{
+  "label": "Advanced Guides",
+  "position": 2.6,
+  "link": {
+    "type": "generated-index",
+    "description": "Explore the advanced documentation of the library, covering the base classes and the utility functions in utils for metrics and multiclass classification handling."
+  }
+}

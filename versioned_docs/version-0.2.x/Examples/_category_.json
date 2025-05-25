@@ -1,0 +1,8 @@
+{
+  "label": "Examples",
+  "position": 2.5,
+  "link": {
+    "type": "generated-index",
+    "description": "Below are some examples that use databases for sorting with the Jupyter notebook tool."
+  }
+}

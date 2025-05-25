@@ -44,19 +44,19 @@ Os exemplos a seguir mostram várias funcionalidades das classes de seleção ne
 Acesse os notebooks com a possibilidade de execução online pelo Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?labpath=%2Fexamples)
 
 ## BNSA (Algoritmo de Seleção Negativa Binária)
-+ [Exemplo com amostras aleatórias](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/example_with_randomly_generated_dataset-pt.ipynb)
++ [Exemplo com amostras aleatórias](https://github.com/AIS-Package/aisp/blob/0.1.x/examples/BNSA/example_with_randomly_generated_dataset-pt.ipynb)
 > No exemplo presente neste notebook, foram geradas 1000 amostras aleatórias, organizadas em dois grupos, um para cada classe.
 
-+ [Exemplo de Base de Dados de Cogumelos](https://github.com/AIS-Package/aisp/blob/main/examples/BNSA/mushrooms_dataBase_example_pt.ipynb)
++ [Exemplo de Base de Dados de Cogumelos](https://github.com/AIS-Package/aisp/blob/0.1.x/examples/BNSA/mushrooms_dataBase_example_pt.ipynb)
 > Ele usa a [base de dados de cogumelos](https://archive.ics.uci.edu/dataset/73/mushroom), que contém informações sobre cogumelos comestíveis e venenosos.
 
 ## RNSA (Algoritmo de Seleção Negativa de Valores Reais)
 
-+ [Exemplo com amostras aleatórias](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/example_with_randomly_generated_dataset-pt.ipynb)
++ [Exemplo com amostras aleatórias](https://github.com/AIS-Package/aisp/blob/0.1.x/examples/RNSA/example_with_randomly_generated_dataset-pt.ipynb)
 > No exemplo presente neste notebook, foram geradas 500 amostras aleatórias, organizadas em dois grupos, um para cada classe.
 
-+ [Exemplo de Base de Dados Iris](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/iris_dataBase_example_pt.ipynb)
++ [Exemplo de Base de Dados Iris](https://github.com/AIS-Package/aisp/blob/0.1.x/examples/RNSA/iris_dataBase_example_pt.ipynb)
 > Exemplo usando a base de dados [íris](https://archive.ics.uci.edu/ml/datasets/iris), que contém amostras de quatro dimensões e três classes de saída (Setosa, Versicolor e Virginica).
 
-+ [Exemplo de Base de Dados Geyser](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/geyser_dataBase_example_pt.ipynb)
++ [Exemplo de Base de Dados Geyser](https://github.com/AIS-Package/aisp/blob/0.1.x/examples/RNSA/geyser_dataBase_example_pt.ipynb)
 > Para classificar erupções de geysers no Parque Nacional de Yellowstone, este notebook usa a [base de dados Old Faithful](https://github.com/mwaskom/seaborn-data/blob/master/geyser.csv).
