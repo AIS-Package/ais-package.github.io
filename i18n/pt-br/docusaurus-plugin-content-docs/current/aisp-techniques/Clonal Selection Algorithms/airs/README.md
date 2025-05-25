@@ -1,9 +1,5 @@
 ---
-id: airs
-title: AIRS
 sidebar_label: AIRS - Sistema Imunológico Artificial de Reconhecimento
-sidebar_position: 1
-pagination_next: null
 keywords:
   - Binary
   - classifying
@@ -16,7 +12,7 @@ lastUpdatedAt: 2025/05/25
 author: João Paulo
 ---
 
-# AIRS (Sistema Imunológico Artificial de Reconhecimento)
+# AIRS - Sistema Imunológico Artificial de Reconhecimento
 
 O ``AIRS`` é um algoritmo de classificação inspirado no processo de seleção clonal. A versão implementada nesta classe é inspirada na sua versão simplificada, o AIRS2, descrito em[Brabazon, O'Neill, and McGarraghy (2015)](#1)
 

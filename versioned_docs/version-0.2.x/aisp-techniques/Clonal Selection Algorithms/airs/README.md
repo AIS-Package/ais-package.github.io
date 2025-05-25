@@ -1,9 +1,6 @@
 ---
-id: airs
-title: AIRS
 sidebar_label: AIRS - Artificial Immune Recognition System
 sidebar_position: 1
-pagination_next: null
 keywords:
   - Binary
   - classifying
@@ -16,7 +13,7 @@ lastUpdatedAt: 2025/05/25
 author: João Paulo
 ---
 
-# Artificial Immune Recognition System
+# AIRS - Artificial Immune Recognition System
 
 The ``AIRS`` class aims to perform classification using metaphors of selection and clonal expansion. 
 

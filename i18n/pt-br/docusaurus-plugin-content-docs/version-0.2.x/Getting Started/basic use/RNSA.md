@@ -24,7 +24,7 @@ keywords:
 
 # Usando o RNSA
 
-Acesse o notebook Jupyter com o código disponível [aqui](https://github.com/AIS-Package/aisp/blob/main/examples/RNSA/example_with_randomly_generated_dataset-pt.ipynb)!
+Acesse o notebook Jupyter com o código disponível [aqui](https://github.com/AIS-Package/aisp/blob/main/examples/pt-br/classification/RNSA/example_with_randomly_generated_dataset-pt.ipynb)!
 
 ## Importando o Algoritmo de seleção negativa de valor real.
 ```python

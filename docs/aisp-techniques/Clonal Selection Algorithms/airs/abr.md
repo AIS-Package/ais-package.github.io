@@ -2,7 +2,7 @@
 id: abr
 title: ABR
 sidebar_label: ABR - Artificial Recognition Ball
-sidebar_position: 1
+sidebar_position: 2
 keywords:
   - Binary
   - classifying
