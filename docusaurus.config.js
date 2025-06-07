@@ -154,6 +154,16 @@ const config = {
             type: 'docsVersionDropdown',
             position: 'right',
             dropdownActiveClassDisabled: false,
+            dropdownItemsAfter: [
+              {
+                type: 'html',
+                value: '<hr style="margin: 0.25rem">',
+              },
+              {
+                label: 'All Versions',
+                to: '/versions',
+              }
+            ]
           },
           {
             type: 'localeDropdown',
