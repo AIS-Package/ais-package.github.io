@@ -30,7 +30,7 @@ keywords:
 
 # Usando o AIRS
 
-Acesse o notebook Jupyter com o código disponível [aqui](https://github.com/AIS-Package/aisp/blob/main/examples/pt-br/classification/AIRS/example_with_randomly_generated_dataset-en.ipynb)!
+Acesse o notebook Jupyter com o código disponível [aqui](https://github.com/AIS-Package/aisp/blob/main/examples/pt-br/classification/AIRS/example_with_randomly_generated_dataset-pt.ipynb)!
 
 ### Importação do Sistema de Reconhecimento Imunológico Artificial
 ```python

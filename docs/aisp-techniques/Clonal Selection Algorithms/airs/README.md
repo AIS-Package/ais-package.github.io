@@ -1,4 +1,5 @@
 ---
+id: airs
 sidebar_label: AIRS - Artificial Immune Recognition System
 keywords:
   - Binary
@@ -45,13 +46,13 @@ Based on Algorithm 16.5 from Brabazon et al. [1](#1).
 * **max_iters** (``int``): Maximum number of interactions in the refinement process of the ARB set exposed to aᵢ. Defaults to 100.
 * **resource_amplified** (``float``): Resource consumption amplifier is multiplied with the incentive to subtract resources. Defaults to 1.0 without amplification.
 * **metric** (Literal["manhattan", "minkowski", "euclidean"]): Way to calculate the distance between the detector and the sample:
-    * ``'Euclidean'`` ➜ The calculation of the distance is given by the expression:  
-    √( (x₁ – x₂)² + (y₁ – y₂)² + ... + (yn – yn)²).
-    * ``'minkowski'`` ➜ The calculation of the distance is given by the expression:  
-    ( |X₁ – Y₁|p + |X₂ – Y₂|p + ... + |Xn – Yn|p) ¹/ₚ.
-    * ``'manhattan'`` ➜ The calculation of the distance is given by the expression:  
-    ( |x₁ – x₂| + |y₁ – y₂| + ... + |yn – yn|).  
-    Defaults to "Euclidean".
+    * ``'Euclidean'`` ➜ The calculation of the distance is given by the expression:
+     $$\sqrt{(X_{1} – X_{1})^2 + (Y_{2} – Y_{2})^2 + ... + (Y_{n} – Y_{n})^2}$$
+    * ``'minkowski'`` ➜ The calculation of the distance is given by the expression:
+    $$( |X_{1} – Y_{1}|^p + |X_{2} – Y_{2}|^p + ... |X_{n} – Y_{n}|^p)^\frac{1}{p}$$.
+    * ``'manhattan'`` ➜ The calculation of the distance is given by the expression: $$( |X_{1} – X_{1}| + |Y_{2} – Y_{2}| + ... + |Y_{n} – Y_{n}|)$$.
+
+    Defaults to **"Euclidean"**.
 * **algorithm** (Literal["continuous-features", "binary-features"]): 
   Specifies the type of algorithm to use based on the nature of the input features:
     * ``continuous-features``: selects an algorithm designed for continuous data, which should

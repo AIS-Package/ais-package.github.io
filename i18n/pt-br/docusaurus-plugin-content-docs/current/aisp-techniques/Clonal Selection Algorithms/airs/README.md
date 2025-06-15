@@ -1,4 +1,5 @@
 ---
+id: airs
 sidebar_label: AIRS - Sistema Imunológico Artificial de Reconhecimento
 keywords:
   - Binary
@@ -55,13 +56,11 @@ A classe `AIRS` tem como objetivo realizar classificação utilizando metáforas
 
 * **metric** (Literal["manhattan", "minkowski", "euclidean"]): Forma de calcular a distância entre o detector e a amostra:
 
-  * `'euclidean'` ➜ O cálculo da distância é dado pela expressão:
-    √( (x₁ – x₂)² + (y₁ – y₂)² + ... + (nₙ – nₙ)² ).
-  * `'minkowski'` ➜ O cálculo da distância é dado pela expressão:
-    ( |X₁ – Y₁|ᵖ + |X₂ – Y₂|ᵖ + ... + |Xₙ – Yₙ|ᵖ )¹/ᵖ.
-  * `'manhattan'` ➜ O cálculo da distância é dado pela expressão:
-    ( |x₁ – x₂| + |y₁ – y₂| + ... + |nₙ – nₙ| ).
-    O padrão é "euclidean".
+    * ``'euclidiana'`` ➜ O cálculo da distância dá-se pela expressão:  $$\sqrt{(X_1 – X_1)^2 + (Y_2 – Y_2)^2 + ... + (Y_n – Y_n)^2}$$.
+    * ``'minkowski'``  ➜ O cálculo da distância dá-se pela expressão: $$( |X_1 – Y_1|^p + |X_2 – Y_2|^p + ... |X_n – Y_n|^p)^\frac{1}{p}$$.
+    * ``'manhattan'``  ➜ O cálculo da distância dá-se pela expressão:  $$( |X_1 – X_1| + |Y_2 – Y_2| + ... + |Y_n – Y_n|)$$.
+
+    Defaults to ``'euclidean'``.
 
 * **algorithm** (Literal["continuous-features", "binary-features"]):
   Especifica o tipo de algoritmo a ser usado com base na natureza das entradas:
