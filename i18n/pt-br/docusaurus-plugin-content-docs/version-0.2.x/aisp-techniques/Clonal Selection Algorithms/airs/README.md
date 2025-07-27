@@ -62,13 +62,7 @@ A classe `AIRS` tem como objetivo realizar classificação utilizando metáforas
 
     Defaults to ``'euclidean'``.
 
-* **algorithm** (Literal["continuous-features", "binary-features"]):
-  Especifica o tipo de algoritmo a ser usado com base na natureza das entradas:
-
-  * `continuous-features`: seleciona um algoritmo projetado para dados contínuos, que devem estar normalizados no intervalo [0, 1].
-  * `binary-features`: seleciona um algoritmo especializado em lidar com variáveis binárias.
-
-* **seed** (int): Semente para geração aleatória de valores dos detectores. O padrão é None.
+* **seed** (``Optional[int]``): Semente para geração aleatória de valores dos detectores. O padrão é None.
 
 - `**kwargs`:
 

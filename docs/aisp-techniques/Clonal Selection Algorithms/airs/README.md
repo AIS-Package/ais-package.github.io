@@ -53,13 +53,8 @@ Based on Algorithm 16.5 from Brabazon et al. [1](#1).
     * ``'manhattan'`` ➜ The calculation of the distance is given by the expression: $$( |X_{1} – X_{1}| + |Y_{2} – Y_{2}| + ... + |Y_{n} – Y_{n}|)$$.
 
     Defaults to **"Euclidean"**.
-* **algorithm** (Literal["continuous-features", "binary-features"]): 
-  Specifies the type of algorithm to use based on the nature of the input features:
-    * ``continuous-features``: selects an algorithm designed for continuous data, which should
-              be normalized within the range [0, 1].
-    * ``binary-features``: selects an algorithm specialized for handling binary variables.
 
-* **seed** (int): Seed for the random generation of detector values. Defaults to None.
+* **seed** (``Optional[int]``): Seed for the random generation of detector values. Defaults to None.
 
 - ``**kwargs``:
     - **p** (``float``): This parameter stores the value of ``p`` used in the Minkowski distance.
