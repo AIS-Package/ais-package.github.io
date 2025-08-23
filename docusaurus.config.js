@@ -1,7 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 require('dotenv/config');
-const {themes} = require('prism-react-renderer')
+const { themes } = require('prism-react-renderer')
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 const math = require('remark-math');
@@ -80,9 +80,16 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: [],
+          filename: 'sitemap.xml',
+        },
       }),
     ],
+
   ],
   stylesheets: [
     {
@@ -114,14 +121,7 @@ const config = {
         { nome: 'keywords', conteúdo: 'Negative Selection Algorithm' },
       ],
       plugins: [
-        '@docusaurus/plugin-content-pages',
-        '@docusaurus/plugin-sitemap',
-        {
-          changefreq: 'weekly',
-          priority: 0.5,
-          ignorePatterns: ['/tags/**'],
-          filename: 'sitemap.xml',
-        },
+        '@docusaurus/plugin-content-pages'
       ],
       sidebar: {
         collapsible: true,
@@ -144,7 +144,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          
+
           {
             href: 'https://github.com/AIS-Package/aisp',
             label: 'GitHub',
