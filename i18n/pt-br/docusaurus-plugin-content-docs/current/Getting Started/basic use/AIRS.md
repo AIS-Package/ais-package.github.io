@@ -2,35 +2,37 @@
 sidebar_position: 3
 title: Usando o AIRS
 sidebar_label: Usando o AIRS
-lastUpdatedAt: 2025/05/17
+lastUpdatedAt: 2025/08/22
 author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
 last_update:
-  date: 2025/05/17
+  date: 2025/08/22
   author: João Paulo
 keywords:
-  - Clonal Selection Algorithm
+  - Algoritmo de Seleção Clonal
   - CSA
-  - Artificial Immune System
+  - Sistema Imunológico Artificial
   - AIS
   - AIRS
-  - Binary Algorithm
+  - Algoritmo Binário
   - NSA
-  - immune-inspired algorithms
-  - machine learning
-  - classification
-  - anomaly detection
-  - mushrooms dataset
-  - iris dataset
-  - geyser dataset
-  - real-valued detectors
-  - immune recognition
+  - Algoritmos Inspirados no Sistema Imunológico
+  - Aprendizado de Máquina
+  - Classificação
+  - Detecção de Anomalias
+  - Conjunto de Dados de Cogumelos
+  - Conjunto de Dados Íris
+  - Conjunto de Dados Gêiser
+  - Detectores de Valores Reais
+  - Reconhecimento Imunológico
 ---
 
 # Usando o AIRS
 
 Acesse o notebook Jupyter com o código disponível [aqui](https://github.com/AIS-Package/aisp/blob/main/examples/pt-br/classification/AIRS/example_with_randomly_generated_dataset-pt.ipynb)!
+
+Executar o notebook online via Binder:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?labpath=%2Fexamples%2Fpt-br%2Fclassification%2FAIRS%2Fexample_with_randomly_generated_dataset-pt.ipynb)
 
 ### Importação do Sistema de Reconhecimento Imunológico Artificial
 ```python

@@ -26,6 +26,9 @@ keywords:
 
 Access the Jupyter notebook with the code available [here](https://github.com/AIS-Package/aisp/blob/main/examples/en/classification/RNSA/example_with_randomly_generated_dataset-en.ipynb)!
 
+
+Run notebook online via Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?labpath=%2Fexamples%2Fen%2Fclassification%2FRNSA%2Fexample_with_randomly_generated_dataset-en.ipynb)
+
 ### Importing the Real-Valued Negative Selection Algorithm.
 ```python
 from aisp.nsa import RNSA

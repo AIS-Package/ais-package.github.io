@@ -4,19 +4,32 @@ title: Negative Selection Base
 sidebar_label: Negative Selection
 lastUpdatedAt: 2025/04/04
 author: João Paulo
+keywords:
+  - BaseNSA
+  - Negative Selection
+  - Artificial Immune Systems
+  - RNSA
+  - BNSA
+  - Base Classifier
+  - Machine Learning
+  - Anomaly Detection
+  - Continuous Features
+  - Binary Features
+  - Feature Validation
+  - Classification
 ---
 
-# ``class BaseNSA(BaseClassifier, ABC)``
+## ``class BaseNSA(BaseClassifier, ABC)``
 
 The ``BaseNSA`` class contains utility functions with the ``protected`` modifier that can be inherited by various classes for ease of use. It includes functions for distance calculation, data separation to improve training and prediction efficiency, accuracy measurement and other functions.
 
 ---
 
-## Protected Functions:
+### Protected Functions:
 
 ---
 
-### Function _check_and_raise_exceptions_fit(...):
+#### Function _check_and_raise_exceptions_fit(...):
 ```python
 def _check_and_raise_exceptions_fit(
     X: npt.NDArray = None,
@@ -37,7 +50,7 @@ Function responsible for verifying fit function parameters and throwing exceptio
 
 ---
 
-### Function _check_and_raise_exceptions_predict(...):
+#### Function _check_and_raise_exceptions_predict(...):
 ```python
 def _check_and_raise_exceptions_predict(
     X: npt.NDArray = None,

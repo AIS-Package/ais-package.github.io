@@ -32,6 +32,8 @@ keywords:
 
 Access the Jupyter notebook with the code available [here](https://github.com/AIS-Package/aisp/blob/main/examples/en/classification/AIRS/example_with_randomly_generated_dataset-en.ipynb)!
 
+Run notebook online via Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?labpath=%2Fexamples%2Fen%2Fclassification%2FAIRS%2Fexample_with_randomly_generated_dataset-en.ipynb)
+
 ### Importing the Artificial Immune Recognition System
 ```python
 from aisp.csa import AIRS

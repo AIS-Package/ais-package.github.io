@@ -27,6 +27,9 @@ The present example, available here, aims to demonstrate the application of the 
 
 Access the Jupyter notebook with the code available [here](https://github.com/AIS-Package/aisp/blob/main/examples/en/classification/BNSA/example_with_randomly_generated_dataset-en.ipynb)!
 
+Run notebook online via Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?labpath=%2Fexamples%2Fen%2Fclassification%2FBNSA%2Fexample_with_randomly_generated_dataset-en.ipynb)
+
+
 ## Importing the BNSA algorithm
 
 ```python

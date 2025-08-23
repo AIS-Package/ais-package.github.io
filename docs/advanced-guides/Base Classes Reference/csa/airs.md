@@ -4,9 +4,20 @@ title: Artificial Immune Recognition System Base
 sidebar_label: Artificial Immune Recognition System
 lastUpdatedAt: 2025/05/25
 author: João Paulo
+keywords:
+  - BaseAIRS
+  - AIRS
+  - Artificial Immune Recognition System
+  - Artificial Immune Systems
+  - Base Classifier
+  - Continuous Features
+  - Binary Features
+  - Feature Validation
+  - Machine Learning
+  - Classification
 ---
 
-# BaseAIRS(BaseClassifier, ABC)
+## ``BaseAIRS(BaseClassifier, ABC)``
 
 Base class for algorithm **AIRS**.
 

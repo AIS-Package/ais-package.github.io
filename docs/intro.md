@@ -38,5 +38,5 @@ keywords:
 
 > - [x] [**Negative Selection.**](/docs/aisp-techniques/Negative%20Selection/)
 > - [x] [**Clonal Selection Algorithms.**](/docs/aisp-techniques/Clonal%20Selection%20Algorithms/)
-> - [ ] *Dendritic Cells.*
-> - [ ] *Immune Network Theory.*
+> - [x] [**Immune Network Theory.**](/docs/aisp-techniques/Immune%20Network%20Theory/)
+> - [ ] *Danger Theory*

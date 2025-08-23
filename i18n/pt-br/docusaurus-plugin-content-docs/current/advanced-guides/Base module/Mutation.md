@@ -1,3 +1,22 @@
+---
+sidebar_position: 4
+title: Mutation
+sidebar_label: Mutation
+lastUpdatedAt: 2025/04/04
+author: João Paulo
+keywords:
+  - Mutação
+  - Expansão Clonal
+  - Sistema Imunológico
+  - clone_and_mutate
+  - clone_and_mutate_continuous
+  - clone_and_mutate_binary
+  - clone_and_mutate_ranged
+  - Sistemas Imunológicos Artificiais
+  - Funções Python Numba
+  - Mutação Vetorial
+---
+
 # Mutation
 
 Contém funções que geram conjuntos de clones mutados a partir de vetores contínuos ou binários, simulando o processo de expansão clonal em sistemas imunológicos artificiais.

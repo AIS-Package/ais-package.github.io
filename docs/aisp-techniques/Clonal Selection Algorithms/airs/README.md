@@ -6,7 +6,6 @@ keywords:
   - classifying
   - affinity threshold
   - Real-Valued
-  - classifying
   - anomalies
   - K-Nearest Neighbors
 lastUpdatedAt: 2025/05/25

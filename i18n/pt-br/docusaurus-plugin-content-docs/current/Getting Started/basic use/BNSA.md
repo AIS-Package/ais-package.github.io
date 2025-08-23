@@ -2,12 +2,12 @@
 sidebar_position: 1
 title: Usando o BNSA
 sidebar_label: Usando o BNSA
-lastUpdatedAt: 2023/06/01
+lastUpdatedAt: 2025/08/22
 author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
 last_update:
-  date: 2025/05/17
+  date: 2025/08/22
   author: João Paulo
 keywords:
   - Binário
@@ -28,6 +28,9 @@ O presente exemplo, disponível aqui, visa demonstrar a aplicação do algoritmo
 
 
 Acesse o notebook Jupyter disponível [aqui](https://github.com/AIS-Package/aisp/blob/main/examples/pt-br/classification/BNSA/example_with_randomly_generated_dataset-pt.ipynb)!
+
+
+Executar o notebook online via Binder:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?labpath=%2Fexamples%2Fpt-br%2Fclassification%2FBNSA%2Fexample_with_randomly_generated_dataset-pt.ipynb)
 
 ## Importando o algoritmo BNSA
 

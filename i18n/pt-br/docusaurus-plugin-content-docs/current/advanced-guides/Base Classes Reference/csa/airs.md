@@ -1,12 +1,23 @@
 ---
 sidebar_position: 1
-title: Sistema Imunológico Artificial de Reconhecimento
+title: Classe Base do Sistema Imunológico Artificial de Reconhecimento
 sidebar_label: Sistema Imunológico Artificial de Reconhecimento
 lastUpdatedAt: 2025/05/25
 author: João Paulo
+keywords:
+  - BaseAIRS
+  - AIRS
+  - Sistema Imunológico Artificial de Reconhecimento
+  - Sistemas Imunológicos Artificiais
+  - Classificador Base
+  - Atributos Contínuos
+  - Atributos Binários
+  - Validação de Atributos
+  - Aprendizado de Máquina
+  - Classificação
 ---
 
-# BaseAIRS(BaseClassifier, ABC)
+## ``BaseAIRS(BaseClassifier, ABC)``
 
 Classe base para o algoritmo **AIRS**.
 

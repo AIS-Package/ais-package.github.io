@@ -1,23 +1,36 @@
 ---
 sidebar_position: 1
-title: Base de Seleção Negativa
+title: Classe Base de Seleção Negativa
 sidebar_label: Seleção Negativa
 lastUpdatedAt: 2025/04/04
 author: João Paulo
+keywords:
+  - BaseNSA
+  - Seleção Negativa
+  - Sistemas Imunológicos Artificiais
+  - RNSA
+  - BNSA
+  - Classificador Base
+  - Aprendizado de Máquina
+  - Detecção de Anomalias
+  - Atributos Contínuos
+  - Atributos Binários
+  - Validação de Atributos
+  - Classificação
 ---
 
-# ``class BaseNSA(BaseClassifier, ABC)``
+## ``class BaseNSA(BaseClassifier, ABC)``
 
 
 A classe ``BaseNSA`` contém funções utilitárias com o modificador ``protected`` que podem ser herdadas por várias classes para facilitar o uso. Ela inclui funções para calcular distância, separar dados para melhorar a eficiência de treinamento e previsão, medir precisão e outras funções.
 
 ---
 
-## Funções Protegidas:
+### Funções Protegidas:
 
 ---
 
-### def _check_and_raise_exceptions_fit(...)
+#### def _check_and_raise_exceptions_fit(...)
 
 ```python
 def _check_and_raise_exceptions_fit(
@@ -40,7 +53,7 @@ Função responsável por verificar os parâmetros da função fit e lançar exc
 a maturação. Verifique o valor do raio definido e considere reduzi-lo.
 
 
-### def _check_and_raise_exceptions_predict(...)
+#### def _check_and_raise_exceptions_predict(...)
 
 ```python
 def _check_and_raise_exceptions_predict(

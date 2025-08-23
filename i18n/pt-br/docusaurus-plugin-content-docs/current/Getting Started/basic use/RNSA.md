@@ -2,12 +2,12 @@
 sidebar_position: 2
 title: Usando o RNSA
 sidebar_label: Usando o RNSA
-lastUpdatedAt: 2023/06/01
+lastUpdatedAt: 2025/08/22
 author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
 last_update:
-  date: 2025/05/17
+  date: 2025/08/22
   author: João Paulo
 keywords:
   - Valor Real
@@ -25,6 +25,10 @@ keywords:
 # Usando o RNSA
 
 Acesse o notebook Jupyter com o código disponível [aqui](https://github.com/AIS-Package/aisp/blob/main/examples/pt-br/classification/RNSA/example_with_randomly_generated_dataset-pt.ipynb)!
+
+
+Executar o notebook online via Binder:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?labpath=%2Fexamples%2Fpt-br%2Fclassification%2FRNSA%2Fexample_with_randomly_generated_dataset-pt.ipynb)
+
 
 ## Importando o Algoritmo de seleção negativa de valor real.
 ```python

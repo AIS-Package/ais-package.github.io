@@ -2,14 +2,13 @@
 id: airs
 sidebar_label: AIRS - Sistema Imunológico Artificial de Reconhecimento
 keywords:
-  - Binary
-  - classifying
-  - affinity threshold
-  - Real-Valued
-  - classifying
-  - anomalies
-  - K-Nearest Neighbors
-lastUpdatedAt: 2025/05/25
+  - Binário
+  - Classificação
+  - Limiar de Afinidade
+  - Valores Reais
+  - Anomalias
+  - K-Vizinhos Mais Próximos
+lastUpdatedAt: 2025/08/22
 author: João Paulo
 ---
 
