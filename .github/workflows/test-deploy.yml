@@ -20,5 +20,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        
+      - name: Generate Changelog
+        run: npm run build:changelog
+
       - name: Test build website
         run: npm run build
