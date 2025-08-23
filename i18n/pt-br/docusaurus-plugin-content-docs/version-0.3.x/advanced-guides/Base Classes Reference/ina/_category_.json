@@ -1,0 +1,8 @@
+{
+  "label": "Algoritmos de Rede Imunológica",
+  "position": 2.71,
+  "link": {
+    "type": "generated-index",
+    "description": "As classes base fornecem a estrutura central para a implementação das técnicas de Algoritmo de Rede Imunológica."
+  }
+}
