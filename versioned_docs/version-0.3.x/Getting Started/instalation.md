@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-title: Instalation
-sidebar_label: Instalation
+title: Installation
+sidebar_label: Installation
 lastUpdatedAt: 2025/05/17
 author: João Paulo
 showLastUpdateAuthor: true
@@ -10,8 +10,6 @@ last_update:
   date: 2025/05/17
   author: João Paulo
 ---
-
-# **Installation**
 
 This page contains information about dependencies, how to install and how to import modules.
 
@@ -30,7 +28,7 @@ The package requires [python 3.10](https://www.python.org/downloads/) or higher.
 
 </div>
 
-## **Instalation procedure**
+## **Installation procedure**
 
 The simplest way to install is via ``pip``:
 

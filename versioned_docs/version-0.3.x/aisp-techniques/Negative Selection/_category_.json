@@ -1,9 +1,0 @@
-{
-  "label": "Negative Selection",
-  "position": 1,
-  
-  "link": {
-    "type": "generated-index",
-    "description": "Maturation of T-cells for classification of non-self."
-  }
-}

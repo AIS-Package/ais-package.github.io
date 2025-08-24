@@ -1,6 +1,7 @@
---- 
+---
 sidebar_position: 1
 ---
+
 # Negative selection
 
 **Negative selection** is the process in which the immune system maturates T-cells, also known as T-lymphocytes, which make them capable of detecting non-self. Thus, the Negative Selection Algorithm (NSA) uses hyperspheres symbolizing the detectors in an N-dimensional data space. [[1]](#1)
