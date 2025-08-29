@@ -1,8 +1,0 @@
-{
-  "label": "Immune Network Algorithms",
-  "position": 2.71,
-  "link": {
-    "type": "generated-index",
-    "description": "The base classes provide the core framework for implementing Immune Network Algorithm techniques."
-  }
-}

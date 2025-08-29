@@ -1,60 +1,163 @@
 ---
 last_update:
-  date: 2025/05/17
+  date: 2025/08/28
   author: João Paulo
 ---
 
-# Sanitizers
+# Distance
 
-## def sanitize_choice(...)
+Utility functions for normalized distance between arrays with numba decorators.
+
+## def hamming(...)
 
 ```python
-def sanitize_choice(value: T, valid_choices: Iterable[T], default: T) -> T
+def hamming(u: npt.NDArray, v: npt.NDArray) -> np.float64:
 ```
 
-A função ``sanitize_choice(...)``, retorna o valor se estiver presente no conjunto de opções válidas; caso contrário, retorna o valor padrão.
+The function to calculate the normalized Hamming distance between two points.
+    
+$((x₁ ≠ x₂) + (y₁ ≠ y₂) + ... + (yn ≠ yn)) / n$
+
 
 **Parameters:**
-* ***value*** (``T``): O valor a ser verificado.
-* ***valid_choices*** (``Iterable[T]``): Uma coleção de opções válidas.
-* ***default***: O valor padrão a ser retornado se ``value`` não estiver em ``valid_choices``.
-
+* u (``npt.NDArray``): Coordinates of the first point.
+* v (``npt.NDArray``): Coordinates of the second point.
 
 **Returns:**
-* `T`: O valor original, se válido, ou o valor padrão, se não.
+* Distance (``float``) between the two points.
 
 ---
 
-## def sanitize_param(...)
+## def euclidean(...)
 
 ```python
-def sanitize_param(value: T, default: T, condition: Callable[[T], bool]) -> T:
+def euclidean(u: npt.NDArray[np.float64], v: npt.NDArray[np.float64]) -> np.float64:
 ```
 
-A função ``sanitize_param(...)``, retorna o valor se ele satisfizer a condição especificada; caso contrário, retorna o valor padrão.
+Function to calculate the normalized Euclidean distance between two points.
+
+$√( (x₁ – x₂)² + (y₁ – y₂)² + ... + (yn – yn)²)$
+
+
 
 **Parameters:**
-* value (``T``): O valor a ser verificado.
-* default (``T``): O valor padrão a ser retornado se a condição não for satisfeita.
-* condition (``Callable[[T], bool]``): Uma função que recebe um valor e retorna um booleano, determinando se o valor é válido.
-
+* u (``npt.NDArray``): Coordinates of the first point.
+* v (``npt.NDArray``): Coordinates of the second point.
 
 **Returns:**
-* `T`: O valor original se a condição for satisfeita, ou o valor padrão se não for.
+* Distance (``float``) between the two points.
 
 ---
 
-## def sanitize_seed(...)
+## def cityblock(...)
 
 ```python
-def sanitize_seed(seed: Any) -> Optional[int]:
+def cityblock(u: npt.NDArray[np.float64], v: npt.NDArray[np.float64]) -> np.float64:
 ```
 
-A função ``sanitize_param(...)``, retorna a semente se for um inteiro não negativo; caso contrário, retorna Nenhum.
+Function to calculate the normalized Manhattan distance between two points.
+    
+$(|x₁ – x₂| + |y₁ – y₂| + ... + |yn – yn|) / n$
+
 
 **Parameters:**
-* seed (``Any``): O valor da seed a ser validado.
+* u (``npt.NDArray``): Coordinates of the first point.
+* v (``npt.NDArray``): Coordinates of the second point.
 
 **Returns:**
-* ``Optional[int]``: A seed original se for um inteiro não negativo, ou ``None`` se for inválido.
+* Distance (``float``) between the two points.
 
+---
+
+## def minkowski(...)
+
+```python
+def minkowski(u: npt.NDArray[np.float64], v: npt.NDArray[np.float64], p: float = 2.0):
+```
+
+Function to calculate the normalized Minkowski distance between two points.
+    
+$(( |X₁ – Y₁|p + |X₂ – Y₂|p + ... + |Xn – Yn|p) ¹/ₚ) / n$
+
+
+**Parameters:**
+* u (``npt.NDArray``): Coordinates of the first point.
+* v (``npt.NDArray``): Coordinates of the second point.
+* p float: The p parameter defines the type of distance to be calculated:
+    - p = 1: **Manhattan** distance — sum of absolute differences.
+    - p = 2: **Euclidean** distance — sum of squared differences (square root).
+    - p > 2: **Minkowski** distance with an increasing penalty as p increases.
+
+**Returns:**
+* Distance (``float``) between the two points.
+
+---
+
+## def compute_metric_distance(...)
+
+```python
+def compute_metric_distance(
+    u: npt.NDArray[np.float64],
+    v: npt.NDArray[np.float64],
+    metric: int,
+    p: np.float64 = 2.0
+) -> np.float64:
+```
+
+Function to calculate the distance between two points by the chosen ``metric``.
+
+**Parameters:**
+* u (``npt.NDArray``): Coordinates of the first point.
+* v (``npt.NDArray``): Coordinates of the second point.
+* metric (``int``): Distance metric to be used. Available options: [0 (Euclidean), 1 (Manhattan), 2 (Minkowski)]
+* p (``float``): Parameter for the Minkowski distance (used only if `metric` is "minkowski").
+
+**Returns:**
+* Distance (``double``) between the two points with the selected metric.
+
+---
+
+## def min_distance_to_class_vectors(...)
+
+```python
+def min_distance_to_class_vectors(
+    x_class: npt.NDArray,
+    vector_x: npt.NDArray,
+    metric: int,
+    p: float = 2.0
+) -> float:
+```
+
+Calculates the minimum distance between an input vector and the vectors of a class.
+
+
+**Parameters:**
+* x_class (``npt.NDArray``): Array containing the class vectors to be compared with the input vector. Expected shape: (n_samples, n_features).
+* vector_x (``npt.NDArray``): Vector to be compared with the class vectors. Expected shape: (n_features,).
+* metric (``int``): Distance metric to be used. Available options: [0 (Euclidean), 1 (Manhattan), 2 (Minkowski)]
+* p (``float``): Parameter for the Minkowski distance (used only if `metric` is "minkowski").
+
+**Returns:**
+* float: The minimum distance calculated between the input vector and the class vectors.
+* Returns -1.0 if the input dimensions are incompatible.
+
+---
+
+## def get_metric_code(...)
+
+```python
+def get_metric_code(metric: str) -> int:
+```
+Returns the numeric code associated with a distance metric.
+
+**Parameters:**
+* metric (str): Name of the metric. Can be "euclidean", "manhattan", "minkowski" or "hamming".
+
+**Raises**
+----------
+* ``ValueError``: If the metric provided is not supported
+
+**Returns:**
+* ``int``: Numeric code corresponding to the metric.
+
+---

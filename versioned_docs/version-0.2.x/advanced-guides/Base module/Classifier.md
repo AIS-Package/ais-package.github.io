@@ -25,8 +25,8 @@ Fit the model to the training data.
 
 Implementation:
 
-- [RNSA](/docs/aisp-techniques/Negative%20Selection/rnsa#function-fit)
-- [BNSA](/docs/aisp-techniques/Negative%20Selection/bnsa#function-fit)
+- [RNSA](/docs/0.2.x/aisp-techniques/Negative%20Selection/rnsa#function-fit)
+- [BNSA](/docs/0.2.x/aisp-techniques/Negative%20Selection/bnsa#function-fit)
 
 
 
@@ -40,8 +40,8 @@ Performs label prediction for the given data.
 
 Implementation:
 
-- [RNSA](/docs/aisp-techniques/Negative%20Selection/rnsa#function-predict)
-- [BNSA](/docs/aisp-techniques/Negative%20Selection/bnsa#function-predict)
+- [RNSA](/docs/0.2.x/aisp-techniques/Negative%20Selection/rnsa#function-predict)
+- [BNSA](/docs/0.2.x/aisp-techniques/Negative%20Selection/bnsa#function-predict)
 
 ---
 
