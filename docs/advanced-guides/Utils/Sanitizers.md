@@ -58,3 +58,25 @@ The function ``sanitize_param(...)``, returns the seed if it is a non-negative i
 
 **Returns:**
 * ``Optional[int]``: The original seed if it is a non-negative integer, or ``None`` if it is invalid.
+
+---
+
+## def sanitize_bounds(...)
+
+```python
+def sanitize_bounds(
+    bounds: Any, 
+    problem_size: int
+) -> Dict[str, npt.NDArray[np.float64]]
+```
+
+The function ``sanitize_bounds(...)``, validate and normalize feature bounds.
+
+**Parameters:**
+* ***bounds*** (``Any``): he input bounds, which must be either None or a dictionary with 'low' and 'high' keys.
+* ***problem_size*** (``int``): The expected length for the normalized bounds lists, corresponding to the number of features in the problem.
+
+
+**Returns:**
+* `Dict[str, list]`: Dictionary ``{'low': [low_1, ..., low_N], 'high': [high_1, ..., high_N]}``.
+

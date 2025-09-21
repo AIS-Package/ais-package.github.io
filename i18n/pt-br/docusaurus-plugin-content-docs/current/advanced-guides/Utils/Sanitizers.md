@@ -58,3 +58,21 @@ A função ``sanitize_param(...)``, retorna a semente se for um inteiro não neg
 **Returns:**
 * ``Optional[int]``: A seed original se for um inteiro não negativo, ou ``None`` se for inválido.
 
+---
+
+## def sanitize_bounds(...)
+
+```python
+def sanitize_bounds(bounds: Any, problem_size: int) -> Dict[str, npt.NDArray[np.float64]]
+```
+
+A função `sanitize_bounds(...)` valida e normaliza os limites das características (features).
+
+**Parâmetros**:
+
+* ***bounds*** (`Any`): Os limites de entrada, que devem ser `None` ou um dicionário com as chaves `'low'` e `'high'`.
+* ***problem_size*** (`int`): O tamanho esperado para as listas de limites normalizadas, correspondente ao número de features do problema.
+
+**Retorna**:
+
+* `Dict[str, list]`: Dicionário no formato `{'low': [low_1, ..., low_N], 'high': [high_1, ..., high_N]}`.
