@@ -1,6 +1,6 @@
 ---
-title: Using the Clonalg
-sidebar_label: Using the Clonalg
+title: Usando o Clonalg
+sidebar_label: Usando o Clonalg
 author: João Paulo
 showLastUpdateAuthor: true
 showLastUpdateTime: true
