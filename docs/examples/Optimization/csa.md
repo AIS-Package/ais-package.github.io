@@ -29,14 +29,14 @@ Run notebooks online via Binder: [![Binder](https://mybinder.org/badge_logo.svg)
 ## Clonalg (Clonal Selection Algorithm)
 
 + [Traveling Salesman Problem](https://github.com/AIS-Package/aisp/blob/main/examples/en/optimization/clonalg/tsp_problem_example.ipynb)
-> In this notebook, apply ClonAlg to the Knapsack Problem using optimization algorithms from the AISP package.
+> In this notebook, apply **Clonalg** to the Knapsack Problem using optimization algorithms from the AISP package.
 
 
 + [Rastrigin Function](https://github.com/AIS-Package/aisp/blob/main/examples/en/optimization/clonalg/rastrigin_function_example.ipynb)
-> In this notebook, we apply **ClonAlg** to the **Rastrigin Function**, a classic continuous optimization problem using optimization algorithms from the **AISP** package.
+> In this notebook, we apply **Clonalg** to the **Rastrigin Function**, a classic continuous optimization problem using optimization algorithms from the **AISP** package.
 
 
 + [Knapsack Problem](https://github.com/AIS-Package/aisp/blob/main/examples/en/optimization/clonalg/knapsack_problem_example.ipynb)
-> In this notebook, apply ClonAlg to the Knapsack Problem using optimization algorithms from the AISP package.
+> In this notebook, apply **Clonalg** to the Knapsack Problem using optimization algorithms from the AISP package.
 
 ---

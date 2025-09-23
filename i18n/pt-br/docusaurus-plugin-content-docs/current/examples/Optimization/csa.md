@@ -28,10 +28,10 @@ Execute notebooks online via Binder: [![Binder](https://mybinder.org/badge_logo.
 ---
 
 + [Problema do Caixeiro Viajante](https://github.com/AIS-Package/aisp/blob/main/examples/pt-br/optimization/clonalg/tsp_problem_example.ipynb)
-> Neste notebook, aplique o ClonAlg ao Problema da Mochila usando algoritmos de otimização do pacote AISP.
+> Neste notebook, aplique o **Clonalg** ao Problema da Mochila usando algoritmos de otimização do pacote AISP.
 
 + [Função Rastrigin](https://github.com/AIS-Package/aisp/blob/main/examples/pt-br/optimization/clonalg/rastrigin_function_example.ipynb)
-> Neste notebook, aplicamos o ClonAlg à Função Rastrigin, um problema clássico de otimização contínua usando algoritmos de otimização do pacote AISP.
+> Neste notebook, aplicamos o **Clonalg** à Função Rastrigin, um problema clássico de otimização contínua usando algoritmos de otimização do pacote AISP.
 
 + [Problema da Mochila](https://github.com/AIS-Package/aisp/blob/main/examples/pt-br/optimization/clonalg/knapsack_problem_example.ipynb)
-> Neste notebook, aplicamos o ClonAlg ao Problema da Mochila usando algoritmos de otimização do pacote AISP.
+> Neste notebook, aplicamos o **Clonalg** ao Problema da Mochila usando algoritmos de otimização do pacote AISP.

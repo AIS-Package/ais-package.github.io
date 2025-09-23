@@ -67,7 +67,7 @@ def rastrigin_fitness(x: np.ndarray) -> float:
 ### Configuração do algoritmo
 
 ```python
-# Configuração otimizada do ClonAlg para função Rastrigin
+# Configuração otimizada do Clonalg para função Rastrigin
 clonalg = Clonalg(
     problem_size=problem_size,
     N=50,
