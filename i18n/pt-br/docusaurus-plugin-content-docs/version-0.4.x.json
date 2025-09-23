@@ -1,0 +1,62 @@
+{
+  "sidebar.docs.category.Implemented techniques": {
+    "message": "Técnicas implementadas",
+    "description": "The label for category Implemented techniques in sidebar docs"
+  },
+  "sidebar.docs.category.Negative selection": {
+    "message": "Seleção negativa",
+    "description": "The label for category Negative selection in sidebar docs"
+  },
+  "sidebar.docs.category.Getting Started": {
+    "message": "Primeiros passos",
+    "description": "The label for category Getting Started in sidebar docs"
+  },
+  "sidebar.docs.category.Técnicas implementadas": {
+    "message": "Técnicas implementadas",
+    "description": "The label for category Técnicas implementadas in sidebar docs"
+  },
+  "sidebar.docs.category.Seleção Negativa": {
+    "message": "Seleção Negativa",
+    "description": "The label for category Seleção Negativa in sidebar docs"
+  },
+  "sidebar.docs.category.Examples": {
+    "message": "Exemplos",
+    "description": "The label for category Examples in sidebar docs"
+  },
+  "sidebar.docs.category.Examples.link.generated-index.description": {
+    "message": "Abaixo estão alguns exemplos que usam base de dados para classificação com a ferramenta Jupyter notebook.",
+    "description": "Abaixo estão alguns exemplos que usam base de dados para classificação com a ferramenta Jupyter notebook."
+  },
+  "sidebar.docs.category.Basic usage": {
+    "message": "Utilização básica",
+    "description": "The label for category Basic usage in sidebar docs"
+  },
+  "sidebar.docs.category.Advanced Guides": {
+    "message": "Guias avançados",
+    "description": "The label for category Advanced Guides in sidebar docs"
+  },
+  "sidebar.docs.category.Base Classes Reference": {
+    "message": "Referência das Classes Base",
+    "description": "The label for category Examples in sidebar docs"
+  },
+  "sidebar.docs.category.Advanced Guides.link.generated-index.description": {
+    "message": "Explore a documentação avançada da biblioteca, que abrange as classes base, além das funções utilitárias do módulo utils voltadas para métricas e manipulação de classificação multiclasse.",
+    "description": "The generated-index page description for category Advanced Guides in sidebar docs"
+  },
+  "sidebar.docs.category.Base module.description": {
+    "message": "Classe base para algoritmo de classificação.",
+    "description": "Classe base para algoritmo de classificação."
+  },
+  "sidebar.docs.category.Base Classes Reference.description": {
+    "message": "Classes base para implementar os algoritmos fornecidos neste pacote.",
+    "description": "Classes base para implementar os algoritmos fornecidos neste pacote."
+  },
+  "sidebar.docs.category.Core.description": {
+    "message": "As funções realizam verificações de detectores e utilizam decoradores Numba para compilação Just-In-Time",
+    "description": "As funções realizam verificações de detectores e utilizam decoradores Numba para compilação Just-In-Time"
+  },
+  "sidebar.docs.category.utils.description": {
+    "message": "Funções utilitárias e auxiliares para o desenvolvimento.",
+    "description": "Funções utilitárias e auxiliares para o desenvolvimento."
+  }
+}
