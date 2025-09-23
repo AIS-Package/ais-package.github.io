@@ -1,0 +1,8 @@
+{
+  "label": "Advanced Guides",
+  "position": 2.6,
+  "link": {
+    "type": "generated-index",
+    "description": "Explore a documentação avançada da biblioteca, que abrange as classes base, além das funções utilitárias do módulo utils voltadas para métricas e manipulação de classificação multiclasse."
+  }
+}
