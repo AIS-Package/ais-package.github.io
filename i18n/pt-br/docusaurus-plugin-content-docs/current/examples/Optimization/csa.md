@@ -1,5 +1,5 @@
 ---
-título: Algoritmos de Seleção Clonal
+title: Algoritmos de Seleção Clonal
 sidebar_position: 3
 showLastUpdateAuthor: true
 showLastUpdateTime: true
@@ -16,8 +16,6 @@ palavras-chave:
 - rastrigin
 - aprendizado de máquina
 ---
-
-import DocCardList de '@theme/DocCardList';
 
 # Algoritmo de Seleção Clonal
 

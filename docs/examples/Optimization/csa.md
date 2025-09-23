@@ -17,8 +17,6 @@ keywords:
   - machine learning
 ---
 
-import DocCardList from '@theme/DocCardList';
-
 # Clonal Selection Algorithm
 
 
