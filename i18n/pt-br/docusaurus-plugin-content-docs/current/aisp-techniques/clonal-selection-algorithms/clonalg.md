@@ -2,17 +2,24 @@
 id: clonalg
 sidebar_label: CLONALG - Algoritmo de Seleção Clonal
 keywords:
-  - Otimização
-  - Binary
-  - affinity
-  - Real-Valued
-lastUpdatedAt: 2025/09/21
-author: João Paulo
+  - CLONALG
+  - algoritmo de seleção clonal
+  - otimização bio-inspirada
+  - inteligência artificial
+  - problemas binários
+  - problemas contínuos
+  - ranged optimization
+  - permutação
+  - metaheurísticas
 ---
 
 # CLONALG - Algoritmo de Seleção Clonal
 
 A classe `Clonalg` é um **algoritmo de otimização** inspirado no processo biológico de seleção clonal do sistema imunológico. Esta implementação é projetada para minimizar ou maximizar funções de custo em diversos tipos de problemas, incluindo problemas binários, contínuos, com valores limitados (ranged) e de permutação.
+
+:::info
+A implementação do CLONALG foi inspirada na descrição apresentada em [1](#1).
+:::
 
 
 :::info
@@ -168,3 +175,12 @@ Clona e aplica hipermutação a uma população de anticorpos. Retorna uma lista
 **Retorna:**
 
 * `list`: Lista contendo os clones mutados.
+
+---
+
+# Referências
+
+---
+
+##### 1
+> BROWNLEE, Jason. Clonal Selection Algorithm. Clever Algorithms: Nature-inspired Programming Recipes., 2011. Available at: https://cleveralgorithms.com/nature-inspired/immune/clonal_selection_algorithm.html

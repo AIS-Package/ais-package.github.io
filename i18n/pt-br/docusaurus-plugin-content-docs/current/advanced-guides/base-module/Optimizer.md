@@ -2,22 +2,19 @@
 sidebar_position: 4
 title: Classe base para algoritmos de otimização.
 sidebar_label: BaseOptimizer
-lastUpdatedAt: 2025/08/19
 author: João Paulo
 keywords:
-  - Base Optimizer
-  - Classification
-  - Abstract Base Class
   - BaseOptimizer
-  - Machine Learning
-  - Supervised Learning
-  - optimize Method
-  - objective function
-  - Model Evaluation
-  - Python ML Classes
-  - Clonalg
+  - classe base de otimização
+  - abstract base class
+  - otimização em machine learning
+  - função objetivo
+  - método optimize
+  - avaliação de modelos
+  - metaheurísticas
+  - algoritmos bio-inspirados
+  - Python ML
 ---
-
 
 Esta classe define a interface central para estratégias de otimização e mantém o histórico de custos, soluções avaliadas e a melhor solução encontrada. Subclasses devem implementar os métodos `optimize` e `objective_function`.
 

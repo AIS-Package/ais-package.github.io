@@ -5,17 +5,18 @@ sidebar_label: BaseOptimizer
 lastUpdatedAt: 2025/08/19
 author: João Paulo
 keywords:
-  - Base Optimizer
-  - Classification
-  - Abstract Base Class
   - BaseOptimizer
-  - Machine Learning
-  - Supervised Learning
-  - optimize Method
+  - base class
+  - optimization algorithms
+  - abstract base class
+  - machine learning optimization
+  - supervised learning
+  - optimize method
   - objective function
-  - Model Evaluation
-  - Python ML Classes
+  - model evaluation
+  - Python ML classes
   - Clonalg
+  - metaheuristics
 ---
 
 
