@@ -47,7 +47,7 @@ Este método abstrato deve ser implementado pelas subclasses.
 
 **Implementação**:
 
-* [AiNet](/docs/aisp-techniques/immune-network-theory/ainet#função-fit)
+* [AiNet](/docs/aisp-techniques/immune-network-theory/ainet#Função-fit)
 
 ---
 
@@ -70,7 +70,7 @@ Este método abstrato deve ser implementado pelas subclasses.
 
 **Implementação**:
 
-* [AiNet](/docs/aisp-techniques/immune-network-theory/ainet#função-predict)
+* [AiNet](/docs/aisp-techniques/immune-network-theory/ainet#Função-predict)
 
 ---
 

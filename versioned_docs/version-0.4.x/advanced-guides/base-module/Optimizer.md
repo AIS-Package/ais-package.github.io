@@ -147,7 +147,7 @@ Execute the optimization process. This method must be implemented by the subclas
 
 **Implementation**:
 
-* [Clonalg](/docs/aisp-techniques/clonal-selection-algorithms/clonalg#function-optimize)
+* [Clonalg](/docs/aisp-techniques/clonal-selection-algorithms/clonalg#Function-optimize)
 
 ---
 

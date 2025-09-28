@@ -40,7 +40,6 @@ const config = {
   projectName: 'ais-package.github.io', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -229,6 +228,23 @@ const config = {
       }),
     ],
   ],
+  markdown: {
+    format: 'mdx',
+    mermaid: true,
+    emoji: true,
+    mdx1Compat: {
+      comments: true,
+      admonitions: true,
+      headingIds: true,
+    },
+    anchors: {
+      maintainCase: true,
+    },
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'throw',
+    },
+  },
 };
 
 module.exports = config;

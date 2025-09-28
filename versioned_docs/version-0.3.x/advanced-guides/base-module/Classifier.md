@@ -38,9 +38,9 @@ Fit the model to the training data.
 
 Implementation:
 
-- [RNSA](/docs/aisp-techniques/negative-selection/rnsa#function-fit)
-- [BNSA](/docs/aisp-techniques/negative-selection/bnsa#function-fit)
-- [AIRS](/docs/aisp-techniques/clonal-selection-algorithms/airs/#function-fit)
+- [RNSA](/docs/aisp-techniques/negative-selection/rnsa#Function-fit)
+- [BNSA](/docs/aisp-techniques/negative-selection/bnsa#Function-fit)
+- [AIRS](/docs/aisp-techniques/clonal-selection-algorithms/airs/#Function-fit)
 
 
 
@@ -54,9 +54,9 @@ Performs label prediction for the given data.
 
 Implementation:
 
-- [RNSA](/docs/aisp-techniques/negative-selection/rnsa#function-predict)
-- [BNSA](/docs/aisp-techniques/negative-selection/bnsa#function-predict)
-- [AIRS](/docs/aisp-techniques/clonal-selection-algorithms/airs/#function-predict)
+- [RNSA](/docs/aisp-techniques/negative-selection/rnsa#Function-predict)
+- [BNSA](/docs/aisp-techniques/negative-selection/bnsa#Function-predict)
+- [AIRS](/docs/aisp-techniques/clonal-selection-algorithms/airs/#Function-predict)
 
 ---
 
