@@ -1,4 +1,8 @@
 {
     "iis.configDir": "",
-    "commentTranslate.targetLanguage": "pt"
+    "commentTranslate.targetLanguage": "pt",
+    "cSpell.words": [
+        "dracula",
+        "katex"
+    ]
 }

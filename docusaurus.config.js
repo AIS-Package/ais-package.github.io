@@ -5,7 +5,6 @@ const { themes } = require('prism-react-renderer')
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 const math = require('remark-math');
-const katex = require('rehype-katex');
 const versions = require('./versions.json');
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -69,7 +68,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.ts'),
           remarkPlugins: [math],
           rehypePlugins: [
-            [katex, { strict: false }],
+            [require("rehype-katex"), { strict: false }],
           ],
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
