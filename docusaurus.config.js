@@ -4,7 +4,6 @@ require('dotenv/config');
 const { themes } = require('prism-react-renderer')
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
-const math = require('remark-math');
 const versions = require('./versions.json');
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -66,7 +65,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
-          remarkPlugins: [math],
+          remarkPlugins: [require("remark-math")],
           rehypePlugins: [
             [require("rehype-katex"), { strict: false }],
           ],
