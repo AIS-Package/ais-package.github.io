@@ -28,7 +28,7 @@ lastUpdatedAt: 2025/08/19
 author: João Paulo
 ---
 
-# AiNet – Artificial Immune Network para Clustering and Compression.
+# AiNet - Artificial Immune Network para Clustering and Compression.
 
 The AiNet class aims to perform clustering using metaphors inspired by immune network theory.
 
@@ -36,7 +36,7 @@ This class implements the aiNet algorithm, an artificial immune network model de
 clustering and data compression tasks. The aiNet algorithm uses principles from immune
 network theory, clonal selection, and affinity maturation to compress high-dimensional
 datasets [1](#1). 
-For clustering, the class uses SciPy’s implementation of the [**Minimum Spanning Tree**
+For clustering, the class uses SciPy's implementation of the [**Minimum Spanning Tree**
 (MST)](#2) to remove the most distant nodes and separate the groups
 
 :::info
@@ -79,10 +79,10 @@ class AiNet(
 * **k** (``int``): Number of nearest neighbors used for label prediction. Defaults to 3.
 * **metric** (Literal["manhattan", "minkowski", "euclidean"]): Way to calculate the distance between the detector and the sample:
     * ``'Euclidean'`` ➜ The calculation of the distance is given by the expression:
-     $$\sqrt{(X_{1} – X_{1})^2 + (Y_{2} – Y_{2})^2 + ... + (Y_{n} – Y_{n})^2}$$
+     $$\sqrt{(X_{1} - X_{1})^2 + (Y_{2} - Y_{2})^2 + ... + (Y_{n} - Y_{n})^2}$$
     * ``'minkowski'`` ➜ The calculation of the distance is given by the expression:
-    $$( |X_{1} – Y_{1}|^p + |X_{2} – Y_{2}|^p + ... |X_{n} – Y_{n}|^p)^\frac{1}{p}$$.
-    * ``'manhattan'`` ➜ The calculation of the distance is given by the expression: $$( |X_{1} – X_{1}| + |Y_{2} – Y_{2}| + ... + |Y_{n} – Y_{n}|)$$.
+    $$( |X_{1} - Y_{1}|^p + |X_{2} - Y_{2}|^p + ... |X_{n} - Y_{n}|^p)^\frac{1}{p}$$.
+    * ``'manhattan'`` ➜ The calculation of the distance is given by the expression: $$( |X_{1} - X_{1}| + |Y_{2} - Y_{2}| + ... + |Y_{n} - Y_{n}|)$$.
 
     Defaults to **"Euclidean"**.
 

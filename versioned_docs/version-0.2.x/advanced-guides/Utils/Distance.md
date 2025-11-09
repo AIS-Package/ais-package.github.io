@@ -36,7 +36,7 @@ def euclidean(u: npt.NDArray[np.float64], v: npt.NDArray[np.float64]) -> np.floa
 
 Function to calculate the normalized Euclidean distance between two points.
 
-$√( (x₁ – x₂)² + (y₁ – y₂)² + ... + (yn – yn)²)$
+$√( (x₁ - x₂)² + (y₁ - y₂)² + ... + (yn - yn)²)$
 
 
 
@@ -57,7 +57,7 @@ def cityblock(u: npt.NDArray[np.float64], v: npt.NDArray[np.float64]) -> np.floa
 
 Function to calculate the normalized Manhattan distance between two points.
     
-$(|x₁ – x₂| + |y₁ – y₂| + ... + |yn – yn|) / n$
+$(|x₁ - x₂| + |y₁ - y₂| + ... + |yn - yn|) / n$
 
 
 **Parameters:**
@@ -77,7 +77,7 @@ def minkowski(u: npt.NDArray[np.float64], v: npt.NDArray[np.float64], p: float =
 
 Function to calculate the normalized Minkowski distance between two points.
     
-$(( |X₁ – Y₁|p + |X₂ – Y₂|p + ... + |Xn – Yn|p) ¹/ₚ) / n$
+$(( |X₁ - Y₁|p + |X₂ - Y₂|p + ... + |Xn - Yn|p) ¹/ₚ) / n$
 
 
 **Parameters:**

@@ -28,7 +28,7 @@ The package requires [python 3.10](https://www.python.org/downloads/) or higher.
 
 </div>
 
-## **Instalation procedure**
+## Installation procedure
 
 The simplest way to install is via ``pip``:
 
@@ -38,9 +38,28 @@ pip install aisp
 
 ## **Importing modules**
 
+### Negative selection Algorithms
+
 ```python
 from aisp.nsa import RNSA, BNSA
 
-nsa = RNSA(N=300, r=0.05)
+r_nsa  = RNSA(N=300, r=0.05)
+b_nsa = BNSA(N=300, aff_thresh=0.30)
 ```
 
+### Clonal Selection Algorithms
+
+```python
+from aisp.csa import AIRS, Clonalg
+
+airs = AIRS()
+clonalg = Clonalg(problem_size=problem_size)
+```
+
+### Immune Network Algorithms
+
+```python
+from aisp.ina import AiNet
+
+ai_net = AiNet(suppression_threshold=0.96, affinity_threshold=0.95)
+```

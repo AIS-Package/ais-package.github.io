@@ -28,7 +28,7 @@ lastUpdatedAt: 2025/08/19
 author: João Paulo
 ---
 
-# AiNet – Rede Imunológica Artificial para Agrupamento e Compressão.
+# AiNet - Rede Imunológica Artificial para Agrupamento e Compressão.
 
 A classe AiNet tem como objetivo realizar agrupamento utilizando metáforas inspiradas na teoria da rede imunológica.
 
@@ -79,10 +79,10 @@ class AiNet(
 * **metric** (Literal["manhattan", "minkowski", "euclidean"]): Forma de calcular a distância entre o detector e a amostra:
 
     * `'euclidean'` ➜ Distância dada pela expressão:
-     $$\sqrt{(X_{1} – X_{1})^2 + (Y_{2} – Y_{2})^2 + ... + (Y_{n} – Y_{n})^2}$$
+     $$\sqrt{(X_{1} - X_{1})^2 + (Y_{2} - Y_{2})^2 + ... + (Y_{n} - Y_{n})^2}$$
     * ``'minkowski'`` ➜ Distância dada pela expressão:
-    $$( |X_{1} – Y_{1}|^p + |X_{2} – Y_{2}|^p + ... |X_{n} – Y_{n}|^p)^\frac{1}{p}$$.
-    * ``'manhattan'`` ➜ Distância dada pela expressão: $$( |X_{1} – X_{1}| + |Y_{2} – Y_{2}| + ... + |Y_{n} – Y_{n}|)$$.
+    $$( |X_{1} - Y_{1}|^p + |X_{2} - Y_{2}|^p + ... |X_{n} - Y_{n}|^p)^\frac{1}{p}$$.
+    * ``'manhattan'`` ➜ Distância dada pela expressão: $$( |X_{1} - X_{1}| + |Y_{2} - Y_{2}| + ... + |Y_{n} - Y_{n}|)$$.
 
     Padrão: **"Euclidean"**.
 

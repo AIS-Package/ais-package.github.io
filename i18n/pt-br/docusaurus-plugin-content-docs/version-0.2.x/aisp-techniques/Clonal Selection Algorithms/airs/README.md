@@ -56,9 +56,9 @@ A classe `AIRS` tem como objetivo realizar classificação utilizando metáforas
 
 * **metric** (Literal["manhattan", "minkowski", "euclidean"]): Forma de calcular a distância entre o detector e a amostra:
 
-    * ``'euclidiana'`` ➜ O cálculo da distância dá-se pela expressão:  $$\sqrt{(X_1 – X_1)^2 + (Y_2 – Y_2)^2 + ... + (Y_n – Y_n)^2}$$.
-    * ``'minkowski'``  ➜ O cálculo da distância dá-se pela expressão: $$( |X_1 – Y_1|^p + |X_2 – Y_2|^p + ... |X_n – Y_n|^p)^\frac{1}{p}$$.
-    * ``'manhattan'``  ➜ O cálculo da distância dá-se pela expressão:  $$( |X_1 – X_1| + |Y_2 – Y_2| + ... + |Y_n – Y_n|)$$.
+    * ``'euclidiana'`` ➜ O cálculo da distância dá-se pela expressão:  $$\sqrt{(X_1 - X_1)^2 + (Y_2 - Y_2)^2 + ... + (Y_n - Y_n)^2}$$.
+    * ``'minkowski'``  ➜ O cálculo da distância dá-se pela expressão: $$( |X_1 - Y_1|^p + |X_2 - Y_2|^p + ... |X_n - Y_n|^p)^\frac{1}{p}$$.
+    * ``'manhattan'``  ➜ O cálculo da distância dá-se pela expressão:  $$( |X_1 - X_1| + |Y_2 - Y_2| + ... + |Y_n - Y_n|)$$.
 
     Defaults to ``'euclidean'``.
 
@@ -206,4 +206,4 @@ def _init_memory_c(self, antigens_list: npt.NDArray) -> List[Cell]:
 ---
 
 ##### 1
-> BRABAZON, Anthony; O’NEILL, Michael; MCGARRAGHY, Seán. Natural Computing Algorithms. [S. l.]: Springer Berlin Heidelberg, 2015. DOI 10.1007/978-3-662-43631-8. Disponível em: http://dx.doi.org/10.1007/978-3-662-43631-8.
+> BRABAZON, Anthony; O'NEILL, Michael; MCGARRAGHY, Seán. Natural Computing Algorithms. [S. l.]: Springer Berlin Heidelberg, 2015. DOI 10.1007/978-3-662-43631-8. Disponível em: http://dx.doi.org/10.1007/978-3-662-43631-8.

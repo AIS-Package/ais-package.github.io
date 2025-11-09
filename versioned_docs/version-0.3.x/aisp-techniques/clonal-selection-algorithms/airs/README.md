@@ -46,10 +46,10 @@ Based on Algorithm 16.5 from Brabazon et al. [1](#1).
 * **resource_amplified** (``float``): Resource consumption amplifier is multiplied with the incentive to subtract resources. Defaults to 1.0 without amplification.
 * **metric** (Literal["manhattan", "minkowski", "euclidean"]): Way to calculate the distance between the detector and the sample:
     * ``'Euclidean'`` ➜ The calculation of the distance is given by the expression:
-     $$\sqrt{(X_{1} – X_{1})^2 + (Y_{2} – Y_{2})^2 + ... + (Y_{n} – Y_{n})^2}$$
+     $$\sqrt{(X_{1} - X_{1})^2 + (Y_{2} - Y_{2})^2 + ... + (Y_{n} - Y_{n})^2}$$
     * ``'minkowski'`` ➜ The calculation of the distance is given by the expression:
-    $$( |X_{1} – Y_{1}|^p + |X_{2} – Y_{2}|^p + ... |X_{n} – Y_{n}|^p)^\frac{1}{p}$$.
-    * ``'manhattan'`` ➜ The calculation of the distance is given by the expression: $$( |X_{1} – X_{1}| + |Y_{2} – Y_{2}| + ... + |Y_{n} – Y_{n}|)$$.
+    $$( |X_{1} - Y_{1}|^p + |X_{2} - Y_{2}|^p + ... |X_{n} - Y_{n}|^p)^\frac{1}{p}$$.
+    * ``'manhattan'`` ➜ The calculation of the distance is given by the expression: $$( |X_{1} - X_{1}| + |Y_{2} - Y_{2}| + ... + |Y_{n} - Y_{n}|)$$.
 
     Defaults to **"Euclidean"**.
 
@@ -187,4 +187,4 @@ def _init_memory_c(self, antigens_list: npt.NDArray) -> List[Cell]:
 ---
 
 ##### 1
-> BRABAZON, Anthony; O’NEILL, Michael; MCGARRAGHY, Seán. Natural Computing Algorithms. [S. l.]: Springer Berlin Heidelberg, 2015. DOI 10.1007/978-3-662-43631-8. Disponível em: http://dx.doi.org/10.1007/978-3-662-43631-8.
+> BRABAZON, Anthony; O'NEILL, Michael; MCGARRAGHY, Seán. Natural Computing Algorithms. [S. l.]: Springer Berlin Heidelberg, 2015. DOI 10.1007/978-3-662-43631-8. Disponível em: http://dx.doi.org/10.1007/978-3-662-43631-8.

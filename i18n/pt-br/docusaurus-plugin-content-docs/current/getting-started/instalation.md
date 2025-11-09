@@ -11,11 +11,9 @@ last_update:
   author: João Paulo
 ---
 
-# **Instalação**
-
 Esta página contém informações sobre as dependências do pacote, como instalá-lo e como importar os módulos.
 
-### **Dependências:**
+## Dependências
 
 O módulo requer [python 3.10](https://www.python.org/downloads/) ou superior.
 
@@ -30,7 +28,7 @@ O módulo requer [python 3.10](https://www.python.org/downloads/) ou superior.
 
 </div>
 
-### **Procedimento de instalação**
+## Procedimento de instalação
 
 A maneira mais simples de instalação é através do ``pip``:
 
@@ -38,11 +36,30 @@ A maneira mais simples de instalação é através do ``pip``:
 pip install aisp
 ```
 
-### **Importando módulos**
+## Importando módulos
 
-``` python
+### Algoritmos de Seleção Negativa
+
+```python
 from aisp.nsa import RNSA, BNSA
 
-nsa = RNSA(N=300, r=0.05)
+r_nsa  = RNSA(N=300, r=0.05)
+b_nsa = BNSA(N=300, aff_thresh=0.30)
+```
 
+### Algoritmos de Seleção Clonal
+
+```python
+from aisp.csa import AIRS, Clonalg
+
+airs = AIRS()
+clonalg = Clonalg(problem_size=problem_size)
+```
+
+### Algoritmo de Rede Imunológica
+
+```python
+from aisp.ina import AiNet
+
+ai_net = AiNet(suppression_threshold=0.96, affinity_threshold=0.95)
 ```
