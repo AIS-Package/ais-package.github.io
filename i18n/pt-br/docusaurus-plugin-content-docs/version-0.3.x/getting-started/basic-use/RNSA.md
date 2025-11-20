@@ -24,16 +24,15 @@ keywords:
 
 Acesse o notebook Jupyter com o código disponível [aqui](https://github.com/AIS-Package/aisp/blob/main/examples/pt-br/classification/RNSA/example_with_randomly_generated_dataset-pt.ipynb)!
 
-
 Executar o notebook online via Binder:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?labpath=%2Fexamples%2Fpt-br%2Fclassification%2FRNSA%2Fexample_with_randomly_generated_dataset-pt.ipynb)
 
+## Importando o Algoritmo de seleção negativa de valor real
 
-## Importando o Algoritmo de seleção negativa de valor real.
 ```python
 from aisp.nsa import RNSA
 ```
 
-## Gerando bolhas de dados para as classe aleatoriamente.
+## Gerando bolhas de dados para as classe aleatoriamente
 
 Utilizando a função make_blobs, são gerados dois conjuntos de dados em forma de bolhas, no intervalo entre 0 e 1, representando cada classe x e y. Em seguida, esses dados são separados em conjuntos de teste e treinamento.
 
@@ -49,7 +48,7 @@ train_x, test_x, train_y, test_y = train_test_split(samples, output, test_size=0
 
 ---
 
-## Testando o modelo `default-NSA`:
+## Testando o modelo `default-NSA`
 
 Inicia o modelo com 500 detectores, cada um com um raio de 0.06. Em seguida, apresenta o resultado da acurácia da previsão.
 
@@ -68,6 +67,7 @@ print(classification_report(test_y, prev_y))
 ```
 
 Output:
+
 ```bash
 ✔ Non-self detectors for classes (0, 1) successfully generated:  ┇██████████┇ 1000/1000 detectors
 The accuracy is 1.0
@@ -83,13 +83,13 @@ weighted avg       1.00      1.00      1.00       100
 
 ---
 
-## Plotagem dos detector e amostras:
+## Plotagem dos detector e amostras
 
-![](../../assets/exemple_pt_d.png)
+![Plotagem dos detector e amostras](../../assets/exemple_pt_d.png)
 
 ---
 
-## Testando o modelo `V-detector`:
+## Testando o modelo `V-detector`
 
 Inicia o modelo com 50 detectores, onde o raio mínimo é de 0.05 e o raio próprio das amostras é de 0.04. Em seguida, mostra o resultado da acurácia da previsão.
 
@@ -108,6 +108,7 @@ print(classification_report(test_y, prev))
 ```
 
 Output:
+
 ```bash
 ✔ Non-self detectors for classes (0, 1) successfully generated:  ┇██████████┇ 100/100 detectors
 A acuracia é 1.0
@@ -123,6 +124,6 @@ weighted avg       1.00      1.00      1.00       100
 
 ---
 
-## Plotagem dos detector e amostras:
+## Plotagem dos v-detector e amostras
 
-![](../../assets/exemple_pt_v.png)
+![Plotagem dos v-detector e amostras](../../assets/exemple_pt_d.png)

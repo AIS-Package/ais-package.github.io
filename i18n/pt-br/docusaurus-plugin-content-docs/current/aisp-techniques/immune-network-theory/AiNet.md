@@ -1,6 +1,5 @@
 ---
 id: ainet
-title: AiNet
 sidebar_label: AiNet - Agrupamento e Compressão
 sidebar_position: 1
 pagination_next: null
@@ -28,23 +27,22 @@ lastUpdatedAt: 2025/08/19
 author: João Paulo
 ---
 
-# AiNet - Rede Imunológica Artificial para Agrupamento e Compressão.
+# AiNet - Rede Imunológica Artificial para Agrupamento e Compressão
 
 A classe AiNet tem como objetivo realizar agrupamento utilizando metáforas inspiradas na teoria da rede imunológica.
 
-A classe AiNet implementa o algoritmo de Rede Imune Artificial para compressão e clustering. Ela utiliza princípios da teoria de redes imunes, 
-seleção clonal e maturação por afinidade para comprimir conjuntos de dados e encontrar clusters [1](#1). 
+A classe AiNet implementa o algoritmo de Rede Imune Artificial para compressão e clustering. Ela utiliza princípios da teoria de redes imunes,
+seleção clonal e maturação por afinidade para comprimir conjuntos de dados e encontrar clusters [1](#1).
 Para clustering, pode opcionalmente utilizar uma [**Árvore Geradora Mínima**
 (MST)](#2) para separar nós distantes em grupos.
 
 :::info
 
-**``AiNet``** estende a **[classe ``BaseAiNet``](/docs/advanced-guides/base-classes-reference/ina/ainet)**, herdando sua funcionalidade básica.
+**``AiNet``** estende a **[classe ``BaseAiNet``](../../advanced-guides/base-classes-reference/ina/ainet.md)**, herdando sua funcionalidade básica.
 
 :::
 
 ## Constructor
-
 
 ```python
 class AiNet(
@@ -78,18 +76,17 @@ class AiNet(
 * **k** (`int`): Número de vizinhos mais próximos usados para predição de rótulos. Padrão: 3.
 * **metric** (Literal["manhattan", "minkowski", "euclidean"]): Forma de calcular a distância entre o detector e a amostra:
 
-    * `'euclidean'` ➜ Distância dada pela expressão:
-     $$\sqrt{(X_{1} - X_{1})^2 + (Y_{2} - Y_{2})^2 + ... + (Y_{n} - Y_{n})^2}$$
-    * ``'minkowski'`` ➜ Distância dada pela expressão:
-    $$( |X_{1} - Y_{1}|^p + |X_{2} - Y_{2}|^p + ... |X_{n} - Y_{n}|^p)^\frac{1}{p}$$.
-    * ``'manhattan'`` ➜ Distância dada pela expressão: $$( |X_{1} - X_{1}| + |Y_{2} - Y_{2}| + ... + |Y_{n} - Y_{n}|)$$.
+  * `'euclidean'` ➜ Distância dada pela expressão:
+     $$\sqrt{(X_{1} - X_{1})^2 + (Y_{2} - Y_{2})^2 + \cdots + (Y_{n} - Y_{n})^2}$$
+  * ``'minkowski'`` ➜ Distância dada pela expressão:
+    $$( |X_{1} - Y_{1}|^p + |X_{2} - Y_{2}|^p + \cdots + |X_{n} - Y_{n}|^p)^\frac{1}{p}$$.
+  * ``'manhattan'`` ➜ Distância dada pela expressão: $$\frac{(|X_{1} - X_{1}| + |Y_{2} - Y_{2}| + \cdots + |Y_{n} - Y_{n}|)}{n}$$.
 
     Padrão: **"Euclidean"**.
 
 * **seed** (`Optional[int]`): Semente para geração de números aleatórios. Padrão: None.
 * **use_mst_clustering** (`bool`): Define se o clustering baseado em MST deve ser utilizado. Padrão: True.
 * **kwargs**:
-    
       * **p** (`float`): Parâmetro para distância de Minkowski. Padrão: 2.
 
 **Outras variáveis inicializadas:**
@@ -310,12 +307,14 @@ def _build_mst(self):
 
 ---
 
-# Referências
+## Referências
 
-##### 1
+### 1
+>
 > 1. De Castro, Leandro & José, Fernando & von Zuben, Antonio Augusto. (2001). aiNet: An Artificial Immune Network for Data Analysis.
 >    Disponível em: [https://www.researchgate.net/publication/228378350_aiNet_An_Artificial_Immune_Network_for_Data_Analysis](https://www.researchgate.net/publication/228378350_aiNet_An_Artificial_Immune_Network_for_Data_Analysis)
 
-##### 2
+### 2
+>
 > 2. SciPy Documentation. *Minimum Spanning Tree*.
 >    Disponível em: [https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.minimum_spanning_tree](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.minimum_spanning_tree)

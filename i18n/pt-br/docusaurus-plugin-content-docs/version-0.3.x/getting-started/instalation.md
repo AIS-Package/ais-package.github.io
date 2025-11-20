@@ -11,8 +11,6 @@ last_update:
   author: João Paulo
 ---
 
-# **Instalação**
-
 Esta página contém informações sobre as dependências do pacote, como instalá-lo e como importar os módulos.
 
 ### **Dependências:**

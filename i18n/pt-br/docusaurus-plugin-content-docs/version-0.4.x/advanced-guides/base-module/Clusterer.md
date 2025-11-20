@@ -19,6 +19,7 @@ keywords:
 ---
 
 ## ``BaseClusterer(ABC, Base)``
+
 Classe base abstrata para algoritmos de clustering.
 
 Esta classe define a interface central para modelos de agrupamento. Ela exige
@@ -47,7 +48,7 @@ Este método abstrato deve ser implementado pelas subclasses.
 
 **Implementação**:
 
-* [AiNet](/docs/aisp-techniques/immune-network-theory/ainet#Função-fit)
+* [AiNet](../../aisp-techniques/immune-network-theory/AiNet.md#Função-fit)
 
 ---
 
@@ -70,7 +71,7 @@ Este método abstrato deve ser implementado pelas subclasses.
 
 **Implementação**:
 
-* [AiNet](/docs/aisp-techniques/immune-network-theory/ainet#Função-predict)
+* [AiNet](../../aisp-techniques/immune-network-theory/AiNet.md#Função-predict)
 
 ---
 

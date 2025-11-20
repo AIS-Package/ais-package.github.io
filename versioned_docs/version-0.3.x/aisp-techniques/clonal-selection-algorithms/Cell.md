@@ -17,20 +17,20 @@ lastUpdatedAt: 2025/05/25
 author: João Paulo
 ---
 
-# Célula-B de memória
+It represents a memory B-cell.
 
-Representa uma célula-B de memória.
-
-### Constructor:
+## Constructor
 
 Parameters:
+
 * **vector** (``Optional[npt.NDArray]``): A feature vector of the cell. Defaults to None.
 
 ---
 
-### Function hyper_clonal_mutate(...):
+## Function hyper_clonal_mutate(...)
 
 Parameters:
+
 * **n** (``int``): The number of clones to be generated from mutations in the original cell.
 * **feature_type** (``Literal["continuous-features", "binary-features", "ranged-features"]``): Specifies the type of
 algorithm to use based on the nature of the input features

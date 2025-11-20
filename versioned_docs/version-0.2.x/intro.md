@@ -20,11 +20,11 @@ keywords:
   - Bioinspiration
   - Immune Metaphors
 ---
-# Artificial Immune Systems Package.
+# Artificial Immune Systems Package
 
 <div style={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
 
-![](./assets/logo.svg)  
+![Artificial Immune Systems Package](./assets/logo.svg)  
 
 </div>
 
@@ -34,9 +34,9 @@ keywords:
 
 **AISP** is a Python package of immunoinspired techniques that apply metaphors from the vertebrate immune system to pattern recognition and optimization tasks. Conceived as an open-source package of artificial immune systems, AISP emerged from a research project initiated in **2022** at the Instituto Federal do Norte de Minas Gerais - Campus Salinas (**IFNMG - Salinas**). Its distribution is governed by the GNU Lesser General Public License v3.0 (LGPLv3).
 
-### Algorithms implemented:
+### Algorithms implemented
 
-> - [x] [**Negative Selection.**](/docs/0.2.x/aisp-techniques/Negative%20Selection/)
-> - [x] [**Clonal Selection Algorithms.**](/docs/0.2.x/aisp-techniques/Clonal%20Selection%20Algorithms/)
+> - [x] [**Negative Selection.**](./aisp-techniques/Negative%20Selection/)
+> - [x] [**Clonal Selection Algorithms.**](./aisp-techniques/Clonal%20Selection%20Algorithms/)
 > - [ ] *Dendritic Cells.*
 > - [ ] *Immune Network Theory.*

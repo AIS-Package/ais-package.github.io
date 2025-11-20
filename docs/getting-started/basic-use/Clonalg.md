@@ -30,6 +30,7 @@ The Rastrigin function is a multimodal, non-convex function with many local mini
 $$ f(x) = 10n + \sum_{i=1}^{n} (x_i^{2} - 10\cos(2\pi x_i)) $$
 
 Where:
+
 * **n** is the problem dimension
 * **xᵢ** ∈ \[−5.12, 5.12] for each dimension
 * **Global minimum**: f(0,0) = 0
@@ -88,9 +89,11 @@ clonalg.register('affinity_function', rastrigin_fitness)
 clonalg.optimize(100, 20)
 
 if clonalg.best_cost is not None:
-	print('Best cost:', abs(clonalg.best_cost))
+ print('Best cost:', abs(clonalg.best_cost))
 ```
+
 Output:
+
 ```bash
 ┌───────────┬─────────────────────────┬────────────────────┬─────────────────┐
 │ Iteration │   Best Affinity (min)   │   Worse Affinity   │   Stagnation    │
@@ -147,10 +150,13 @@ Best cost: 0.020278270044883584
 ```
 
 ### Result
+
 ```python
 print(clonalg.get_report())
 ```
+
 Output:
+
 ```python
 =============================================
             Optimization Summary             
@@ -213,4 +219,4 @@ Cost History per Iteration:
 
 ### Evolution of the best over generations
 
-![alt text](../../assets/clonalg.png)
+![Evolution of the best over generations](../../assets/clonalg.png)

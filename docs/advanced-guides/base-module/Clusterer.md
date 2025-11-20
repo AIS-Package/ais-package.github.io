@@ -52,7 +52,7 @@ This abstract method must be implemented by subclasses.
 
 **Implementation**:
 
-* [AiNet](/docs/aisp-techniques/immune-network-theory/ainet#Function-fit)
+* [AiNet](../../aisp-techniques/immune-network-theory/AiNet.md#Function-fit)
 
 ---
 
@@ -77,7 +77,7 @@ This abstract method must be implemented by subclasses.
 
 **Implementation**:
 
-* [AiNet](/docs/aisp-techniques/immune-network-theory/ainet#Function-predict)
+* [AiNet](../../aisp-techniques/immune-network-theory/AiNet.md#Function-predict)
 
 ---
 

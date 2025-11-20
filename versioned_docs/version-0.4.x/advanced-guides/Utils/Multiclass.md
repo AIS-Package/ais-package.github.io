@@ -19,8 +19,10 @@ according to the output class, to loop through the sample array, only in positio
 the output is the class being trained.
 
 **Parameters**:
+
 * ***classes*** (``list or npt.NDArray``): list with unique classes.
 * ***y*** (npt.NDArray): Receives a ``y``[``N sample``] array with the output classes of the ``X`` sample array.
 
 **returns**:
+
 * dict: A dictionary with the list of array positions(``y``), with the classes as key.

@@ -6,7 +6,7 @@ lastUpdatedAt: 2025/05/25
 author: João Paulo
 ---
 
-# BaseAIRS(BaseClassifier, ABC)
+## BaseAIRS(BaseClassifier, ABC)
 
 Classe base para o algoritmo **AIRS**.
 
@@ -14,7 +14,7 @@ A classe base contém funções que são utilizadas por mais de uma classe no pa
 
 ---
 
-### def _check_and_raise_exceptions_fit(...):
+### def _check_and_raise_exceptions_fit(...)
 
 Verifica os parâmetros de ajuste (*fit*) e lança exceções caso a verificação não seja bem-sucedida.
 
@@ -31,8 +31,8 @@ def _check_and_raise_exceptions_fit(
 
 **Parâmetros**:
 
-* ***X*** (`npt.NDArray`): Array de treinamento, contendo as amostras e suas características, com formato [`N amostras` (linhas)][`N características` (colunas)].
-* ***y*** (`npt.NDArray`): Array das classes alvo de `X` com [`N amostras` (linhas)].
+* ***X*** (`npt.NDArray`): Array de treinamento, contendo as amostras e suas características, com formato \[`N amostras` (linhas)]\[`N características` (colunas)].
+* ***y*** (`npt.NDArray`): Array das classes alvo de `X` com \[`N amostras` (linhas)].
 * ***algorithm*** (`Literal["continuous-features", "binary-features"], opcional`): Especifica o tipo de algoritmo a ser usado, dependendo se os dados de entrada possuem características contínuas ou binárias.
 
 **Exceções**:
@@ -44,7 +44,7 @@ def _check_and_raise_exceptions_fit(
 
 ---
 
-### def _check_and_raise_exceptions_predict(...):
+### def _check_and_raise_exceptions_predict(...)
 
 Verifica os parâmetros de predição e lança exceções caso a verificação não seja bem-sucedida.
 
@@ -61,7 +61,7 @@ def _check_and_raise_exceptions_predict(
 
 **Parâmetros**:
 
-* ***X*** (`npt.NDArray`): Array de entrada, contendo as amostras e suas características, com formato [`N amostras` (linhas)][`N características` (colunas)].
+* ***X*** (`npt.NDArray`): Array de entrada, contendo as amostras e suas características, com formato \[`N amostras` (linhas)]\[`N características` (colunas)].
 * ***expected*** (`int`): Número esperado de características por amostra (colunas de X).
 * ***algorithm*** (`Literal["continuous-features", "binary-features"], opcional`): Especifica o tipo de algoritmo a ser usado, dependendo se os dados de entrada possuem características contínuas ou binárias.
 

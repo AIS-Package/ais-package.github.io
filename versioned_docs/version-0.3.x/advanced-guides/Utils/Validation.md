@@ -21,7 +21,9 @@ This function analyzes the input vector and classifies its data as one of the su
 * `vector` (`npt.NDArray`): An array containing the data to be classified.
 
 **Returns**
+
 * `FeatureType` (`Literal["binary-features", "continuous-features", "ranged-features"]`): The detected type of data in the vector.
 
 **Raises**
+
 * `UnsupportedDataTypeError`: Raised if the vector contains an unsupported data type.

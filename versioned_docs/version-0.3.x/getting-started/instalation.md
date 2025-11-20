@@ -28,7 +28,7 @@ The package requires [python 3.10](https://www.python.org/downloads/) or higher.
 
 </div>
 
-## **Instalation procedure**
+## **Installation procedure**
 
 The simplest way to install is via ``pip``:
 
@@ -43,4 +43,3 @@ from aisp.nsa import RNSA, BNSA
 
 nsa = RNSA(N=300, r=0.05)
 ```
-

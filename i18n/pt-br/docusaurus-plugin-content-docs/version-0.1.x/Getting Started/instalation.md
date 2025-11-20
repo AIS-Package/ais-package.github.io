@@ -11,11 +11,9 @@ last_update:
   author: João Paulo
 ---
 
-# **Instalação**
-
 Esta página contém informações sobre as dependências do pacote, como instalá-lo e como importar os módulos.
 
-### **Dependências:**
+### Dependências
 
 O módulo requer [python 3.10](https://www.python.org/downloads/) ou superior.
 
@@ -30,7 +28,7 @@ O módulo requer [python 3.10](https://www.python.org/downloads/) ou superior.
 
 </div>
 
-### **Procedimento de instalação**
+### Procedimento de instalação
 
 A maneira mais simples de instalação é através do ``pip``:
 
@@ -38,7 +36,7 @@ A maneira mais simples de instalação é através do ``pip``:
 pip install aisp
 ```
 
-### **Importando módulos**
+### Importando módulos
 
 ``` python
 from aisp.nsa import RNSA, BNSA

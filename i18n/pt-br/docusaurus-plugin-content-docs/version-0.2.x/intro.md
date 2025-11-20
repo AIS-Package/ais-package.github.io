@@ -24,10 +24,11 @@ keywords:
   - Immune-inspired Algorithms
 ---
 
-# Pacote de Sistemas Imunológicos Artificiais.
+# Pacote de Sistemas Imunológicos Artificiais
+
 <div style={{ display: "flex", justifyContent: "center", alignItems: "center", margin: "auto" }}>
 
-![](./assets/logo.svg)  
+![Pacote de Sistemas Imunológicos Artificiais](./assets/logo.svg)  
 
 </div>
 
@@ -37,9 +38,9 @@ keywords:
 
 **AISP** é um pacote Python de técnicas imunoinspiradas, as quais aplicam metáforas do sistema imunológico dos vertebrados ao reconhecimento de padrões e à tarefas de otimização. Concebido como um pacote de sistemas imunológicos artificiais de código aberto, o AISP é resultado de um projeto de pesquisa iniciado em **2022** no Instituto Federal do Norte de Minas Gerais - Campus Salinas (**IFNMG - Salinas**). Sua distribuição é regida pela GNU Lesser General Public License v3.0 (LGPLv3).
 
-### Algoritmos implementados:
+### Algoritmos implementados
 
-> - [x] [**Seleção Negativa.**](/docs/0.2.x/aisp-techniques/Negative%20Selection/)
-> - [x] [**Algoritmos de Seleção Clonal.**](/docs/0.2.x/aisp-techniques/Clonal%20Selection%20Algorithms/)
+> - [x] [**Seleção Negativa.**](./aisp-techniques/Negative%20Selection/)
+> - [x] [**Algoritmos de Seleção Clonal.**](./aisp-techniques/Clonal%20Selection%20Algorithms/)
 > - [ ] *Células Dendríticas.*
 > - [ ] *Teoria da Rede Imune.*

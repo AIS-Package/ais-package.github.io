@@ -17,8 +17,6 @@ keywords:
   - Mutação Vetorial
 ---
 
-# Mutation
-
 Contém funções que geram conjuntos de clones mutados a partir de vetores contínuos ou binários, simulando o processo de expansão clonal em sistemas imunológicos artificiais.
 
 ## clone_and_mutate_continuous
@@ -68,7 +66,6 @@ Esta função cria `n` clones do vetor binário de entrada e aplica mutações a
 ### Retorno
 
 * `clone_set` (`npt.NDArray[np.bool_]`): Array com forma `(n, len(vector))` contendo os `n` clones mutados do vetor original.
-
 
 ---
 

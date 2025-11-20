@@ -23,14 +23,15 @@ Acesse o notebook Jupyter com o código disponível [here](https://github.com/AI
 
 Executar o notebook online via Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?urlpath=%2Fdoc%2Ftree%2F%2Fexamples%2Fpt-br%2Foptimization%2Fclonalg%2Frastrigin_function_example.ipynb)
 
-### Aplicamos o Clonalg à Função Rastrigin.
+### Aplicamos o Clonalg à Função Rastrigin
 
-A função Rastrigin é uma função multimodal não-convexa que possui muitos mínimos locais, 
+A função Rastrigin é uma função multimodal não-convexa que possui muitos mínimos locais,
 tornando-a um excelente teste para algoritmos de otimização, [saiba mais](https://en.wikipedia.org/wiki/Rastrigin_function). A função é definida como:
 
 $$ f(x) = 10n + \sum_{i=1}^{n} (x_i^{2} - 10\cos(2\pi x_i)) $$
 
 Onde:
+
 * **n** é a dimensão do problema
 * **x_i** ∈ [-5.12, 5.12] para cada dimensão
 * **Mínimo global**: f(0,0) = 0
@@ -91,7 +92,9 @@ clonalg.optimize(100, 20)
 if clonalg.best_cost is not None:
     print('Best cost:', abs(clonalg.best_cost))
 ```
+
 Output:
+
 ```bash
 ┌───────────┬─────────────────────────┬────────────────────┬─────────────────┐
 │ Iteration │   Best Affinity (min)   │   Worse Affinity   │   Stagnation    │
@@ -152,7 +155,9 @@ Best cost: 0.020278270044883584
 ```python
 print(clonalg.get_report())
 ```
+
 Output:
+
 ```python
 =============================================
             Optimization Summary             
@@ -215,4 +220,4 @@ Cost History per Iteration:
 
 ### Evolução do melhor ao longo das gerações
 
-![](../../assets/clonalg.png)
+![Evolução do melhor ao longo das gerações](../../assets/clonalg.png)

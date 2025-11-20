@@ -17,8 +17,6 @@ keywords:
   - Vector Mutation
 ---
 
-# Mutation
-
 Contains functions that generate sets of mutated clones from continuous or binary vectors, simulating the clonal expansion process in artificial immune systems.
 
 ## clone_and_mutate_continuous

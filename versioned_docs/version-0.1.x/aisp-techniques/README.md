@@ -10,7 +10,7 @@ Classes implemented using the metaphors of artificial immune systems.
 
 ---
 
-### Class module:
+### Class module
 
 > 1. [**Negative selection**](./Negative%20Selection/)
 > 2. **Clonal Selection Algorithms**
