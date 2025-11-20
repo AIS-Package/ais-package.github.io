@@ -79,7 +79,7 @@ class AiNet(
   * `'euclidean'` ➜ Distância dada pela expressão:
      $$\sqrt{(X_{1} - X_{1})^2 + (Y_{2} - Y_{2})^2 + \cdots + (Y_{n} - Y_{n})^2}$$
   * ``'minkowski'`` ➜ Distância dada pela expressão:
-    $$( |X_{1} - Y_{1}|^p + |X_{2} - Y_{2}|^p + \cdots + |X_{n} - Y_{n}|^p)^\frac{1}{p}$$.
+    $$\frac{((|X_{1} - Y_{1}|^p + |X_{2} - Y_{2}|^p + \cdots + |X_{n} - Y_{n}|^p)^\frac{1}{p})}{n}$$.
   * ``'manhattan'`` ➜ Distância dada pela expressão: $$\frac{(|X_{1} - X_{1}| + |Y_{2} - Y_{2}| + \cdots + |Y_{n} - Y_{n}|)}{n}$$.
 
     Padrão: **"Euclidean"**.

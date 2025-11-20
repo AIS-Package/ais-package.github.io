@@ -79,7 +79,7 @@ def minkowski(u: npt.NDArray[np.float64], v: npt.NDArray[np.float64], p: float =
 
 Function to calculate the normalized Minkowski distance between two points.
 
-$$( |X_{1} - Y_{1}|^p + |X_{2} - Y_{2}|^p + \cdots + |X_{n} - Y_{n}|^p)^\frac{1}{p}$$
+$$\frac{((|X_{1} - Y_{1}|^p + |X_{2} - Y_{2}|^p + \cdots + |X_{n} - Y_{n}|^p)^\frac{1}{p})}{n}$$
 
 **Parameters:**
 
