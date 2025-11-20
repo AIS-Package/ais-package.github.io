@@ -24,9 +24,9 @@ Ajusta o modelo aos dados de treinamento.
 
 Implementação:
 
-- [RNSA](/docs/aisp-techniques/negative-selection/rnsa#Função-fit)
-- [BNSA](/docs/aisp-techniques/negative-selection/bnsa#Função-fit)
-- [AIRS](/docs/aisp-techniques/clonal-selection-algorithms/airs/#Método-fit)
+- [RNSA](../../aisp-techniques/negative-selection/RNSA.md#Função-fit)
+- [BNSA](../../aisp-techniques/negative-selection/BNSA.md#Função-fit)
+- [AIRS](../../aisp-techniques/clonal-selection-algorithms/airs/#Método-fit)
 
 ### def predict(...)
 
@@ -38,9 +38,9 @@ Realiza a previsão dos rótulos para os dados fornecidos.
 
 Implementação:
 
-- [RNSA](/docs/aisp-techniques/negative-selection/rnsa#Função-predict)
-- [BNSA](/docs/aisp-techniques/negative-selection/bnsa#Função-predict)
-- [AIRS](/docs/aisp-techniques/clonal-selection-algorithms/airs/#Método-predict)
+- [RNSA](../../aisp-techniques/negative-selection/RNSA.md#Função-predict)
+- [BNSA](../../aisp-techniques/negative-selection/BNSA.md#Função-predict)
+- [AIRS](../../aisp-techniques/clonal-selection-algorithms/airs/#Método-predict)
 
 ---
 

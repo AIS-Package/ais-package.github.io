@@ -40,7 +40,7 @@ keywords:
 
 ### Algoritmos implementados
 
-> - [x] [**Seleção Negativa.**](/docs/0.1.x/aisp-techniques/Negative%20Selection/)
+> - [x] [**Seleção Negativa.**](./aisp-techniques/Negative%20Selection/)
 > - [ ] *Algoritmos de Seleção Clonal.*
 > - [ ] *Células Dendríticas.*
 > - [ ] *Teoria da Rede Imune.*

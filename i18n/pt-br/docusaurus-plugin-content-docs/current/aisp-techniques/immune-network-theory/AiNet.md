@@ -38,7 +38,7 @@ Para clustering, pode opcionalmente utilizar uma [**Árvore Geradora Mínima**
 
 :::info
 
-**``AiNet``** estende a **[classe ``BaseAiNet``](/docs/advanced-guides/base-classes-reference/ina/ainet)**, herdando sua funcionalidade básica.
+**``AiNet``** estende a **[classe ``BaseAiNet``](../../advanced-guides/base-classes-reference/ina/ainet.md)**, herdando sua funcionalidade básica.
 
 :::
 

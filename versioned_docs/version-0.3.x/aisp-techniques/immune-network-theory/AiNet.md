@@ -40,7 +40,7 @@ For clustering, the class uses SciPy's implementation of the [**Minimum Spanning
 
 :::info
 
-**``AiNet``** extends the **[``BaseAiNet`` class](/docs/advanced-guides/base-classes-reference/ina/ainet)**, inheriting its base functionality.
+**``AiNet``** extends the **[``BaseAiNet`` class](../../advanced-guides/base-classes-reference/ina/ainet.md)**, inheriting its base functionality.
 
 :::
 

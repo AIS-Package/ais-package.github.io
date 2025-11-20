@@ -37,9 +37,9 @@ Fit the model to the training data.
 
 Implementation:
 
-- [RNSA](/docs/aisp-techniques/negative-selection/rnsa#Function-fit)
-- [BNSA](/docs/aisp-techniques/negative-selection/bnsa#Function-fit)
-- [AIRS](/docs/aisp-techniques/clonal-selection-algorithms/airs/#Function-fit)
+- [RNSA](../../aisp-techniques/negative-selection/RNSA.md#Function-fit)
+- [BNSA](../../aisp-techniques/negative-selection/BNSA.md#Function-fit)
+- [AIRS](../../aisp-techniques/clonal-selection-algorithms/airs/#Function-fit)
 
 ### def predict(...)
 
@@ -51,9 +51,9 @@ Performs label prediction for the given data.
 
 Implementation:
 
-- [RNSA](/docs/aisp-techniques/negative-selection/rnsa#Function-predict)
-- [BNSA](/docs/aisp-techniques/negative-selection/bnsa#Function-predict)
-- [AIRS](/docs/aisp-techniques/clonal-selection-algorithms/airs/#Function-predict)
+- [RNSA](../../aisp-techniques/negative-selection/RNSA.md#Function-predict)
+- [BNSA](../../aisp-techniques/negative-selection/BNSA.md#Function-predict)
+- [AIRS](../../aisp-techniques/clonal-selection-algorithms/airs/#Function-predict)
 
 ---
 

@@ -40,7 +40,7 @@ keywords:
 
 ### Algoritmos implementados
 
-> - [x] [**Seleção Negativa.**](/docs/aisp-techniques/negative-selection/)
-> - [x] [**Algoritmos de Seleção Clonal.**](/docs/aisp-techniques/clonal-selection-algorithms/)
-> - [x] [**Teoria da Rede Imune.**](/docs/aisp-techniques/immune-network-theory/)
+> - [x] [**Seleção Negativa.**](./aisp-techniques/negative-selection/)
+> - [x] [**Algoritmos de Seleção Clonal.**](./aisp-techniques/clonal-selection-algorithms/)
+> - [x] [**Teoria da Rede Imune.**](./aisp-techniques/immune-network-theory/)
 > - [ ] *Teoria do Perigo.*
