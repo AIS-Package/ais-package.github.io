@@ -16,7 +16,7 @@ def hamming(u: npt.NDArray, v: npt.NDArray) -> np.float64:
 
 The function to calculate the normalized Hamming distance between two points.
 
-$((x₁ ≠ x₂) + (y₁ ≠ y₂) + ... + (yn ≠ yn)) / n$
+$$\frac{(x_1 \neq y_1) + (x_2 \neq y_2) + \cdots + (x_n \neq y_n)}{n}$$
 
 **Parameters:**
 
@@ -37,7 +37,7 @@ def euclidean(u: npt.NDArray[np.float64], v: npt.NDArray[np.float64]) -> np.floa
 
 Function to calculate the normalized Euclidean distance between two points.
 
-$√( (x₁ - x₂)² + (y₁ - y₂)² + ... + (yn - yn)²)$
+$$\sqrt{(X_{1} - X_{1})^2 + (Y_{2} - Y_{2})^2 + \cdots + (Y_{n} - Y_{n})^2}$$
 
 **Parameters:**
 
@@ -58,7 +58,7 @@ def cityblock(u: npt.NDArray[np.float64], v: npt.NDArray[np.float64]) -> np.floa
 
 Function to calculate the normalized Manhattan distance between two points.
 
-$(|x₁ - x₂| + |y₁ - y₂| + ... + |yn - yn|) / n$
+$$\frac{(|X_{1} - X_{1}| + |Y_{2} - Y_{2}| + \cdots + |Y_{n} - Y_{n}|)}{n}$$
 
 **Parameters:**
 
@@ -79,7 +79,7 @@ def minkowski(u: npt.NDArray[np.float64], v: npt.NDArray[np.float64], p: float =
 
 Function to calculate the normalized Minkowski distance between two points.
 
-$(( |X₁ - Y₁|p + |X₂ - Y₂|p + ... + |Xn - Yn|p) ¹/ₚ) / n$
+$$( |X_{1} - Y_{1}|^p + |X_{2} - Y_{2}|^p + \cdots + |X_{n} - Y_{n}|^p)^\frac{1}{p}$$
 
 **Parameters:**
 
@@ -162,7 +162,6 @@ Returns the numeric code associated with a distance metric.
 * metric (str): Name of the metric. Can be "euclidean", "manhattan", "minkowski" or "hamming".
 
 **Raises**
-----------
 
 * ``ValueError``: If the metric provided is not supported
 

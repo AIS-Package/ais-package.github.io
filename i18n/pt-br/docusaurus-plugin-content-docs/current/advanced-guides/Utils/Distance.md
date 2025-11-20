@@ -162,7 +162,6 @@ Retorna o código numérico associado a uma métrica de distância.
 * metric (``str``): Nome da métrica. Pode ser "euclidean", "manhattan", "minkowski" ou "hamming".
 
 **Raises**
-----------
 
 * ``ValueError``: Se a métrica informada não for suportada.
 
