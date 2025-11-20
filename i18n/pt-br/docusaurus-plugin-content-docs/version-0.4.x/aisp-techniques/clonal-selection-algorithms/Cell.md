@@ -17,20 +17,17 @@ lastUpdatedAt: 2025/05/25
 author: João Paulo
 ---
 
-# Célula-B de memória
-
 Representa uma célula-B de memória.
 
-### Construtor:
+### Construtor
 
 Parâmetros:
 
 * **vector** (`npt.NDArray`): Vetor de características da célula. Padrão é None.
 
-
 ---
 
-### Função hyper_clonal_mutate(...):
+### Função hyper_clonal_mutate(...)
 
 Parâmetros:
 

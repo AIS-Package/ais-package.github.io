@@ -22,7 +22,6 @@ keywords:
   - Computação Natural
 ---
 
-# Applying the BNSA
 The present example, available here, aims to demonstrate the application of the binary negative selection algorithm. This algorithm is used to classify samples with discrete characteristics.
 
 Access the Jupyter notebook with the code available [here](https://github.com/AIS-Package/aisp/blob/main/examples/en/classification/BNSA/example_with_randomly_generated_dataset-en.ipynb)!
@@ -32,6 +31,7 @@ Access the Jupyter notebook with the code available [here](https://github.com/AI
 ```python
 from aisp.nsa import BNSA
 ```
+
 ## Generating samples
 
 Algorithm training and testing needs data samples. Thus, for the demonstration, two random classes were generated, using the following function:
@@ -103,6 +103,7 @@ print(classification_report(test_y, prev_y))
 ```
 
 Output:
+
 ```
 ✔ Non-self detectors for classes (x, y) successfully generated:  ┇██████████┇ 500/500 detectors
 The accuracy is 0.93

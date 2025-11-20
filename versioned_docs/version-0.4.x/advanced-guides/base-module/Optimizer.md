@@ -83,7 +83,8 @@ def _record_best(self, cost: float, best_solution: Any) -> None
 Record a new cost value and update the best solution if improved.
 
 **Parameters**:
-  * ***cost***: `float` - Cost value to be added to the history.
+
+* ***cost***: `float` - Cost value to be added to the history.
 
 ---
 
@@ -97,7 +98,8 @@ Generate a formatted summary report of the optimization process. The report incl
 its associated cost, and the evolution of cost values per iteration.
 
 **Returns**:
-  * **report**: `str` - A formatted string containing the optimization summary.
+
+* **report**: `str` - A formatted string containing the optimization summary.
 
 ---
 
@@ -110,12 +112,14 @@ def register(self, alias: str, function: Callable[..., Any]) -> None
 Register a function dynamically in the optimizer instance.
 
 **Parameters**:
-  * ***alias***: `str` - Name used to access the function as an attribute.
-  * ***function***: `Callable[..., Any]` - Callable to be registered.
+
+* ***alias***: `str` - Name used to access the function as an attribute.
+* ***function***: `Callable[..., Any]` - Callable to be registered.
 
 **Raises**:
-  * **TypeError**: If `function` is not callable.
-  * **AttributeError**: If `alias` is protected and cannot be modified, or if `alias` does not exist in the
+
+* **TypeError**: If `function` is not callable.
+* **AttributeError**: If `alias` is protected and cannot be modified, or if `alias` does not exist in the
      optimizer class.
 
 ---
@@ -141,9 +145,10 @@ def optimize(self, max_iters: int = 50, n_iter_no_change=10, verbose: bool = Tru
 Execute the optimization process. This method must be implemented by the subclass to define how the optimization strategy explores the search space.
 
 **Parameters**:
-  * ***max_iters***: `int` - Maximum number of iterations.
-  * ***n_iter_no_change***: `int`, default=10 - The maximum number of iterations without updating the best solution.
-  * ***verbose***: `bool`, default=True - Flag to enable or disable detailed output during optimization.
+
+* ***max_iters***: `int` - Maximum number of iterations.
+* ***n_iter_no_change***: `int`, default=10 - The maximum number of iterations without updating the best solution.
+* ***verbose***: `bool`, default=True - Flag to enable or disable detailed output during optimization.
 
 **Implementation**:
 
@@ -160,7 +165,9 @@ def affinity_function(self, solution: Any) -> float
 Evaluate the affinity of a candidate solution. This method must be implemented by the subclass to define the problem-specific.
 
 **Parameters**:
-  * ***solution***: `Any` - Candidate solution to be evaluated.
+
+* ***solution***: `Any` - Candidate solution to be evaluated.
 
 **Returns**:
-  * **cost**: `float` - Cost value associated with the given solution.
+
+* **cost**: `float` - Cost value associated with the given solution.

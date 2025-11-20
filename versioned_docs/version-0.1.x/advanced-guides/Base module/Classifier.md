@@ -1,19 +1,17 @@
 ---
 sidebar_position: 1
-title: Classification
 sidebar_label: BaseClassifier
 lastUpdatedAt: 2025/04/04
 author: João Paulo
 ---
 
-# Base class for classification algorithm.
+# Base class for classification algorithm
 
-## ``class BaseClassifier(ABC)``:
+## ``class BaseClassifier(ABC)``
 
 Base class for classification algorithms, defining the abstract methods ``fit`` and ``predict``, and implementing the ``get_params`` method.
 
 ## Abstract methods
-
 
 ### def fit(...)
 
@@ -27,8 +25,6 @@ Implementation:
 
 - [RNSA](/docs/0.1.x/aisp-techniques/Negative%20Selection/rnsa#Function-fit)
 - [BNSA](/docs/0.1.x/aisp-techniques/Negative%20Selection/bnsa#Function-fit)
-
-
 
 ### def predict(...)
 
@@ -47,27 +43,27 @@ Implementation:
 
 ## Methods
 
-
 ### def score(...)
 
 ```python
 def score(self, X: npt.NDArray, y: list) -> float
 ```
+
 Score function calculates forecast accuracy.
 
-This function performs the prediction of X and checks how many elements are equal between vector y and y_predicted. 
+This function performs the prediction of X and checks how many elements are equal between vector y and y_predicted.
 This function was added for compatibility with some scikit-learn functions.
 
 **Parameters**:
-+ ***X***: ``np.ndarray``
+
+- ***X***: ``np.ndarray``
     Feature set with shape (n_samples, n_features).
-+ ***y***: ``np.ndarray``
+- ***y***: ``np.ndarray``
     True values with shape (n_samples,).
 
 **Returns**:
 
-+ accuracy: ``float`` The accuracy of the model.
-
+- accuracy: ``float`` The accuracy of the model.
 
 ### Function _slice_index_list_by_class(...)
 
@@ -86,11 +82,9 @@ Returns a dictionary with the classes as key and the indices in ``X`` of the sam
 ```python
 def get_params(self, deep: bool = True) -> dict:
 ```
+
 The get_params function Returns a dictionary with the object's main parameters.
 
 This function is required to ensure compatibility with scikit-learn functions.
 
 ---
-
-
-

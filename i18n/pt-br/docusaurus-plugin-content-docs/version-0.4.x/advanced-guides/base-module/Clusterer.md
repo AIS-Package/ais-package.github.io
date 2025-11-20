@@ -19,6 +19,7 @@ keywords:
 ---
 
 ## ``BaseClusterer(ABC, Base)``
+
 Classe base abstrata para algoritmos de clustering.
 
 Esta classe define a interface central para modelos de agrupamento. Ela exige

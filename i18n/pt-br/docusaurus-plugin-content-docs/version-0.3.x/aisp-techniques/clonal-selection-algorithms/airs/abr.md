@@ -25,16 +25,18 @@ Individuo do conjunto de células reconhecedoras (ABR), herda características d
 
 :::
 
-### Constructor:
+### Constructor
 
 Parameters:
+
 * vector (``npt.NDArray``): A feature vector of the cell. Defaults to None.
 
 ---
 
-### Function consume_resource(...):
+### Function consume_resource(...)
 
 Parameters:
+
 * n_resource (```float```) : The initial amount of resources.
 * amplified (``float``): Amplifier for resource consumption by the cell. It is multiplied by the cell's stimulus. The default value is 1.
 
@@ -43,4 +45,3 @@ def consume_resource(self, n_resource: float, amplified: float = 1) -> float:
 ```
 
 Returns the remaining amount of resources after consumption.
-

@@ -22,11 +22,9 @@ keywords:
 
 # Usando o BNSA
 
-O presente exemplo, disponível aqui, visa demonstrar a aplicação do algoritmo de seleção negativa binária. Esse algoritmo é empregado na classificação de amostras com características discretas. 
-
+O presente exemplo, disponível aqui, visa demonstrar a aplicação do algoritmo de seleção negativa binária. Esse algoritmo é empregado na classificação de amostras com características discretas.
 
 Acesse o notebook Jupyter disponível [aqui](https://github.com/AIS-Package/aisp/blob/main/examples/pt-br/classification/BNSA/example_with_randomly_generated_dataset-pt.ipynb)!
-
 
 Executar o notebook online via Binder:  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?labpath=%2Fexamples%2Fpt-br%2Fclassification%2FBNSA%2Fexample_with_randomly_generated_dataset-pt.ipynb)
 
@@ -63,7 +61,7 @@ def generate_samples(n_samples: int, n_features: int, s: float, x: None):
 
 ---
 
-Cada classe contará com 500 amostras, sendo a similaridade mínima entre amostras de 80% (s = 0.2). Essas classes serão separadas em conjunto de treinamento (800 amostras) e de teste (200 amostras). 
+Cada classe contará com 500 amostras, sendo a similaridade mínima entre amostras de 80% (s = 0.2). Essas classes serão separadas em conjunto de treinamento (800 amostras) e de teste (200 amostras).
 
 ```python
 # Configurando a seed para 121 para garantir a reprodutibilidade dos dados gerados.
@@ -89,7 +87,7 @@ train_x, test_x, train_y, test_y = train_test_split(samples, output, test_size=0
 
 ---
 
-## Treinamento:
+## Treinamento
 
 O modelo é ajustado através dos padrões de treinamento. Nessa aplicação, a seleção negativa distribuirá, com taxa de diferenciação de 30%, 250 detectores pelo espaço de entradas.
 
@@ -106,7 +104,8 @@ print(classification_report(test_y, prev))
 ```
 
 Output:
-```
+
+```bash
 ✔ Non-self detectors for classes (x, y) successfully generated:  ┇██████████┇ 500/500 detectors
 A acurácia é 0.93
               precision    recall  f1-score   support
@@ -122,6 +121,7 @@ weighted avg       0.93      0.93      0.93       200
 ---
 
 ## Avaliação
+
 O modelo obteve 0,93 de acurácia para o conjunto teste. A precisão na classificação, tanto para x quanto para y, também foi de 0,93. Isso pode ser observado pela matriz de confusão na Figura 1.
 
 ![Matriz de confusão BNSA](../../assets/matrizBNSA.png)

@@ -32,11 +32,12 @@ Access the Jupyter notebook with the code available [here](https://github.com/AI
 Run notebook online via Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?labpath=%2Fexamples%2Fen%2Fclassification%2FAIRS%2Fexample_with_randomly_generated_dataset-en.ipynb)
 
 ### Importing the Artificial Immune Recognition System
+
 ```python
 from aisp.csa import AIRS
 ```
 
-### Generating dice bubbles for classes randomly.
+### Generating dice bubbles for classes randomly
 
 Using the `make_blobs` function, two sets of data are generated in the form of bubbles, in the range between 0 and 1, representing each class x and y. Then this data is separated into test and training sets.
 
@@ -52,7 +53,7 @@ train_x, test_x, train_y, test_y = train_test_split(samples, output, test_size=0
 
 ---
 
-### Testing the model AIRS:
+### Testing the model AIRS
 
 Then, it presents the result of the forecast accuracy.
 
@@ -71,6 +72,7 @@ print(classification_report(test_y, prev_y))
 ```
 
 Output:
+
 ```bash
 ✔ Set of memory cells for classes (0, 1) successfully generated:  ┇██████████┇ 400/400 memory cells for each aᵢ
 The accuracy is 1.0
@@ -86,6 +88,6 @@ weighted avg       1.00      1.00      1.00       100
 
 ---
 
-### Memory cell and sample plotting:
+### Memory cell and sample plotting
 
 ![Memory cell and sample plotting](../../assets/exemple_airs_plot.png)

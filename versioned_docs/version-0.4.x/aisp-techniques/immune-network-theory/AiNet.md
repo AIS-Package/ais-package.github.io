@@ -1,6 +1,5 @@
 ---
 id: ainet
-title: AiNet
 sidebar_label: AiNet - Clustering and Compression
 sidebar_position: 1
 pagination_next: null
@@ -28,14 +27,14 @@ lastUpdatedAt: 2025/08/19
 author: João Paulo
 ---
 
-# AiNet - Artificial Immune Network para Clustering and Compression.
+# AiNet - Artificial Immune Network para Clustering and Compression
 
 The AiNet class aims to perform clustering using metaphors inspired by immune network theory.
 
 This class implements the aiNet algorithm, an artificial immune network model designed for
 clustering and data compression tasks. The aiNet algorithm uses principles from immune
 network theory, clonal selection, and affinity maturation to compress high-dimensional
-datasets [1](#1). 
+datasets [1](#1).
 For clustering, the class uses SciPy's implementation of the [**Minimum Spanning Tree**
 (MST)](#2) to remove the most distant nodes and separate the groups
 
@@ -46,7 +45,6 @@ For clustering, the class uses SciPy's implementation of the [**Minimum Spanning
 :::
 
 ## Constructor
-
 
 ```python
 class AiNet(
@@ -68,6 +66,7 @@ class AiNet(
 ```
 
 **Attributes:**
+
 * **N** (``int``): Number of memory cells (antibodies) in the population. Defaults to 50.
 * **n_clone** (``int``): Number of clones generated per selected memory cell. Defaults to 10.
 * **top_clonal_memory_size** (``Optional[int]``): Number of highest-affinity antibodies selected for cloning. Defaults to 5.
@@ -78,20 +77,21 @@ class AiNet(
 * **max_iterations** (``int``): Maximum number of training iterations. Defaults to 10.
 * **k** (``int``): Number of nearest neighbors used for label prediction. Defaults to 3.
 * **metric** (Literal["manhattan", "minkowski", "euclidean"]): Way to calculate the distance between the detector and the sample:
-    * ``'Euclidean'`` ➜ The calculation of the distance is given by the expression:
+  * ``'Euclidean'`` ➜ The calculation of the distance is given by the expression:
      $$\sqrt{(X_{1} - X_{1})^2 + (Y_{2} - Y_{2})^2 + ... + (Y_{n} - Y_{n})^2}$$
-    * ``'minkowski'`` ➜ The calculation of the distance is given by the expression:
+  * ``'minkowski'`` ➜ The calculation of the distance is given by the expression:
     $$( |X_{1} - Y_{1}|^p + |X_{2} - Y_{2}|^p + ... |X_{n} - Y_{n}|^p)^\frac{1}{p}$$.
-    * ``'manhattan'`` ➜ The calculation of the distance is given by the expression: $$( |X_{1} - X_{1}| + |Y_{2} - Y_{2}| + ... + |Y_{n} - Y_{n}|)$$.
+  * ``'manhattan'`` ➜ The calculation of the distance is given by the expression: $$( |X_{1} - X_{1}| + |Y_{2} - Y_{2}| + ... + |Y_{n} - Y_{n}|)$$.
 
     Defaults to **"Euclidean"**.
 
 * **seed** (``Optional[int]``): Seed for random number generation. Defaults to None.
 * **use_mst_clustering** (``bool``): Whether to perform MST-based clustering. Defaults to True.
 * **kwargs**:
-    * **p** (``float``): Parameter for Minkowski distance. Defaults to 2.
+  * **p** (``float``): Parameter for Minkowski distance. Defaults to 2.
 
 **Other initialized variables:**
+
 * **_population_antibodies** (``npt.NDArray``): Stores the current set of antibodies.
 * **_memory_network** (``dict``): Dictionary mapping clusters to antibodies.
 * **_mst_structure** (``scipy.sparse.csr_matrix``): MST adjacency structure.
@@ -109,7 +109,7 @@ Trains the AiNet model on input data:
 
 ```python
 def fit(self, X: npt.NDArray, verbose: bool = True):
-````
+```
 
 **Input parameters:**
 
@@ -165,7 +165,7 @@ Initializes antibody population randomly.
 
 ```python
 def _init_population_antibodies(self) -> npt.NDArray:
-````
+```
 
 **Returns:** Initialized antibodies (`npt.NDArray`).
 
@@ -302,12 +302,14 @@ def _build_mst(self):
 
 ---
 
-# References
+## References
 
-#####  1
+### 1
+>
 > De Castro, Leandro & José, Fernando & von Zuben, Antonio Augusto. (2001). aiNet: An Artificial Immune Network for Data Analysis.
->    Available at: [https://www.researchgate.net/publication/228378350_aiNet_An_Artificial_Immune_Network_for_Data_Analysis](https://www.researchgate.net/publication/228378350_aiNet_An_Artificial_Immune_Network_for_Data_Analysis)
+> Available at: [https://www.researchgate.net/publication/228378350_aiNet_An_Artificial_Immune_Network_for_Data_Analysis](https://www.researchgate.net/publication/228378350_aiNet_An_Artificial_Immune_Network_for_Data_Analysis)
 
-##### 2
+### 2
+>
 > SciPy Documentation. *Minimum Spanning Tree*.
->    Available at: [https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.minimum_spanning_tree](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.minimum_spanning_tree)
+> Available at: [https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.minimum_spanning_tree](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.minimum_spanning_tree)

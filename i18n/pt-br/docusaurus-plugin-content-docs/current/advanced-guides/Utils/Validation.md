@@ -7,6 +7,7 @@ def detect_vector_data_type(
     vector: npt.NDArray
 ) -> FeatureType:
 ```
+
 Detecta o tipo de dado em um determinado vetor.
 
 Esta função analisa o vetor de entrada e classifica seus dados como um dos tipos suportados:

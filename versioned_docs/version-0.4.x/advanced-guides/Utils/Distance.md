@@ -15,15 +15,16 @@ def hamming(u: npt.NDArray, v: npt.NDArray) -> np.float64:
 ```
 
 The function to calculate the normalized Hamming distance between two points.
-    
+
 $((x₁ ≠ x₂) + (y₁ ≠ y₂) + ... + (yn ≠ yn)) / n$
 
-
 **Parameters:**
+
 * u (``npt.NDArray``): Coordinates of the first point.
 * v (``npt.NDArray``): Coordinates of the second point.
 
 **Returns:**
+
 * Distance (``float``) between the two points.
 
 ---
@@ -38,13 +39,13 @@ Function to calculate the normalized Euclidean distance between two points.
 
 $√( (x₁ - x₂)² + (y₁ - y₂)² + ... + (yn - yn)²)$
 
-
-
 **Parameters:**
+
 * u (``npt.NDArray``): Coordinates of the first point.
 * v (``npt.NDArray``): Coordinates of the second point.
 
 **Returns:**
+
 * Distance (``float``) between the two points.
 
 ---
@@ -56,15 +57,16 @@ def cityblock(u: npt.NDArray[np.float64], v: npt.NDArray[np.float64]) -> np.floa
 ```
 
 Function to calculate the normalized Manhattan distance between two points.
-    
+
 $(|x₁ - x₂| + |y₁ - y₂| + ... + |yn - yn|) / n$
 
-
 **Parameters:**
+
 * u (``npt.NDArray``): Coordinates of the first point.
 * v (``npt.NDArray``): Coordinates of the second point.
 
 **Returns:**
+
 * Distance (``float``) between the two points.
 
 ---
@@ -76,19 +78,20 @@ def minkowski(u: npt.NDArray[np.float64], v: npt.NDArray[np.float64], p: float =
 ```
 
 Function to calculate the normalized Minkowski distance between two points.
-    
+
 $(( |X₁ - Y₁|p + |X₂ - Y₂|p + ... + |Xn - Yn|p) ¹/ₚ) / n$
 
-
 **Parameters:**
+
 * u (``npt.NDArray``): Coordinates of the first point.
 * v (``npt.NDArray``): Coordinates of the second point.
 * p float: The p parameter defines the type of distance to be calculated:
-    - p = 1: **Manhattan** distance — sum of absolute differences.
-    - p = 2: **Euclidean** distance — sum of squared differences (square root).
-    - p > 2: **Minkowski** distance with an increasing penalty as p increases.
+  * p = 1: **Manhattan** distance — sum of absolute differences.
+  * p = 2: **Euclidean** distance — sum of squared differences (square root).
+  * p > 2: **Minkowski** distance with an increasing penalty as p increases.
 
 **Returns:**
+
 * Distance (``float``) between the two points.
 
 ---
@@ -107,12 +110,14 @@ def compute_metric_distance(
 Function to calculate the distance between two points by the chosen ``metric``.
 
 **Parameters:**
+
 * u (``npt.NDArray``): Coordinates of the first point.
 * v (``npt.NDArray``): Coordinates of the second point.
 * metric (``int``): Distance metric to be used. Available options: [0 (Euclidean), 1 (Manhattan), 2 (Minkowski)]
 * p (``float``): Parameter for the Minkowski distance (used only if `metric` is "minkowski").
 
 **Returns:**
+
 * Distance (``double``) between the two points with the selected metric.
 
 ---
@@ -130,14 +135,15 @@ def min_distance_to_class_vectors(
 
 Calculates the minimum distance between an input vector and the vectors of a class.
 
-
 **Parameters:**
+
 * x_class (``npt.NDArray``): Array containing the class vectors to be compared with the input vector. Expected shape: (n_samples, n_features).
 * vector_x (``npt.NDArray``): Vector to be compared with the class vectors. Expected shape: (n_features,).
 * metric (``int``): Distance metric to be used. Available options: [0 (Euclidean), 1 (Manhattan), 2 (Minkowski)]
 * p (``float``): Parameter for the Minkowski distance (used only if `metric` is "minkowski").
 
 **Returns:**
+
 * float: The minimum distance calculated between the input vector and the class vectors.
 * Returns -1.0 if the input dimensions are incompatible.
 
@@ -148,16 +154,19 @@ Calculates the minimum distance between an input vector and the vectors of a cla
 ```python
 def get_metric_code(metric: str) -> int:
 ```
+
 Returns the numeric code associated with a distance metric.
 
 **Parameters:**
+
 * metric (str): Name of the metric. Can be "euclidean", "manhattan", "minkowski" or "hamming".
 
 **Raises**
-----------
+
 * ``ValueError``: If the metric provided is not supported
 
 **Returns:**
+
 * ``int``: Numeric code corresponding to the metric.
 
 ---

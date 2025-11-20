@@ -21,7 +21,6 @@ A classe `Clonalg` é um **algoritmo de otimização** inspirado no processo bio
 A implementação do CLONALG foi inspirada na descrição apresentada em [1](#1).
 :::
 
-
 :::info
 Esta implementação do CLONALG contém algumas alterações baseadas no contexto do AISP, para aplicação geral
 a diversos problemas, que podem produzir resultados diferentes da implementação padrão ou
@@ -178,9 +177,10 @@ Clona e aplica hipermutação a uma população de anticorpos. Retorna uma lista
 
 ---
 
-# Referências
+## Referências
 
 ---
 
-##### 1
+### 1
+>
 > BROWNLEE, Jason. Clonal Selection Algorithm. Clever Algorithms: Nature-inspired Programming Recipes., 2011. Available at: [https://cleveralgorithms.com/nature-inspired/immune/clonal_selection_algorithm.html](https://cleveralgorithms.com/nature-inspired/immune/clonal_selection_algorithm.html)

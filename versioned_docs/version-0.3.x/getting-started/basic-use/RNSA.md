@@ -23,15 +23,15 @@ keywords:
 
 Access the Jupyter notebook with the code available [here](https://github.com/AIS-Package/aisp/blob/main/examples/en/classification/RNSA/example_with_randomly_generated_dataset-en.ipynb)!
 
-
 Run notebook online via Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AIS-Package/aisp/HEAD?labpath=%2Fexamples%2Fen%2Fclassification%2FRNSA%2Fexample_with_randomly_generated_dataset-en.ipynb)
 
-### Importing the Real-Valued Negative Selection Algorithm.
+## Importing the Real-Valued Negative Selection Algorithm
+
 ```python
 from aisp.nsa import RNSA
 ```
 
-### Generating dice bubbles for classes randomly.
+## Generating dice bubbles for classes randomly
 
 Using the `make_blobs` function, two sets of data are generated in the form of bubbles, in the range between 0 and 1, representing each class x and y. Then this data is separated into test and training sets.
 
@@ -47,7 +47,7 @@ train_x, test_x, train_y, test_y = train_test_split(samples, output, test_size=0
 
 ---
 
-### Testing the model `default-NSA`:
+## Testing the model `default-NSA`
 
 Start the model with 500 detectors, each with a radius of 0.06. Then, it presents the result of the forecast accuracy.
 
@@ -66,6 +66,7 @@ print(classification_report(test_y, prev_y))
 ```
 
 Output:
+
 ```bash
 ✔ Non-self detectors for classes (0, 1) successfully generated:  ┇██████████┇ 1000/1000 detectors
 The accuracy is 1.0
@@ -81,13 +82,13 @@ weighted avg       1.00      1.00      1.00       100
 
 ---
 
-### Detector and sample plotting:
+## Detector and sample plotting
 
 ![Detector and sample plotting](../../assets/exemple_en_d.png)
 
 ---
 
-### Testing the model `V-detector`:
+## Testing the model `V-detector`
 
 Start the model with 50 detectors, where the minimum radius is 0.05 and the sample's own radius is 0.04. It then shows the forecast accuracy result.
 
@@ -106,6 +107,7 @@ print(classification_report(test_y, prev_y))
 ```
 
 Output:
+
 ```bash
 ✔ Non-self detectors for classes (0, 1) successfully generated:  ┇██████████┇ 40/40 detectors
 The accuracy is 1.0
@@ -121,5 +123,6 @@ weighted avg       1.00      1.00      1.00       100
 
 ---
 
-### Detector and sample plotting:
-![Detector and sample plotting](../../assets/exemple_en_v.png)
+## V-Detector and sample plotting
+
+![V-Detector and sample plotting](../../assets/exemple_en_v.png)

@@ -50,7 +50,6 @@ Esta função cria `n` clones do vetor binário de entrada e aplica mutações a
 
 * `clone_set` (`npt.NDArray[np.bool_]`): Array com forma `(n, len(vector))` contendo os `n` clones mutados do vetor original.
 
-
 ---
 
 ## clone_and_mutate_ranged
