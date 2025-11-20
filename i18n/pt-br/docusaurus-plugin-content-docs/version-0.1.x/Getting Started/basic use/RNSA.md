@@ -83,7 +83,7 @@ weighted avg       1.00      1.00      1.00       100
 
 ## Plotagem dos detector e amostras:
 
-![](../../assets/exemple_pt_d.png)
+![Plotagem dos detector e amostras](../../assets/exemple_pt_d.png)
 
 ---
 
@@ -123,4 +123,4 @@ weighted avg       1.00      1.00      1.00       100
 
 ## Plotagem dos detector e amostras:
 
-![](../../assets/exemple_pt_v.png)
+![Plotagem dos v-detector e amostras](../../assets/exemple_pt_d.png)

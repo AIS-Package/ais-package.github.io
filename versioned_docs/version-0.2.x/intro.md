@@ -24,7 +24,7 @@ keywords:
 
 <div style={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
 
-![](./assets/logo.svg)  
+![Artificial Immune Systems Package](./assets/logo.svg)  
 
 </div>
 

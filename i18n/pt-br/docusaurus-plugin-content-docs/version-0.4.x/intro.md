@@ -27,7 +27,7 @@ keywords:
 # Pacote de Sistemas Imunológicos Artificiais.
 <div style={{ display: "flex", justifyContent: "center", alignItems: "center", margin: "auto" }}>
 
-![](./assets/logo.svg)  
+![Pacote de Sistemas Imunológicos Artificiais](./assets/logo.svg)   
 
 </div>
 

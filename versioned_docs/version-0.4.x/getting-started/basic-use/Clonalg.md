@@ -213,4 +213,4 @@ Cost History per Iteration:
 
 ### Evolution of the best over generations
 
-![alt text](../../assets/clonalg.png)
+![Evolution of the best over generations](../../assets/clonalg.png)

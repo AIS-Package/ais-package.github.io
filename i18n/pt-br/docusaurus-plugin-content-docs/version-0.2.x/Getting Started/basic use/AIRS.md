@@ -96,4 +96,4 @@ weighted avg       1.00      1.00      1.00       100
 
 ### Célula de memória e plotagem de amostra:
 
-![](../../assets/exemple_airs_plot.png)
+![Célula de memória e plotagem de amostra](../../assets/exemple_airs_plot.png)

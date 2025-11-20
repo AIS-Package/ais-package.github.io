@@ -83,7 +83,7 @@ weighted avg       1.00      1.00      1.00       100
 
 ### Detector and sample plotting:
 
-![](../../assets/exemple_en_d.png)
+![Detector and sample plotting](../../assets/exemple_en_d.png)
 
 ---
 
@@ -122,4 +122,4 @@ weighted avg       1.00      1.00      1.00       100
 ---
 
 ### Detector and sample plotting:
-![](../../assets/exemple_en_v.png)
+![Detector and sample plotting](../../assets/exemple_en_v.png)

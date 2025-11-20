@@ -123,4 +123,4 @@ weighted avg       0.93      0.93      0.93       200
 ## Avaliação
 O modelo obteve 0,93 de acurácia para o conjunto teste. A precisão na classificação, tanto para x quanto para y, também foi de 0,93. Isso pode ser observado pela matriz de confusão na Figura 1.
 
-![](../../assets/matrizBNSA.png)
+![Matriz de confusão BNSA](../../assets/matrizBNSA.png)

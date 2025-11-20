@@ -131,4 +131,4 @@ plt.ylabel('Estimated')
 plt.show()
 ```
 
-![](../../assets/matrixBNSA.png)
+![BNSA confusion Matrix](../../assets/matrixBNSA.png)

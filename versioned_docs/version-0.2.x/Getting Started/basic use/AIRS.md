@@ -89,4 +89,4 @@ weighted avg       1.00      1.00      1.00       100
 
 ### Memory cell and sample plotting:
 
-![](../../assets/exemple_airs_plot.png)
+![Memory cell and sample plotting](../../assets/exemple_airs_plot.png)
