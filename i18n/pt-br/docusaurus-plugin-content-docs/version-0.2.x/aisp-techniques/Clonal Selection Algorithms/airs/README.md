@@ -56,8 +56,8 @@ A classe `AIRS` tem como objetivo realizar classificação utilizando metáforas
 - **metric** (Literal["manhattan", "minkowski", "euclidean"]): Forma de calcular a distância entre o detector e a amostra:
 
   - ``'euclidiana'`` ➜ O cálculo da distância dá-se pela expressão:  $$\sqrt{(X_1 - X_1)^2 + (Y_2 - Y_2)^2 + ... + (Y_n - Y_n)^2}$$.
-  - ``'minkowski'``  ➜ O cálculo da distância dá-se pela expressão: $$( |X_1 - Y_1|^p + |X_2 - Y_2|^p + ... |X_n - Y_n|^p)^\frac{1}{p}$$.
-  - ``'manhattan'``  ➜ O cálculo da distância dá-se pela expressão:  $$( |X_1 - X_1| + |Y_2 - Y_2| + ... + |Y_n - Y_n|)$$.
+  - ``'minkowski'``  ➜ O cálculo da distância dá-se pela expressão: $$\frac{((|X_{1} - Y_{1}|^p + |X_{2} - Y_{2}|^p + \cdots + |X_{n} - Y_{n}|^p)^\frac{1}{p})}{n}$$.
+  - ``'manhattan'``  ➜ O cálculo da distância dá-se pela expressão:  $$\frac{(|X_{1} - X_{1}| + |Y_{2} - Y_{2}| + \cdots + |Y_{n} - Y_{n}|)}{n}$$.
 
     Defaults to ``'euclidean'``.
 

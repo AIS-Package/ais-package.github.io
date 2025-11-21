@@ -1,0 +1,3 @@
+{
+  "description": "As funções realizam verificações de detectores e utilizam decoradores Numba para compilação Just-In-Time"
+}

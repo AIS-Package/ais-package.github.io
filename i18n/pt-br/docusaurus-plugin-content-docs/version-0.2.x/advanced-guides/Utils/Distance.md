@@ -16,7 +16,9 @@ def hamming(u: npt.NDArray, v: npt.NDArray) -> np.float64:
 
 Função para calcular a distância de Hamming normalizada entre dois pontos.
 
-$((x₁ ≠ x₂) + (y₁ ≠ y₂) + ... + (y_n ≠ y_n)) / n$
+$$
+\frac{(x_1 \neq y_1) + (x_2 \neq y_2) + \cdots + (x_n \neq y_n)}{n}
+$$
 
 **Parameters:**
 
@@ -37,7 +39,9 @@ def euclidean(u: npt.NDArray[np.float64], v: npt.NDArray[np.float64]) -> np.floa
 
 Função para calcular a distância euclidiana normalizada entre dois pontos.
 
-$√( (x₁ - x₂)² + (y₁ - y₂)² + ... + (y_n - y_n)²)$
+$$
+\sqrt{(X_{1} - X_{1})^2 + (Y_{2} - Y_{2})^2 + \cdots + (Y_{n} - Y_{n})^2}
+$$
 
 **Parameters:**
 
@@ -58,7 +62,9 @@ def cityblock(u: npt.NDArray[np.float64], v: npt.NDArray[np.float64]) -> np.floa
 
 Função para calcular a distância Manhattan normalizada entre dois pontos.
 
-$(|x₁ - x₂| + |y₁ - y₂| + ... + |y_n - y_n|) / n$
+$$
+\frac{(|X_{1} - X_{1}| + |Y_{2} - Y_{2}| + \cdots + |Y_{n} - Y_{n}|)}{n}
+$$
 
 **Parameters:**
 
