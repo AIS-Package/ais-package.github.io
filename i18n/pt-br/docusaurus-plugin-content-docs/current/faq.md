@@ -55,7 +55,7 @@ rnsa.fit(x_norm, y)
 
 ## Configuração de Parâmetros
 
-### Como escolher o numero de detectores (N) no RNSA ou BNSA?
+### Como escolher o numero de detectores (``N``) no ``RNSA`` ou ``BNSA``?
 
 O numero de detectores afeta diretamente a performance:
 
@@ -69,7 +69,7 @@ O numero de detectores afeta diretamente a performance:
 
 ---
 
-### Qual raio (``r`` ou ``aff_thresh``) devo utilizar no BNSA ou RNSA?
+### Qual raio (``r`` ou ``aff_thresh``) devo utilizar no ``BNSA`` ou ``RNSA``?
 
 O raio dos detectores depende da distribuição dos dados:
 
@@ -78,7 +78,7 @@ O raio dos detectores depende da distribuição dos dados:
 
 ---
 
-### O que é o parâmetro ``r_s`` no RNSA?
+### O que é o parâmetro ``r_s`` no ``RNSA``?
 
 O ``r_s`` é o raio da amostra self. Ele define uma região ao redor de cada amostra de treinamento.
 
