@@ -31,12 +31,29 @@ keywords:
 ![Pacote de Sistemas Imunológicos Artificiais](./assets/logo.svg)  
 
 </div>
+<div style={{ display: "flex", justifyContent: "center", alignItems: "center", margin: "auto" }}>
+
+[![GitHub stars](https://img.shields.io/github/stars/AIS-Package/aisp?style=social)](https://github.com/AIS-Package/aisp)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/aisp?period=total&units=INTERNATIONAL_SYSTEM&left_color=GRAY&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/aisp)
+![License](https://img.shields.io/pypi/l/aisp)
+![Python version](https://img.shields.io/pypi/pyversions/aisp)
+
+</div>
 
 ---
 
 ## Introdução
 
-**AISP** é um pacote Python de técnicas imunoinspiradas, as quais aplicam metáforas do sistema imunológico dos vertebrados ao reconhecimento de padrões e à tarefas de otimização. Concebido como um pacote de sistemas imunológicos artificiais de código aberto, o AISP é resultado de um projeto de pesquisa iniciado em **2022** no Instituto Federal do Norte de Minas Gerais - Campus Salinas (**IFNMG - Salinas**). Sua distribuição é regida pela GNU Lesser General Public License v3.0 (LGPLv3).
+**AISP (Artificial Immune Systems Package)** é um pacote Python de técnicas imunoinspiradas, as quais aplicam metáforas do sistema imunológico dos vertebrados ao reconhecimento de padrões e à tarefas de otimização. Concebido como um pacote de sistemas imunológicos artificiais de código aberto, o AISP é resultado de um projeto de pesquisa iniciado em **2022** no Instituto Federal do Norte de Minas Gerais - Campus Salinas (**IFNMG - Salinas**). Sua distribuição é regida pela GNU Lesser General Public License v3.0 (LGPLv3).
+
+### O que voce pode fazer com o AISP?
+
+O AISP oferece implementações de algoritmos bio-inspirados para:
+
+- **Detecção de anomalias**: Identifique padrões anormais em dados.
+- **Classificação**: Classifique dados com multi-classes.
+- **Otimização**: Encontre soluções ótimas para funções objetivas.
+- **Clustering**: Agrupe dados sem supervisão.
 
 ### Algoritmos implementados
 
