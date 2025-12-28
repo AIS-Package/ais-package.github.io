@@ -28,7 +28,6 @@ keywords:
 
 </div>
 
-</div>
 <div style={{ display: "flex", justifyContent: "center", alignItems: "center", margin: "auto" }}>
 
 [![GitHub stars](https://img.shields.io/github/stars/AIS-Package/aisp?style=social)](https://github.com/AIS-Package/aisp)
@@ -52,7 +51,6 @@ AISP provides implementations of bio-inspired algorithms for:
 - **Classification**: Classify data with multiple classes.
 - **Optmization**: Find optimal solutions for objective functions.
 - **Clustering**: Group data without supervision.
-
 
 ### Algorithms implemented
 
