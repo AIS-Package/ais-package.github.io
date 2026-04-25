@@ -55,9 +55,35 @@ O AISP oferece implementações de algoritmos bio-inspirados para:
 - **Otimização**: Encontre soluções ótimas para funções objetivas.
 - **Clustering**: Agrupe dados sem supervisão.
 
-### Algoritmos implementados
+---
 
-> - [x] [**Seleção Negativa.**](./aisp-techniques/negative-selection/)
-> - [x] [**Algoritmos de Seleção Clonal.**](./aisp-techniques/clonal-selection-algorithms/)
-> - [x] [**Teoria da Rede Imune.**](./aisp-techniques/immune-network-theory/)
-> - [ ] *Teoria do Perigo.*
+## Algoritmos Implementados
+
+### [Seleção Negativa](./aisp-techniques/negative-selection.md) (`aisp.nsa`)
+
+- [**BNSA**](./api/nsa/bnsa.md) - Algoritmo de Seleção Negativa Binária  
+- [**RNSA**](./api/nsa/rnsa.md) - Algoritmo de Seleção Negativa com Valores Reais  
+
+### [Seleção Clonal](./aisp-techniques/clonal-selection-algorithms.md) (`aisp.csa`)
+
+- [**AIRS**](./api/csa/airs.md) - Sistema Imunológico Artificial de Reconhecimento  
+- [**CLONALG**](./api/csa/clonalg.md) - Algoritmo de Seleção Clonal  
+
+### [Teoria de Redes Imunológicas](./aisp-techniques/immune-network-theory.md) (`aisp.ina`)
+
+- [**AiNet**](./api/ina/ai-net.md) - Rede Imunológica Artificial para Agrupamento e Compressão de Dados  
+
+### Módulo em Desenvolvimento
+
+#### Teoria do Perigo (`aisp.dta`)
+
+- **DCA** - Algoritmo de Células Dendríticas *(planejado)*  
+
+## Visão geral da API
+
+Todos os algoritmos seguem uma interface simples e consistente:
+
+- `fit(X, y, verbose: bool = True)`: Treina o modelo para tarefas de classificação.
+- `fit(X, verbose: bool = True)`: Treina o modelo para tarefas de agrupamento.
+- `predict(X)`: Faz previsões com base em novos dados.
+- `optimize(max_iters: int =..., n_iter_no_change: int =..., verbose: bool = True)`: executar os algoritmos de otimização

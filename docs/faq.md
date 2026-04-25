@@ -1,6 +1,6 @@
 ---
+id: faq
 sidebar_position: 6
-title: Frequently Asked Questions
 sidebar_label: FAQ
 keywords:
     - FAQ
@@ -8,6 +8,8 @@ keywords:
     - Questions
     - Help
 ---
+
+# Frequently Asked Questions
 
 Quick solutions for possible questions about aisp.
 
@@ -17,27 +19,30 @@ Quick solutions for possible questions about aisp.
 
 It depends on the type of problem:
 
-- **Anomaly detection**: Use ``RNSA`` or ``BNSA``.
+- **Anomaly detection**: Use `RNSA` or `BNSA`.
   - RNSA for problems with continuous data.
   - BNSA for problems with binary data.
-- **Classification**: Use ``AIRS``, ``RNSA``, or ``BNSA``.
-  - ``RNSA`` and ``BNSA`` were implemented to be applied to multiclass classification.
-  - ``AIRS`` is more robust to noise in the data.
-- **Optimization**: Use ``Clonalg``.
+- **Classification**: Use `AIRS`, `RNSA`, or `BNSA`.
+  - `RNSA` and `BNSA` were implemented to be applied to multiclass classification.
+  - `AIRS` is more robust to noise in the data.
+- **Optimization**: Use `Clonalg`.
   - The implementation can be applied to objective function optimization (min/max).
-- **Clustering**: Use ``AiNet``.
+- **Clustering**: Use `AiNet`.
   - Automatically separates data into groups.
   - Does not require a predefined number of clusters.
 
 ---
 
-### How do I normalize my data to use the ``RNSA`` algorithm?
+### How do I normalize my data to use the `RNSA` algorithm?
 
-RNSA works exclusively with data normalized in the range [0, 1]. Therefore, before applying it, the data must be normalized if they are not already in this range. A simple way to do this is by using normalization tools from **scikit-learn**, such as [``MinMaxScaler``](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html).
+RNSA works exclusively with data normalized in the range (0.0, 1.0). Therefore, before applying it, the data must be
+normalized if they are not already in this range. A simple way to do this is by using normalization tools from
+**scikit-learn**, such as
+[``MinMaxScaler``](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html).
 
 #### Example
 
-In this example, ``X`` represents the non-normalized input data.
+In this example, `X` represents the non-normalized input data.
 
 ```python
 from sklearn.preprocessing import MinMaxScaler
@@ -55,7 +60,7 @@ rnsa.fit(x_norm, y)
 
 ## Parameter configuration
 
-### How do I choose the number of detectors (``N``) in ``RNSA`` or ``BNSA``?
+### How do I choose the number of detectors (`N`) in `RNSA` or `BNSA`?
 
 The number of detectors directly affects performance:
 
@@ -69,7 +74,7 @@ The number of detectors directly affects performance:
 
 ---
 
-### Which radius (``r`` or ``aff_thresh``) should I use in ``BNSA`` or ``RNSA``?
+### Which radius (`r` or `aff_thresh`) should I use in `BNSA` or `RNSA`?
 
 The detector radius depends on the data distribution:
 
@@ -78,15 +83,17 @@ The detector radius depends on the data distribution:
 
 ---
 
-### What is the ``r_s`` parameter in ``RNSA``?
+### What is the `r_s` parameter in `RNSA`?
 
-``r_s`` is the radius of the self sample. It defines a region around each training sample.
+`r_s` is the radius of the self sample. It defines a region around each training sample.
 
 ---
 
 ### Clonalg: How do I define the objective function?
 
-The objective function must follow the pattern of the [base class](https://github.com/AIS-Package/aisp/blob/main/aisp/base/core/_optimizer.py#L140). It must receive a solution as input and return a cost (or affinity) value.
+The objective function must follow the pattern of the
+[base class](https://github.com/AIS-Package/aisp/blob/main/aisp/base/core/_optimizer.py#L140).
+It must receive a solution as input and return a cost (or affinity) value.
 
 ```python
 def affinity_function(self, solution: Any) -> float:
@@ -95,12 +102,14 @@ def affinity_function(self, solution: Any) -> float:
 
 There are two ways to define the objective function in Clonalg.
 
+```python
+def sphere(solution):
+    return np.sum(solution ** 2)
+```
+
 1. Defining the function directly in the class constructor
 
 ```python
-def sphere(solution):
-    return np.sum(solution *- 2)
-
 clonalg = Clonalg(
     problem_size=2,
     affinity_function=sphere
@@ -110,9 +119,6 @@ clonalg = Clonalg(
 2. Using the function registry
 
 ```python
-def sphere(solution):
-    return np.sum(solution *- 2)
-
 clonalg = Clonalg(
     problem_size=2,
 )
