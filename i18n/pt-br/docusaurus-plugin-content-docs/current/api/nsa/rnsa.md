@@ -208,7 +208,7 @@ Prever as classes com base nos detectores gerados após o treinamento.
 
 Exemplos completos de uso estão disponíveis nos notebooks Jupyter:
 
-- [**Exemplos**](../../examples/Classification/nsa.md#rnsa-algoritmo-de-selecao-negativa-de-valores-reais)
+- [**Exemplos**](../../examples/Classification/nsa.md#rnsa-algoritmo-de-seleção-negativa-de-valores-reais)
 
 ---
 

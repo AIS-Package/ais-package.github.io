@@ -183,7 +183,7 @@ próximos (K-NN).
 
 Exemplos completos de uso estão disponíveis nos notebooks Jupyter:
 
-- [**Exemplos**](../../examples/Classification/csa.md#airs-sistema-imunologico-artificial-de-reconhecimento)
+- [**Exemplos**](../../examples/Classification/csa.md#airs-sistema-imunológico-artificial-de-reconhecimento)
 
 ---
 

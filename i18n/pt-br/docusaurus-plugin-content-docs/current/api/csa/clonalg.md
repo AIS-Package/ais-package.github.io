@@ -174,7 +174,7 @@ Avalia a afinidade de uma solução candidata.
 
 Exemplos completos de uso estão disponíveis nos notebooks Jupyter:
 
-- [**Exemplos**](../../examples/Optimization/csa.md#clonalg-algoritmo-de-selecao-clonal)
+- [**Exemplos**](../../examples/Optimization/csa.md#clonalg-algoritmo-de-seleção-clonal)
 
 ---
 

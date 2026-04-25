@@ -180,7 +180,7 @@ Prever as classes com base nos detectores gerados após o treinamento.
 
 Exemplos completos de uso estão disponíveis nos notebooks Jupyter:
 
-- [**Exemplos**](../../examples/Classification/nsa.md#bnsa-algoritmo-de-selecao-negativa-binaria)
+- [**Exemplos**](../../examples/Classification/nsa.md#bnsa-algoritmo-de-seleção-negativa-binária)
 
 ---
 

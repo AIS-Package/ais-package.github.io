@@ -208,7 +208,7 @@ dos pesos das arestas são removidas. Cada grafo conectado após essa poda é tr
 
 Exemplos completos de uso estão disponíveis nos notebooks Jupyter:
 
-- [**Exemplos**](../../examples/Clustering/ina.md#ainet-rede-imunologica-artificial)
+- [**Exemplos**](../../examples/Clustering/ina.md#ainet-rede-imunológica-artificial)
 
 ---
 
