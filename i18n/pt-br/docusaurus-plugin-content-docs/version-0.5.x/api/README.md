@@ -9,6 +9,9 @@ keywords:
     - classification
     - optimization
     - clustering
+    - classificação
+    - otimização
+    - clusterização
 ---
 
 # AISP - API
