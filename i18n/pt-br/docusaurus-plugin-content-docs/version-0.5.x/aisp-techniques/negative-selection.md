@@ -46,5 +46,5 @@ previsão de dados presentes na região não-self de todos os detectores e class
     and Privacy, Oakland, CA, USA, 1994, pp. 202-212,
     doi: https://dx.doi.org/10.1109/RISP.1994.296580.
 
-[^3] Ji, Z.; Dasgupta, D. (2004). Real-Valued Negative Selection Algorithm with Variable-Sized Detectors.
+[^3]: Ji, Z.; Dasgupta, D. (2004). Real-Valued Negative Selection Algorithm with Variable-Sized Detectors.
     In *Lecture Notes in Computer Science*, vol. 3025. https://doi.org/10.1007/978-3-540-24854-5_30

@@ -1,5 +1,6 @@
 ---
 id: exceptions
+sidebar_position: 6
 sidebar_label: aisp.exceptions
 keywords:
   - exceptions
