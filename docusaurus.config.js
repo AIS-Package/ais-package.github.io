@@ -1,5 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+import rehypeKatex from 'rehype-katex';
+import remarkMath from 'remark-math';
 require('dotenv/config');
 const { themes } = require('prism-react-renderer')
 const lightCodeTheme = themes.github;
@@ -47,7 +49,7 @@ const config = {
     locales: ['en', 'pt-br'],
     localeConfigs: {
       en: {
-        htmlLang: 'en-GB',
+        htmlLang: 'en',
       },
       // You can omit a locale (e.g. fr) if you don't need to override the defaults
       pt: {
@@ -65,10 +67,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
-          remarkPlugins: [require("remark-math")],
-          rehypePlugins: [
-            [require("rehype-katex"), { strict: false }],
-          ],
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [[rehypeKatex, { strict: false }]],
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           lastVersion: isDev ? 'current' : getNextVersionName(),
@@ -141,7 +141,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-
+          
           {
             href: 'https://github.com/AIS-Package/aisp',
             label: 'GitHub',
@@ -225,6 +225,7 @@ const config = {
         searchResultLimits: 6,
       }),
     ],
+    '@docusaurus/theme-mermaid',
   ],
   markdown: {
     format: 'mdx',
@@ -236,7 +237,7 @@ const config = {
       headingIds: true,
     },
     anchors: {
-      maintainCase: true,
+      maintainCase: false,
     },
     hooks: {
       onBrokenMarkdownLinks: 'warn',

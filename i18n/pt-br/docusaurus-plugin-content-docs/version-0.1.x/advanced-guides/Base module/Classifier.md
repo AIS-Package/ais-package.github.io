@@ -24,8 +24,8 @@ Ajusta o modelo aos dados de treinamento.
 
 Implementação:
 
-- [RNSA](../../aisp-techniques/Negative%20Selection/RNSA.md#Função-fit)
-- [BNSA](../../aisp-techniques/Negative%20Selection/BNSA.md#Função-fit)
+- [RNSA](../../aisp-techniques/Negative%20Selection/RNSA.md#função-fit)
+- [BNSA](../../aisp-techniques/Negative%20Selection/BNSA.md#função-fit)
 
 ### def predict(...)
 
@@ -37,8 +37,8 @@ Realiza a previsão dos rótulos para os dados fornecidos.
 
 Implementação:
 
-- [RNSA](../../aisp-techniques/Negative%20Selection/RNSA.md#Função-predict)
-- [BNSA](../../aisp-techniques/Negative%20Selection/BNSA.md#Função-predict)
+- [RNSA](../../aisp-techniques/Negative%20Selection/RNSA.md#função-predict)
+- [BNSA](../../aisp-techniques/Negative%20Selection/BNSA.md#função-predict)
 
 ---
 

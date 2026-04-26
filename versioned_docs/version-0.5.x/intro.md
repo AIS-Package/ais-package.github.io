@@ -52,9 +52,35 @@ AISP provides implementations of bio-inspired algorithms for:
 - **Optmization**: Find optimal solutions for objective functions.
 - **Clustering**: Group data without supervision.
 
-### Algorithms implemented
+---
 
-> - [x] [**Negative Selection.**](./aisp-techniques/negative-selection/)
-> - [x] [**Clonal Selection Algorithms.**](./aisp-techniques/clonal-selection-algorithms/)
-> - [x] [**Immune Network Theory.**](./aisp-techniques/immune-network-theory/)
-> - [ ] *Danger Theory*
+## Implemented Algorithms
+
+### [Negative Selection](./aisp-techniques/negative-selection.md) (`aisp.nsa`)
+
+- [**BNSA**](./api/nsa/bnsa.md) - Binary Negative Selection Algorithm  
+- [**RNSA**](./api/nsa/rnsa.md) - Real-Valued Negative Selection Algorithm  
+
+### [Clonal Selection](./aisp-techniques/clonal-selection-algorithms.md) (`aisp.csa`)
+
+- [**AIRS**](./api/csa/airs.md) - Artificial Immune Recognition System  
+- [**CLONALG**](./api/csa/clonalg.md) - Clonal Selection Algorithm  
+
+### [Immune Network Theory](./aisp-techniques/immune-network-theory.md) (`aisp.ina`)
+
+- [**AiNet**](./api/ina/ai-net.md) - Artificial Immune Network for clustering and data compression
+
+### Module in Development
+
+#### Danger Theory (`aisp.dta`)
+
+- **DCA** - Dendritic Cell Algorithm *(planned)*
+
+## API overview
+
+All algorithms follow a simple and consistent interface:
+
+- `fit(X, y, verbose: bool = True)`: trains the model for classification tasks.
+- `fit(X, verbose: bool = True)`: trains the model for clustering tasks.
+- `predict(X)`: makes predictions based on new data.
+- `optimize(max_iters: int =..., n_iter_no_change: int =..., verbose: bool = True)`: run the optimization algorithms
