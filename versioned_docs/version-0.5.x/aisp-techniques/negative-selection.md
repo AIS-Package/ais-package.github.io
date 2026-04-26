@@ -1,5 +1,5 @@
 ---
-id: docs-nsa
+id: negative-selection
 keywords:
     - negative selection
     - nsa

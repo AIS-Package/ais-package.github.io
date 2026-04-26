@@ -1,5 +1,5 @@
 ---
-id: docs-ina
+id: immune-network-theory
 keywords:
     - teoria da rede imunológica
     - ainet
