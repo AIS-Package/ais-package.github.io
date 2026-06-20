@@ -23,7 +23,6 @@ The package requires [python 3.10](https://www.python.org/downloads/) or higher.
 |:-------------:|:-------------:|
 |    numpy      |    ≥ 1.23.0   |
 |    scipy      |    ≥ 1.8.1    |
-|    tqdm       |    ≥ 4.64.1   |
 |    numba      |    ≥ 0.59.0   |
 
 </div>
